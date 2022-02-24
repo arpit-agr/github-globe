@@ -1,5 +1,5 @@
 {
-  "name": "github-globe",
+  "name": "cobe-globe",
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "cobe": "^0.4.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.23"
   }
 }

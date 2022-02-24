@@ -1,0 +1,29 @@
+/* main:before {
+  background: #0e1e25;
+  content: " ";
+  display: block;
+  height: var(--gutter);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+} */
+
+main {
+  margin-top: calc(var(--gutter) * -2);
+  z-index: 1;
+}
+
+@media (max-width: 1421px) {
+  main {
+    /* margin-top: calc(-8 * var(--size-fluid-4)); */
+    /* transform: translateY(calc(-15 * var(--gutter))); */
+    /* position: relative;
+    top: calc(-15 * var(--gutter));
+    z-index: 99; */
+
+    margin-top: calc(var(--gutter) * -12);
+    z-index: 1;
+  }
+}
