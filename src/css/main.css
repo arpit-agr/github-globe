@@ -11,7 +11,7 @@
 } */
 
 main {
-  margin-top: calc(var(--gutter) * -2);
+  margin-top: calc(var(--gutter) * -6);
   z-index: 1;
 }
 
@@ -23,7 +23,7 @@ main {
     top: calc(-15 * var(--gutter));
     z-index: 99; */
 
-    margin-top: calc(var(--gutter) * -12);
-    z-index: 1;
+    margin-top: -300px;
+    /* z-index: 1; */
   }
 }

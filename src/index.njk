@@ -5,8 +5,11 @@ heading: One-stop shop from Chinese ports to your factory doors
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<header>
-  {% include "sections/hero.html" %}
+<header class="overflow:hidden">
+  <div class="stack wrapper">
+    {% include "partials/nav.html" %}
+    {% include "sections/hero.html" %}
+  </div>
 </header>
 <main class="flow">
   {% include "sections/products.html" %}
