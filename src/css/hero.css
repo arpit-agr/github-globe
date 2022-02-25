@@ -30,7 +30,7 @@ header {
   padding-block-end: var(--border-size-3);
 } */
 
-@media (max-width: 1421px) {
+@media (max-width: 1373px) {
   .hero-section {
     text-align: center;
   }

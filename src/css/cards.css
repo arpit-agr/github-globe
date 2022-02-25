@@ -9,7 +9,7 @@
 }
 
 .smol-card-component {
-  --img-ratio: 3/2;
+  --img-ratio: 1.618;
   --flow-space: var(--gutter);
   --border-color: hsl(210deg 5% 92%);
   --bg: hsl(180deg 9% 98%);
@@ -27,7 +27,11 @@
   margin-top: 1rem;
 } */
 
-.smol-card-component > img {
+/* .smol-card-component picture {
+  --flow-space: 0;
+} */
+
+.smol-card-component img {
   /* Fallback for `aspect-ratio` of defining
   a height */
   height: max(18vh, 12rem);
@@ -37,33 +41,33 @@
 
 /* When supported, use `aspect-ratio` */
 @supports (aspect-ratio: 1) {
-  .smol-card-component > img {
+  .smol-card-component img {
     aspect-ratio: var(--img-ratio);
     height: auto;
   }
 }
 
-.smol-card-component > img:first-child {
+.smol-card-component picture:first-child img {
   border-radius: var(--radius-1) var(--radius-1) 0 0;
 }
 
-.smol-card-component > img:last-child {
+.smol-card-component picture:last-child img {
   border-radius: 0 0 var(--radius-1) var(--radius-1);
   margin-top: auto;
 }
 
-.smol-card-component > :not(img) {
+.smol-card-component > :not(picture) {
   margin-left: var(--gutter);
   margin-right: var(--gutter);
 }
 
-.smol-card-component > :not(img):first-child {
+.smol-card-component > :not(picture):first-child {
   margin-top: var(--gutter);
 }
 
 /* Enhanced `:not()` accepts a selector list,
 but as a fallback you can chain `:not()` instead */
-.smol-card-component > :last-of-type:not(img, h2, h3, h4) {
+.smol-card-component > :last-of-type:not(picture, h2, h3, h4) {
   margin-bottom: var(--gutter);
 }
 

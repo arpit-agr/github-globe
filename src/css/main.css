@@ -15,7 +15,7 @@ main {
   z-index: 1;
 }
 
-@media (max-width: 1421px) {
+@media (max-width: 1373px) {
   main {
     /* margin-top: calc(-8 * var(--size-fluid-4)); */
     /* transform: translateY(calc(-15 * var(--gutter))); */
