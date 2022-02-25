@@ -24,7 +24,8 @@ async function imageShortcode(src, alt, sizes) {
 module.exports = function (eleventyConfig) {
 
 	//PASSTHROUGH COPY
-	eleventyConfig.addPassthroughCopy("./src/img/");
+	eleventyConfig.addPassthroughCopy("./src/img");
+	eleventyConfig.addPassthroughCopy("./src/scripts");
 
 	//SHORTCODE
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
@@ -37,7 +38,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.on('eleventy.after', async () => {
     // Run me after the build ends
 		return esbuild.build({
-      entryPoints: ['src/scripts/globe.js'],
+      entryPoints: ['src/build-scripts/globe.js'],
       bundle: true,
       outdir: 'public/scripts'
     });
