@@ -11,7 +11,7 @@
 } */
 
 main {
-  margin-top: calc(var(--gutter) * -6);
+  margin-top: calc(var(--gutter) * -5);
   z-index: 1;
 }
 

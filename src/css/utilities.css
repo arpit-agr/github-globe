@@ -1,5 +1,5 @@
 .flow > * + * {
-  margin-top: var(--flow-space, 1em);
+  margin-block-start: var(--flow-space, 1em);
 }
 :where(.flow) {
   --flow-space: var(--size-fluid-4);
@@ -19,7 +19,7 @@
 }
 
 .wrapper {
-  padding-block: calc(var(--gutter) * 2);
+  padding-block: var(--gutter);
   --measure: min(83rem, 100vw - var(--gutter) * 2);
   max-width: var(--measure);
   margin-inline: auto;
