@@ -1,6 +1,6 @@
 import createGlobe from "cobe";
 
-let phi = 3.5;
+let phi = 4.5;
 let canvas = document.getElementById("cobe");
 
 const globe = createGlobe(canvas, {
@@ -12,9 +12,9 @@ const globe = createGlobe(canvas, {
   dark: 1,
   diffuse: 1.2,
   mapSamples: 16000,
-  mapBrightness: 6,
+  mapBrightness: 5,
   baseColor: [0.05490196, 0.11764706, 0.14509804],
-  markerColor: [1, 1, 1],
+  markerColor: [0.97254902, 0.98823529, 0.98823529],
   glowColor: [0.05490196, 0.11764706, 0.14509804],
   markers: [
     // latitude longitude
