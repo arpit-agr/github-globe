@@ -13,7 +13,8 @@ module.exports = function (eleventyConfig) {
 
 	//WATCH TARGET
 	eleventyConfig.addWatchTarget("./src/css/");
-	eleventyConfig.addWatchTarget('./src/scripts/')
+	eleventyConfig.addWatchTarget('./src/build-scripts/');
+	eleventyConfig.addWatchTarget('./src/scripts/');
 
 	//ELEVENTY AFTER EVENT
 	eleventyConfig.on('eleventy.after', async () => {
