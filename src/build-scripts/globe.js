@@ -12,7 +12,7 @@ const globe = createGlobe(canvas, {
   dark: 1,
   diffuse: 1.2,
   mapSamples: 16000,
-  mapBrightness: 5,
+  mapBrightness: 6,
   baseColor: [0.05490196, 0.11764706, 0.14509804],
   markerColor: [0.97254902, 0.98823529, 0.98823529],
   glowColor: [0.05490196, 0.11764706, 0.14509804],
