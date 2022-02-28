@@ -48,15 +48,14 @@
   padding: var(--size-1) var(--size-2);
   border-radius: var(--radius-1);
   /* text-shadow: 1px 1px var(--bg); */
-  outline: var(--border-size-1) solid transparent;
-  outline-offset: calc(-1 * var(--border-size-1));
+  border: var(--border-size-1) solid transparent;
 }
 
 .cta:hover {
   color: var(--primary);
   background-color: transparent;
   text-decoration: none;
-  outline: var(--border-size-1) solid;
+  border: var(--border-size-1) solid;
 }
 
 .burger-menu__trigger {
