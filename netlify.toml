@@ -4,4 +4,11 @@
   functions = "netlify/functions"
   publish = "public"
 
-  ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [
+    "./public/img/", # Eleventy Image Disk Cache
+    ".cache" # Remote Asset Cache
+  ]
