@@ -5,10 +5,10 @@ let canvas = document.getElementById("cobe");
 
 const globe = createGlobe(canvas, {
   devicePixelRatio: 2,
-  width: 600 * 2,
-  height: 600 * 2,
+  width: 720 * 2,
+  height: 720 * 2,
   phi: 0,
-  theta: 0,
+  theta: -0.1,
   dark: 1,
   diffuse: 1.2,
   mapSamples: 16000,

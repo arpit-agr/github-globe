@@ -1,37 +1,28 @@
 header {
-  --bg: hsl(198deg 45% 8%);
+  --bg: hsl(198deg 45% 6%);
   --primary: hsl(0deg 0% 100%);
   --accent-color: hsl(175deg 73% 33%);
-  padding-block-end: calc(var(--gutter) * 5);
+  /* padding-block-end: calc(var(--gutter) * 5); */
   background-color: var(--bg);
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d544e' fill-opacity='0.06'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: var(--primary);
 }
 
 :where(header) > .stack {
-  --stack-gap: 0;
-}
-
-@media (max-width: 1373px) {
-  header {
-    padding-block-end: 0;
-  }
-
-  :where(header) > .stack {
-    --stack-gap: var(--size-fluid-5);
-  }
+  --stack-gap: var(--space-xl);
 }
 
 .hero-section {
-  --cluster-gap: 0;
-  justify-content: center;
+  --stack-gap: 0;
+  align-items: center;
+  text-align: center;
   /* min-height: 80vh; */
   /* overflow: hidden; */
   /* border-block-end: var(--border-size-2) double var(--accent-color); */
 }
 
 :where(.hero-section) h1 {
-  --flow-space: var(--size-fluid-2);
+  --flow-space: var(--space-m);
   letter-spacing: var(--font-letterspacing-0);
 }
 
@@ -46,12 +37,6 @@ header {
   padding-block-end: var(--border-size-3);
 } */
 
-@media (max-width: 1373px) {
-  .hero-section {
-    text-align: center;
-  }
-}
-
 .globe-subtitle {
   /* --flow-space: var(--size-fluid-2); */
   /* font-size: var(--font-size-fluid-0); */
@@ -63,6 +48,8 @@ header {
   letter-spacing: var(--font-letterspacing-2);
   /* border-inline-start: var(--border-size-1) double;
   padding-inline-start: var(--border-size-4); */
+
+  /* font-size: var(--step--1); */
 }
 
 /*  .globe {
@@ -74,6 +61,40 @@ header {
   transform: translateY(-50%);
   z-index: -1;
 }  */
+
+.globe {
+  position: relative;
+  isolation: isolate;
+}
+
+/* .globe:before {
+  content: "";
+  width: 82%;
+  height: 82%;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+  background: hsl(0deg 0% 100% / 1%);
+} */
+.globe:after {
+  content: "";
+  width: 82%;
+  height: 82%;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+  background: hsl(0deg 0% 100% / 1%);
+}
 
 canvas {
   /* position: absolute;

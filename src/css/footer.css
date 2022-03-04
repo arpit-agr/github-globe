@@ -1,0 +1,4 @@
+footer {
+  justify-content: space-between;
+  padding-block: var(--space-xs);
+}

@@ -1,6 +1,6 @@
 .smol-css-grid {
-  --min: var(--size-header-2);
-  --gap: calc(2 * var(--gutter));
+  --min: 25ch;
+  --gap: var(--gutter);
   display: grid;
   grid-gap: calc(2 * var(--gap)) var(--gap);
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
@@ -9,7 +9,7 @@
 }
 
 .smol-card-component {
-  --img-ratio: 1.618;
+  --img-ratio: 16/9;
   --flow-space: var(--gutter);
   --border-color: hsl(210deg 5% 92%);
   --bg: hsl(180deg 9% 98%);

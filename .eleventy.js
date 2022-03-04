@@ -1,8 +1,12 @@
 const esbuild = require("esbuild");
 const imageShortcode = require("./src/_11ty/shortcodes/image");
-
+const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
+
+	eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
 	//PASSTHROUGH COPY
 	eleventyConfig.addPassthroughCopy("./src/img");

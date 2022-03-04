@@ -2,7 +2,7 @@
   margin-block-start: var(--flow-space, 1em);
 }
 :where(.flow) {
-  --flow-space: var(--size-fluid-4);
+  --flow-space: var(--gutter);
 }
 
 .cluster {
@@ -19,8 +19,7 @@
 }
 
 .wrapper {
-  padding-block: var(--gutter);
-  --measure: min(83rem, 100vw - var(--gutter) * 2);
+  --measure: min(90rem, 100vw - var(--gutter) * 2);
   max-width: var(--measure);
   margin-inline: auto;
 }
@@ -31,4 +30,8 @@
 
 .overflow\:visible {
   overflow: visible;
+}
+
+.step-0 {
+  font-size: var(--step-0);
 }

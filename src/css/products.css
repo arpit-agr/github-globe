@@ -2,7 +2,7 @@
   --basicShadow: 0 2px 4px 0 hsla(198, 45%, 10%, 0.12);
   --bg: hsl(0deg 0% 100%);
   /* min-height: 100vh; */
-  padding-inline: var(--size-fluid-4);
+  padding: var(--gutter);
   background: var(--bg);
   box-shadow: var(--basicShadow);
   border-radius: var(--radius-2);
