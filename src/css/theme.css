@@ -2,7 +2,7 @@
   --bg: hsl(180deg 45% 98%);
   --primary: hsl(198deg 45% 10%);
   --accent-color: hsl(175deg 73% 19%);
-  --gutter: var(--space-m-xl);
+  --gutter: var(--space-m-2xl);
   --radius-2: var(--space-2xs);
   --radius-1: var(--space-3xs);
 
