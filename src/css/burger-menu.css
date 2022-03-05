@@ -107,7 +107,7 @@
 
 .burger-menu[enabled="true"] .burger-menu__trigger[aria-expanded="true"] {
   position: fixed;
-  top: calc(1.5 * var(--gutter));
+  top: calc(0.69 * var(--gutter));
   right: var(--gutter);
   z-index: 3;
 }
