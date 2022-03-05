@@ -5,17 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>{{ title }}</title>
-  
+
+  <!-- <script>document.documentElement.classList.add('with-js');</script> -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/open-props"/> -->
   <link rel="stylesheet" href="/css/style.css"/>
-  <meta name="theme-color" content="#0e1e25">
+  <meta name="theme-color" content="#0a151a" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a151a" media="(prefers-color-scheme: dark)">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="stack">
   {% block content %}{% endblock %}
   <script src="/scripts/burger-menu.js" type="module" defer></script>
+  <!-- <script>
+    window.addEventListener('scroll', () => {
+      document.body.style.setProperty('--scroll',window.scrollY / (document.body.offsetHeight - window.innerHeight));
+    }, false);
+  </script> -->
+  <script src="/scripts/scale-up.js" defer></script>
+  <script src="/scripts/fade-in.js" defer></script>
 </body>
 </html>

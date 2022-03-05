@@ -1,7 +1,6 @@
 header {
-  --bg: hsl(198deg 45% 6%);
+  --bg: hsl(198deg 45% 7%);
   --primary: hsl(0deg 0% 100%);
-  --accent-color: hsl(175deg 73% 33%);
   /* padding-block-end: calc(var(--gutter) * 5); */
   background-color: var(--bg);
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d544e' fill-opacity='0.06'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -23,7 +22,7 @@ header {
 
 :where(.hero-section) h1 {
   --flow-space: var(--space-m);
-  letter-spacing: var(--font-letterspacing-0);
+  /* letter-spacing: var(--font-letterspacing-0); */
 }
 
 /* :where(.hero-section) small {
@@ -41,15 +40,16 @@ header {
   /* --flow-space: var(--size-fluid-2); */
   /* font-size: var(--font-size-fluid-0); */
 
-  --accent-color: hsl(174deg 52% 86%);
-  display: inline-block;
-  color: var(--accent-color);
+  /* --accent-color: hsl(174deg 52% 86%); */
+  /* display: inline-block; */
+  color: var(--tertiary);
   text-transform: uppercase;
-  letter-spacing: var(--font-letterspacing-2);
   /* border-inline-start: var(--border-size-1) double;
   padding-inline-start: var(--border-size-4); */
 
   /* font-size: var(--step--1); */
+
+  --flow-space: var(--space-m-l);
 }
 
 /*  .globe {

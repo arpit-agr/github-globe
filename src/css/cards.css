@@ -1,8 +1,8 @@
 .smol-css-grid {
   --min: 25ch;
-  --gap: var(--gutter);
+  --gap: var(--space-xl-2xl);
   display: grid;
-  grid-gap: calc(2 * var(--gap)) var(--gap);
+  grid-gap: var(--gap);
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
   list-style: none;
   padding: 0;
@@ -12,7 +12,7 @@
   --img-ratio: 16/9;
   --flow-space: var(--space-m);
   --border-color: hsl(210deg 5% 92%);
-  --bg: hsl(180deg 9% 98%);
+  --bg: hsl(0deg 0% 100%);
   --bg-hover: hsl(0deg 0% 96%);
 
   display: flex;
@@ -29,6 +29,24 @@
 
 /* .smol-card-component picture {
   --flow-space: 0;
+} */
+
+.smol-card-component picture {
+  position: relative;
+}
+
+.smol-card-component picture::after {
+  background: var(--primary);
+  mix-blend-mode: color;
+  content: "";
+  display: block;
+  width: 100%;
+  inset: 0;
+  position: absolute;
+}
+
+/* .smol-card-component picture:hover::after {
+  mix-blend-mode: hue;
 } */
 
 .smol-card-component img {

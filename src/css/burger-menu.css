@@ -30,26 +30,24 @@
 }
 
 :where(.navigation) a {
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--primary);
-  letter-spacing: var(--font-letterspacing-2);
+  color: var(--tertiary);
 }
 
 :where(.navigation) a:hover {
-  --accent-color: hsl(174deg 52% 86%);
-  color: var(--accent-color);
+  color: var(--primary);
   text-decoration: underline;
 }
 
 .cta {
   background-color: var(--accent-color);
   color: var(--primary);
-  padding: var(--space-3xs) var(--space-2xs);
-  border-radius: var(--radius-1);
+  /* padding: var(--space-3xs) var(--space-2xs); */
+  /* border-radius: var(--radius-1); */
   /* text-shadow: 1px 1px var(--bg); */
-  border: var(--border-size-1) solid transparent;
+  border-color: transparent;
 }
 
 .cta:hover {
@@ -69,8 +67,8 @@
   display: block;
   width: 24px;
   height: 3px;
-  background: var(--primary);
-  border: var(--border-size-1) solid var(--primary);
+  background: var(--tertiary);
+  border: var(--border-size-1) solid var(--tertiary);
   position: absolute;
   border-radius: var(--radius-1);
   left: 50%;
@@ -139,7 +137,7 @@
 }
 
 .burger-menu[enabled="true"] .navigation li {
-  font-size: var(--step-2);
+  font-size: var(--step-1);
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel {

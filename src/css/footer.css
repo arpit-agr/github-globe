@@ -1,4 +1,17 @@
 footer {
-  justify-content: space-between;
+  /* --bg: hsl(198deg 45% 10% / 2%); */
+  width: 100%;
+  background: var(--primary);
+  color: var(--tertiary);
+  margin-block-start: auto;
+}
+
+footer * {
+  color: inherit;
+}
+
+footer div {
+  --cluster-gap: var(--space-3xs);
   padding-block: var(--space-xs);
+  justify-content: space-between;
 }
