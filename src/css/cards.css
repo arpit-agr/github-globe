@@ -12,8 +12,7 @@
   --img-ratio: 16/9;
   --flow-space: var(--space-m);
   --border-color: hsl(210deg 5% 92%);
-  --bg: hsl(0deg 0% 100%);
-  --bg-hover: hsl(0deg 0% 96%);
+  --bg: hsl(198deg 45% 97%);
 
   display: flex;
   flex-direction: column;

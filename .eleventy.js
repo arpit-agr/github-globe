@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.on('eleventy.after', async () => {
     // Run me after the build ends
 		return esbuild.build({
-      entryPoints: ['src/build-scripts/globe.js'],
+      entryPoints: ['src/build-scripts/globe.js', 'src/build-scripts/lite-yt-embed.js'],
       bundle: true,
       outdir: 'public/scripts'
     });

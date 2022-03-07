@@ -20,7 +20,7 @@
     {
       root: null,
       rootMargin: '0px',
-      threshold: 0
+      threshold: 0.05
     }
   );
 

@@ -17,3 +17,8 @@
     background-color: currentColor;
   }
 }
+
+.section-header + p {
+  --flow-space: var(--space-m-s);
+  max-width: 45ch;
+}

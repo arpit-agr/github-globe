@@ -38,3 +38,14 @@
   font-size: var(--step-0);
   letter-spacing: var(--font-letterspacing-2);
 }
+
+.grid {
+  display: grid;
+  grid-gap: var(--gutter);
+}
+
+@supports (width: min(250px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  }
+}
