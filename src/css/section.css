@@ -1,0 +1,19 @@
+.section-header {
+  --cluster-gap: var(--space-s);
+  justify-content: space-between;
+}
+
+.section-header h2 {
+  display: flex;
+  flex-grow: 999;
+  flex-basis: 0;
+}
+
+@media (min-width: 500px) {
+  .section-header h2::after {
+    content: "";
+    height: 1px;
+    flex-grow: 999;
+    background-color: currentColor;
+  }
+}

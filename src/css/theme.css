@@ -62,20 +62,3 @@ a {
   color: var(--primary);
   text-decoration: none;
 } */
-
-/* hr {
-  margin-block-end: 0;
-  background-color: hsl(180deg 9% 98%);
-  border-color: hsl(200deg 5% 66%);
-  color: hsl(200deg 5% 66%);
-  border: none;
-  height: 2px;
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: var(--red-9);
-    --primary: var(--red-1);
-    --accent-color: var(--red-0);
-  }
-} */

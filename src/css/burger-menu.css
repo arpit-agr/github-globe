@@ -1,13 +1,6 @@
 .site-head__inner {
-  /* display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  gap: 0 1rem; */
-
-  /* --cluster-gap: 0 1rem; */
-  justify-content: space-between;
-  padding-block: var(--space-xs);
+  padding-block: var(--space-s-m);
 }
 
 .site-head__brand {
@@ -16,12 +9,7 @@
 }
 
 :where(.navigation) ul {
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.3rem 0.8rem; */
-
-  --cluster-gap: 0.3rem 0.8rem;
+  --cluster-gap: var(--space-s);
   padding: 0;
 }
 
@@ -44,9 +32,6 @@
 .cta {
   background-color: var(--accent-color);
   color: var(--primary);
-  /* padding: var(--space-3xs) var(--space-2xs); */
-  /* border-radius: var(--radius-1); */
-  /* text-shadow: 1px 1px var(--bg); */
   border-color: transparent;
 }
 
