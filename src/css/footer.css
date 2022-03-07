@@ -1,8 +1,6 @@
 footer {
   /* --bg: hsl(198deg 45% 10% / 2%); */
   width: 100%;
-  background: var(--primary);
-  color: var(--tertiary);
   margin-block-start: auto;
 }
 
