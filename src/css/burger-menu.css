@@ -7,7 +7,7 @@
 
   /* --cluster-gap: 0 1rem; */
   justify-content: space-between;
-  padding-block-start: var(--space-xs);
+  padding-block: var(--space-xs);
 }
 
 .site-head__brand {

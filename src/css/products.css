@@ -1,3 +1,10 @@
+.products {
+  margin-block-start: -360px;
+  background: var(--bg);
+  z-index: 4;
+  isolation: isolate;
+}
+
 .products-section {
   --basicShadow: 0 2px 4px 0 hsla(198, 45%, 10%, 0.12);
   --bg: hsl(0deg 0% 100%);
@@ -6,7 +13,6 @@
   background: var(--bg);
   box-shadow: var(--basicShadow);
   border-radius: var(--radius-2); */
-  padding-block: var(--space-xl-2xl);
 }
 
 /* .products-section h2 {

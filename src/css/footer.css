@@ -2,6 +2,7 @@ footer {
   /* --bg: hsl(198deg 45% 10% / 2%); */
   width: 100%;
   margin-block-start: auto;
+  border-block-start: 1px solid white;
 }
 
 footer * {
@@ -10,6 +11,6 @@ footer * {
 
 footer div {
   --cluster-gap: var(--space-3xs);
-  padding-block: var(--space-xs);
+  padding-block: var(--space-s);
   justify-content: space-between;
 }

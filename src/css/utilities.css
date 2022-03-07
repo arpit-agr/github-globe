@@ -20,8 +20,10 @@
 
 :where(.wrapper) {
   --measure: min(87rem, 100vw - var(--gutter) * 2);
+  box-sizing: content-box;
   max-width: var(--measure);
   margin-inline: auto;
+  padding: var(--space-xl-2xl) var(--gutter);
 }
 
 .overflow\:hidden {

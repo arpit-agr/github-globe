@@ -1,19 +1,20 @@
 ---
 title: Globe
 heading: One-stop shop from Chinese ports to your factory doors
-subtitle: Offices in India, Singapore and China
+subtitle: Offices in India, Singapore and China ↓
 ---
 {% extends "layouts/base.html" %}
 
 {% block content %}
 <header class="overflow:hidden">
-  <div class="stack wrapper">
+  <div class="hero stack wrapper">
     {% include "partials/nav.html" %}
     {% include "sections/hero.html" %}
   </div>
 </header>
-<main class="scale flow">
+<main>
   {% include "sections/products.html" %}
+  {# {% include "sections/testimonials.html" %} #}
 </main>
 {% include "partials/footer.html" %}
 {% endblock %}
