@@ -1,5 +1,6 @@
 const esbuild = require("esbuild");
 const imageShortcode = require("./src/_11ty/shortcodes/image");
+const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
@@ -28,6 +29,20 @@ module.exports = function (eleventyConfig) {
       bundle: true,
       outdir: 'public/scripts'
     });
+  });
+
+	//TRANSFORM
+	eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath && outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
   });
 
 
