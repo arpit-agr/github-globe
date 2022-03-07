@@ -23,7 +23,7 @@
   box-sizing: content-box;
   max-width: var(--measure);
   margin-inline: auto;
-  padding: var(--space-xl-2xl) var(--gutter);
+  padding: var(--space-2xl-3xl) var(--gutter);
 }
 
 .overflow\:hidden {

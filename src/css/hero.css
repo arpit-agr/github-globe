@@ -23,7 +23,6 @@ header {
 
 .globe-subtitle {
   --flow-space: var(--space-m-l);
-  color: var(--tertiary);
   text-transform: uppercase;
 }
 

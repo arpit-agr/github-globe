@@ -1,8 +1,34 @@
 ---
 title: Globe
-heading: One-stop shop from Chinese ports to your factory doors
-subtitle: Offices in India, Singapore and China ↓
+hero:
+  heading: >
+    One-stop shop from Chinese ports to your factory doors
+  subtitle: >
+    Offices in India, Singapore and China ↓
+  url: "/#"
+product:
+  heading: >
+    Our Products
+  subtitle: >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex nam, omnis, inventore dolores modi cumque!
+  url: "/#"
+testimonial:
+  heading: Client Stories
+  subtitle: >
+    Our customers trust us to deliver exceptional service. Read a few of our client testimonials.
+  url: "/#"
+  videoID: "ejfsN8xOEoU"
+  videoTitle: >
+    CEO Satya Nadella on the Importance of Education
+  content: >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum accusamus esse omnis labore id fugit qui possimus. Tempora, sed. Lorem ipsum dolor sit amet consectetur.
+  name: Satya Nadella
+  job: CEO
+  company: Microsoft
 ---
+{% set videoTitle = testimonial.videoTitle %}
+{% set videoId = testimonial.videoID %}
+
 {% extends "layouts/base.html" %}
 
 {% block content %}

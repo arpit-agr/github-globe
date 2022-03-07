@@ -1,18 +1,15 @@
-{% set videoTitle = "CEO Satya Nadella on the Importance of Education" %}
-{% set videoId = "ejfsN8xOEoU" %}
-
 <div>
   <section class="wrapper flow">
     <div class="section-header cluster">
-      <h2 class="cluster">Client Stories</h2>
+      <h2 class="cluster">{{ testimonial.heading }}</h2>
       <a href="#" class="btn step-0">Know More</a>
     </div>
-    <p>Our customers trust us to deliver exceptional service. Read a few of our client testimonials.</p>
+    <p>{{ testimonial.subtitle }}</p>
     <div class="youtube grid">
       {% include "partials/youtube.html" %}
       <div class="testimonial-content flow">
-        <p class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum accusamus esse omnis labore id fugit qui possimus. Tempora, sed.</p>
-        <p class="fade-in">- Satya Nadella, Microsoft</p>
+        <p class="fade-in">{{ testimonial.content }}</p>
+        <p class="fade-in">{{ testimonial.name }}<br>{{ testimonial.job }}, {{ testimonial.company }}</p>
       </div>
     </div>
   </section>

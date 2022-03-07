@@ -1,10 +1,10 @@
 <div class="products scale">
   <section class="wrapper flow">
     <div class="section-header cluster">
-      <h2 class="cluster">Our products</h2>
-      <a href="#" class="btn step-0">Know More</a>
+      <h2 class="cluster">{{ product.heading }}</h2>
+      <a href="{{ product.url }}" class="btn step-0">Know More</a>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex nam, omnis, inventore dolores modi cumque!</p>
+    <p>{{ product.subtitle }}</p>
     {% include "partials/cards.html" %}
   </section>
 </div>

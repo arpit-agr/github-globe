@@ -15,7 +15,7 @@ lite-youtube:hover {
 }
 
 .testimonial-content :last-child {
-  font-size: var(--step-2);
+  /* font-size: var(--step-2); */
   color: var(--accent-color);
 }
 
