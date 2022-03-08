@@ -25,10 +25,10 @@ body {
   background: var(--bg);
 }
 
-body,
+/* body,
 main {
   --stack-gap: var(--space-l);
-}
+} */
 
 h1,
 h2,
