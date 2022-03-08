@@ -1,15 +1,25 @@
-<div>
+<div class="testimonial">
   <section class="wrapper box flow">
     <div class="section-header cluster">
       <h2 class="cluster">{{ testimonial.heading }}</h2>
       <a href="#" class="btn step-0">Know More</a>
     </div>
     <p>{{ testimonial.subtitle }}</p>
-    <div class="youtube grid">
+    <div class="testimonial-featured grid">
       {% include "partials/youtube.html" %}
-      <div class="testimonial-content flow">
-        <p class="fade-in">{{ testimonial.content }}</p>
+      <div class="testimonial-block stack">
+        <p class="testimonial-content fade-in stack">{{ testimonial.content }}</p>
         <p class="fade-in">{{ testimonial.name }}<br>{{ testimonial.job }}, {{ testimonial.company }}</p>
+      </div>
+    </div>
+    <div class="grid" style="counter-reset: eyebrow 1; grid-gap: var(--space-xl-2xl);">
+      <div class="testimonial-block stack fade-in">
+        <p class="testimonial-content stack">{{ testimonial.content }}</p>
+        <p>{{ testimonial.name }}<br>{{ testimonial.job }}, {{ testimonial.company }}</p>
+      </div>
+      <div class="testimonial-block stack fade-in">
+        <p class="testimonial-content stack">{{ testimonial.content }}</p>
+        <p>{{ testimonial.name }}<br>{{ testimonial.job }}, {{ testimonial.company }}</p>
       </div>
     </div>
   </section>

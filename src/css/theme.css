@@ -6,8 +6,10 @@
   --accent-color: hsl(175deg 73% 29%);
 
   --gutter: var(--space-m-2xl);
-  --radius-2: var(--space-2xs);
-  --radius-1: var(--space-3xs);
+  /* --radius-2: var(--space-2xs);
+  --radius-1: var(--space-3xs); */
+  --radius-2: 2px;
+  --radius-1: 2px;
 
   --font-plain: Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -49,6 +51,11 @@ h1 {
 
 h2 {
   font-size: var(--step-3);
+  text-decoration: underline;
+  text-decoration-color: hsl(179deg 4% 82%);
+  text-decoration-thickness: 0.8ex;
+  text-underline-offset: -0.8ex;
+  text-decoration-skip-ink: none;
 }
 
 h3 {

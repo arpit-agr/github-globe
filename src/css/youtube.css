@@ -1,22 +1,11 @@
 lite-youtube {
-  border-radius: var(--radius-2);
+  /* border-radius: var(--radius-2); */
   filter: grayscale(1);
   transition: filter 175ms cubic-bezier(0.42, 0, 0.32, 1.17);
 }
 
 lite-youtube:hover {
   filter: grayscale(0);
-}
-
-.testimonial-content {
-  --flow-space: var(--space-m);
-  align-self: end;
-  color: var(--primary);
-}
-
-.testimonial-content :last-child {
-  /* font-size: var(--step-2); */
-  color: var(--accent-color);
 }
 
 /* .video-player {
