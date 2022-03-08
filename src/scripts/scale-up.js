@@ -6,7 +6,7 @@
 
   let observer = new IntersectionObserver(
     (changes, observer) => {
-      let timeout = 0;
+      let timeout = 800;
 
       changes.forEach(change => {
         if (change.intersectionRatio > 0) {
