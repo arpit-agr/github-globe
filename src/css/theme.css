@@ -3,7 +3,7 @@
   --primary: hsl(198deg 45% 10%);
   --secondary: hsl(198deg 18% 22%);
   --tertiary: hsl(198deg 5% 62%);
-  --accent-color: hsl(175deg 73% 30%);
+  --accent-color: hsl(175deg 73% 29%);
 
   --gutter: var(--space-m-2xl);
   --radius-2: var(--space-2xs);
