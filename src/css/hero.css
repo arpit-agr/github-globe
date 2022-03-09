@@ -49,13 +49,11 @@ header {
   content: "";
   width: 82%;
   height: 82%;
-  background: red;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
   background: hsl(0deg 0% 100% / 1%);
 }
 

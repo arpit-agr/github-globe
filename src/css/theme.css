@@ -68,16 +68,11 @@ h3 {
 
 a {
   display: inline-block;
-  background-color: transparent;
   text-decoration: underline;
   color: var(--primary);
   /* font-family: var(--font-special); */
+  text-underline-offset: var(--space-3xs);
 }
-
-/* a:hover {
-  color: var(--primary);
-  text-decoration: none;
-} */
 
 em {
   font-style: normal;

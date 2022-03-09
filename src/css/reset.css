@@ -27,6 +27,7 @@ ol[role="list"] {
 
 :where(ul[class], ol[class]) {
   margin: 0;
+  list-style: none;
 }
 
 /* Set core root defaults */

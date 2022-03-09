@@ -1,35 +1,19 @@
 .smol-css-grid {
-  --min: 25ch;
+  --min: 30ch;
   --gap: var(--space-xl-2xl);
-  display: grid;
   grid-gap: var(--gap);
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-  list-style: none;
   padding: 0;
 }
 
 .smol-card-component {
   --img-ratio: 16/9;
-  --flow-space: var(--space-m);
-  /* --border-color: hsl(210deg 5% 92%); */
-  /* --bg: hsl(198deg 45% 97%); */
+  --stack-gap: var(--space-m);
 
-  display: flex;
-  flex-direction: column;
   border-radius: var(--radius-1);
-  /* border: var(--border-size-1) solid var(--border-color); */
   border: var(--border-size-1) solid var(--separator);
   background-color: var(--surface-2);
 }
-
-/* Soon we can replace this with: gap: 1rem; */
-/* .smol-card-component > * + * {
-  margin-top: 1rem;
-} */
-
-/* .smol-card-component picture {
-  --flow-space: 0;
-} */
 
 .smol-card-component picture {
   position: relative;
@@ -44,10 +28,6 @@
   inset: 0;
   position: absolute;
 }
-
-/* .smol-card-component picture:hover::after {
-  mix-blend-mode: hue;
-} */
 
 .smol-card-component img {
   /* Fallback for `aspect-ratio` of defining
