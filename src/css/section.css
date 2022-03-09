@@ -14,7 +14,7 @@
     content: "";
     height: 1px;
     flex-grow: 999;
-    background-color: currentColor;
+    background-color: var(--separator);
   }
 }
 

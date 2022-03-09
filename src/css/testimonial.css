@@ -16,6 +16,7 @@
 }
 
 .testimonial-content {
+  --stack-gap: var(--space-m);
   flex-grow: 999;
   justify-content: space-between;
 }
@@ -43,4 +44,12 @@
   content: "Featured";
   text-transform: uppercase;
   font-size: var(--step-0);
+  font-weight: 500;
+  /* letter-spacing: var(--font-letterspacing-2); */
+  background: var(--accent-bg);
+  width: max-content;
+  padding: var(--space-3xs) var(--space-xs);
+  border-radius: 1em;
+  color: var(--accent-color);
+  border-block-start: unset;
 }

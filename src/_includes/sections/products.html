@@ -1,10 +1,10 @@
-<div class="products scale">
+<div class="products">
   <section class="wrapper box flow">
     <div class="section-header cluster">
       <h2 class="cluster">{{ product.heading }}</h2>
       <a href="{{ product.url }}" class="btn step-0">Know More</a>
     </div>
-    <p>{{ product.subtitle }}</p>
+    <p>{{ product.subtitle | safe }}</p>
     {% include "partials/cards.html" %}
   </section>
 </div>

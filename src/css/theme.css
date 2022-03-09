@@ -4,6 +4,8 @@
   --secondary: hsl(198deg 18% 22%);
   --tertiary: hsl(198deg 5% 62%);
   --accent-color: hsl(175deg 73% 29%);
+  --accent-bg: hsl(175deg 73% 29% / 10%);
+  --separator: hsl(198deg 45% 10% / 8%);
 
   --gutter: var(--space-m-2xl);
   /* --radius-2: var(--space-2xs);
@@ -32,6 +34,10 @@ main {
   --stack-gap: var(--space-l);
 } */
 
+main {
+  margin-block-start: -342px;
+}
+
 h1,
 h2,
 h3 {
@@ -51,11 +57,6 @@ h1 {
 
 h2 {
   font-size: var(--step-3);
-  text-decoration: underline;
-  text-decoration-color: hsl(179deg 4% 82%);
-  text-decoration-thickness: 0.8ex;
-  text-underline-offset: -0.8ex;
-  text-decoration-skip-ink: none;
 }
 
 h3 {
@@ -74,3 +75,15 @@ a {
   color: var(--primary);
   text-decoration: none;
 } */
+
+em {
+  font-style: normal;
+  /* text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 0.8ex;
+  text-underline-offset: -0.8ex;
+  text-decoration-skip-ink: none; */
+
+  color: var(--accent-color);
+  font-weight: 500;
+}
