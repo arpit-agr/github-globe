@@ -11,11 +11,3 @@
   --step-5: clamp(2.67rem, calc(2.02rem + 3.25vw), 4.95rem);
   --step-6: clamp(6.99rem, calc(2.29rem + 5.22vw), 3.34rem);
 }
-
-:root {
-  --font-lineheight-0: 1.1;
-  --font-lineheight-1: 1.25;
-  --font-letterspacing-0: -0.05em;
-  --font-letterspacing-2: 0.05em;
-  --border-size-1: 1px;
-}

@@ -7,12 +7,14 @@
   counter-increment: eyebrow;
 }
 .testimonial-block {
-  --bg: hsl(198deg 45% 7% / 5%);
+  /* --bg: hsl(198deg 45% 7% / 5%);
+  background: var(--bg); */
+
+  background: var(--surface-2);
   aspect-ratio: 16/9;
-  background: var(--bg);
   padding: var(--space-m);
   border-radius: var(--radius-1);
-  border: 1px solid;
+  border: var(--border-size-1) solid var(--separator);
 }
 
 .testimonial-content {
@@ -30,7 +32,8 @@
 .testimonial-featured {
   grid-gap: 0;
   border-radius: var(--radius-1);
-  border: 1px solid;
+  border: var(--border-size-1) solid var(--separator);
+  background: var(--surface-2);
 }
 
 .testimonial-featured .testimonial-block {
@@ -48,8 +51,8 @@
   /* letter-spacing: var(--font-letterspacing-2); */
   background: var(--accent-bg);
   width: max-content;
-  padding: var(--space-3xs) var(--space-xs);
+  padding: var(--space-4xs) var(--space-xs);
   border-radius: 1em;
   color: var(--accent-color);
-  border-block-start: unset;
+  border: var(--border-size-1) solid;
 }

@@ -1,17 +1,25 @@
 :root {
-  --bg: hsl(180deg 45% 98%);
+  --surface-1: hsl(198deg 45% 98%);
+  --surface-2: hsl(198deg 100% 99%);
   --primary: hsl(198deg 45% 10%);
   --secondary: hsl(198deg 18% 22%);
   --tertiary: hsl(198deg 5% 62%);
-  --accent-color: hsl(175deg 73% 29%);
-  --accent-bg: hsl(175deg 73% 29% / 10%);
-  --separator: hsl(198deg 45% 10% / 8%);
+  --accent-color: hsl(198deg 73% 29%);
+  --accent-bg: hsl(198deg 73% 29% / 10%);
+  /* --separator: hsl(198deg 45% 10% / 8%); */
+  --separator: hsl(198deg 13% 91%);
 
   --gutter: var(--space-m-2xl);
   /* --radius-2: var(--space-2xs);
   --radius-1: var(--space-3xs); */
-  --radius-2: 2px;
-  --radius-1: 2px;
+  --radius-1: var(--space-3xs);
+  --radius-2: var(--space-2xs);
+
+  --font-lineheight-0: 1.1;
+  --font-lineheight-1: 1.25;
+  --font-letterspacing-0: -0.05em;
+  --font-letterspacing-2: 0.05em;
+  --border-size-1: 1px;
 
   --font-plain: Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -26,13 +34,8 @@
 body {
   font-size: var(--step-1);
   line-height: 1.5625;
-  background: var(--bg);
+  background: var(--surface-1);
 }
-
-/* body,
-main {
-  --stack-gap: var(--space-l);
-} */
 
 main {
   margin-block-start: -342px;

@@ -8,6 +8,6 @@
 }
 
 .btn:hover {
-  color: var(--bg);
+  color: var(--surface-1);
   background-color: var(--primary);
 }

@@ -12,14 +12,14 @@
   --img-ratio: 16/9;
   --flow-space: var(--space-m);
   /* --border-color: hsl(210deg 5% 92%); */
-  --bg: hsl(198deg 45% 97%);
+  /* --bg: hsl(198deg 45% 97%); */
 
   display: flex;
   flex-direction: column;
   border-radius: var(--radius-1);
   /* border: var(--border-size-1) solid var(--border-color); */
-  border: var(--border-size-1) solid;
-  background-color: var(--bg);
+  border: var(--border-size-1) solid var(--separator);
+  background-color: var(--surface-2);
 }
 
 /* Soon we can replace this with: gap: 1rem; */
