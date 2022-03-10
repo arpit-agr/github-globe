@@ -1,0 +1,23 @@
+---
+title: Products
+product:
+  heading: >
+    Our Products
+  subtitle: >
+    Lorem ipsum dolor sit amet <em>industry leading</em> elit. Natus ex nam, omnis, inventore dolores modi cumque!
+  url: "/#"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<header class="overflow:hidden">
+  <div class="hero stack wrapper box">
+    {% include "partials/nav.html" %}
+  </div>
+</header>
+<main>
+  {% include "sections/products.html" %}
+</main>
+{% include "partials/footer.html" %}
+{% endblock %}

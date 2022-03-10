@@ -5,7 +5,7 @@
 }
 
 .smol-card-component {
-  --img-ratio: 16/9;
+  --img-ratio: 1.618;
   --stack-gap: var(--space-m);
 
   border-radius: var(--radius-1);

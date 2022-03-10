@@ -21,22 +21,22 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--tertiary);
+  color: var(--header-link);
 }
 
 :where(.navigation) a:hover {
-  color: var(--primary);
+  color: var(--header-link-hover);
   text-decoration: underline;
 }
 
 .cta {
   background-color: var(--accent-color);
-  color: var(--primary);
+  color: var(--header-bg);
   border-color: transparent;
 }
 
 .cta:hover {
-  color: var(--primary);
+  color: var(--header-link);
   background-color: transparent;
   text-decoration: none;
   border: var(--border-size-1) solid;
@@ -106,7 +106,7 @@
   height: 100vh;
   visibility: hidden;
   opacity: 0;
-  background: var(--bg);
+  background: var(--header-bg);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 

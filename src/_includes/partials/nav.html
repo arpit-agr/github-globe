@@ -1,6 +1,6 @@
 <div class="site-head__inner cluster">
   <a href="/" aria-label="ACME home" class="site-head__brand">
-    <img src="/img/logo.svg" alt="ACME logo" />
+    {% include "partials/logo.svg" %}
   </a>
   <burger-menu max-width="600">
     <nav class="navigation step-0" aria-label="primary">
@@ -9,10 +9,10 @@
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/">Our Products</a>
+          <a href="/products">Our Products</a>
         </li>
         <li>
-          <a href="/">About us</a>
+          <a href="/clientele">Clientele</a>
         </li>
         <li>
           <a href="/" class="cta btn">Contact Us</a>

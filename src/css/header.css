@@ -1,0 +1,17 @@
+header {
+  --stack-gap: var(--space-l);
+  --header-bg: var(--surface-1);
+  --header-text: hsl(198deg 45% 7%);
+  --header-link: var(--secondary);
+  --header-link-hover: var(--header-text);
+  background: var(--header-bg);
+  color: var(--header-text);
+}
+
+header * {
+  color: inherit;
+}
+
+.hero {
+  padding-block: 0;
+}

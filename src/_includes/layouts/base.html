@@ -16,8 +16,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
-<body>
-  {% block content %}{% endblock %}
+<body class="{{ title }}-page">
+  {% block content %}
+    This page is under maintenance.
+  {% endblock %}
   <script src="/scripts/burger-menu.js" type="module" defer></script>
   <script src="/scripts/scale-up.js" defer></script>
   <script src="/scripts/fade-in.js" defer></script>
