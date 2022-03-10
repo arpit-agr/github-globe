@@ -1,58 +1,52 @@
 .testimonial-block {
   --flow-space: var(--space-m);
-  /* color: var(--primary); */
-}
-
-.testimonial-block {
-  counter-increment: eyebrow;
-}
-.testimonial-block {
-  /* --bg: hsl(198deg 45% 7% / 5%);
-  background: var(--bg); */
-
-  background: var(--surface-2);
-  aspect-ratio: 16/9;
   padding: var(--space-m);
-  border-radius: var(--radius-1);
-  border: var(--border-size-1) solid var(--separator);
-}
-
-.testimonial-content {
-  --stack-gap: var(--space-m);
-  flex-grow: 999;
-  justify-content: space-between;
-}
-
-.testimonial-content::before {
-  content: counter(eyebrow, decimal-leading-zero);
-  padding-block-start: var(--space-m);
-  border-block-start: var(--border-size-1) solid;
+  background: var(--surface-2);
+  counter-increment: eyebrow;
 }
 
 .testimonial-featured {
-  grid-gap: 0;
+  --grid-gap: 0;
   border-radius: var(--radius-1);
   border: var(--border-size-1) solid var(--separator);
   background: var(--surface-2);
 }
 
-.testimonial-featured .testimonial-block {
-  align-self: end;
-  border-radius: unset;
-  background: unset;
-  border: unset;
-}
-
-.testimonial-featured .testimonial-content::before {
+.testimonial-featured .testimonial-block::before {
   content: "Featured";
   text-transform: uppercase;
   font-size: var(--step-0);
   font-weight: 500;
-  /* letter-spacing: var(--font-letterspacing-2); */
   background: var(--accent-bg);
   width: max-content;
   padding: var(--space-4xs) var(--space-xs);
   border-radius: 1em;
   color: var(--accent-color);
   border: var(--border-size-1) solid;
+}
+
+.testimonial-normal {
+  --grid-gap: var(--space-xl-2xl);
+  --min: 320px;
+  counter-reset: eyebrow 1;
+}
+
+.testimonial-normal .testimonial-block {
+  aspect-ratio: 16/9;
+  border-radius: var(--radius-1);
+  border: var(--border-size-1) solid var(--separator);
+}
+
+.testimonial-normal .testimonial-block::before {
+  content: counter(eyebrow, decimal-leading-zero);
+  padding-block-start: var(--space-m);
+  border-block-start: var(--border-size-1) solid;
+}
+
+.testimonial-block :nth-child(1) {
+  margin-block-start: auto;
+}
+
+.testimonial-content {
+  --measure: 60ch;
 }

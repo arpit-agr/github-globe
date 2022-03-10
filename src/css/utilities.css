@@ -40,16 +40,19 @@
 }
 
 .grid {
+  --grid-gap: var(--gutter);
   display: grid;
-  grid-gap: var(--gutter);
+  grid-gap: var(--grid-gap);
 }
 
 @supports (width: min(250px, 100%)) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(430px, 100%), 1fr));
+    --min: 430px;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
   }
 }
 
 :where(.box) {
   padding: var(--gutter);
+  /* padding: var(--space-xl-2xl) var(--gutter); */
 }

@@ -14,6 +14,7 @@
   --radius-1: var(--space-3xs); */
   --radius-1: var(--space-3xs);
   --radius-2: var(--space-2xs);
+  --measure: 60ch;
 
   --font-lineheight-0: 1.1;
   --font-lineheight-1: 1.25;
@@ -60,6 +61,7 @@ h1 {
 
 h2 {
   font-size: var(--step-3);
+  color: var(--accent-color);
 }
 
 h3 {
@@ -72,6 +74,14 @@ a {
   color: var(--primary);
   /* font-family: var(--font-special); */
   text-underline-offset: var(--space-3xs);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+p {
+  max-inline-size: var(--measure);
 }
 
 em {

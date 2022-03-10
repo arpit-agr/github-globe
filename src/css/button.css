@@ -5,9 +5,10 @@
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--accent-color);
 }
 
 .btn:hover {
   color: var(--surface-1);
-  background-color: var(--primary);
+  background-color: var(--accent-color);
 }
