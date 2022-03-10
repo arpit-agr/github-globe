@@ -1,0 +1,14 @@
+<div class="products">
+  <section class="wrapper box flow">
+    <div class="section-header cluster">
+      <h{{ headingLevel if headingLevel else '2' }} class="cluster">
+        {{ product.heading }}
+      </h{{ headingLevel if headingLevel else '2' }}>
+      {%if not headingLevel %}
+        <a href="{{ product.url }}" class="btn step-0">Know More</a>
+      {% endif %}
+    </div>
+    <p>{{ product.subtitle | safe }}</p>
+    {% include "partials/cards.html" %}
+  </section>
+</div>

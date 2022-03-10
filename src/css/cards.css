@@ -13,6 +13,12 @@
   background-color: var(--surface-2);
 }
 
+:where(.smol-card-component) h2,
+h3 {
+  font-size: var(--step-2);
+  color: var(--primary);
+}
+
 .smol-card-component picture {
   position: relative;
 }
@@ -33,6 +39,7 @@
   height: max(18vh, 12rem);
   object-fit: cover;
   width: 100%;
+  border-block-end: var(--border-size-1) solid var(--separator);
 }
 
 /* When supported, use `aspect-ratio` */

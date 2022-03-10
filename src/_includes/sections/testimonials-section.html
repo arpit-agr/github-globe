@@ -1,8 +1,12 @@
 <div class="testimonial">
   <section class="wrapper box flow">
     <div class="section-header cluster">
-      <h2 class="cluster">{{ testimonial.heading }}</h2>
-      <a href="#" class="btn step-0">Know More</a>
+      <h{{ headingLevel if headingLevel else '2' }} class="cluster">
+        {{ testimonial.heading }}
+      </h{{ headingLevel if headingLevel else '2' }}>
+      {%if not headingLevel %}
+        <a href="{{ testimonial.url }}" class="btn step-0">Know More</a>
+      {% endif %}
     </div>
     <p>{{ testimonial.subtitle | safe }}</p>
     <div class="testimonial-featured grid">

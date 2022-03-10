@@ -1,17 +1,23 @@
 <ul class="smol-css-grid grid">
   <li class="smol-card-component stack fade-in">
     {% image "https://file2.okorder.com/prodalbum/2014/11/07/f1ddc1a0c1403f906b65c48351e04099.jpg", "Port with cargo being moved" %}
-    <h3>Carbon Black</h3>
+    <h{{ headingLevel + 1 if headingLevel else '3' }}>
+      Carbon Black
+    </h{{ headingLevel + 1 if headingLevel else '3' }}>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex incidunt laboriosam velit, quas alias expedita at natus dolorum?</p>
   </li>
   <li class="smol-card-component stack fade-in">
     {% image "https://file2.okorder.com/prodalbum/2015/12/18/971c4792f0eb6b27cc6e0dd93b0df29a.jpg", "Factory with heavy machinery" %}
-    <h3>Beadwire</h3>
+    <h{{ headingLevel + 1 if headingLevel else '3' }}>
+      Beadwire
+    </h{{ headingLevel + 1 if headingLevel else '3' }}>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex incidunt laboriosam velit, quas alias expedita at natus dolorum?</p>
   </li>
   <li class="smol-card-component stack fade-in">
     {% image "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CZpvcLgamMDBh8ST7y98nwHaE0%26pid%3DApi&f=1", "Ship carrying cargo" %}
-    <h3>Synthetic Rubber</h3>
+    <h{{ headingLevel + 1 if headingLevel else '3' }}>
+      Synthetic Rubber
+    </h{{ headingLevel + 1 if headingLevel else '3' }}>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex incidunt laboriosam velit, quas alias expedita at natus dolorum?</p>
   </li>
 </ul>

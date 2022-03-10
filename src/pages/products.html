@@ -1,5 +1,6 @@
 ---
 title: Products
+headingLevel: 1
 product:
   heading: >
     Our Products
@@ -7,7 +8,6 @@ product:
     Lorem ipsum dolor sit amet <em>industry leading</em> elit. Natus ex nam, omnis, inventore dolores modi cumque!
   url: "/#"
 ---
-
 {% extends "layouts/base.html" %}
 
 {% block content %}
@@ -17,7 +17,7 @@ product:
   </div>
 </header>
 <main>
-  {% include "sections/products.html" %}
+  {% include "sections/products-section.html" %}
 </main>
 {% include "partials/footer.html" %}
 {% endblock %}
