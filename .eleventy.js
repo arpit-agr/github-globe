@@ -27,6 +27,7 @@ module.exports = function (eleventyConfig) {
 		return esbuild.build({
       entryPoints: ['src/build-scripts/globe.js', 'src/build-scripts/lite-yt-embed.js'],
       bundle: true,
+			minify: true,
       outdir: 'public/scripts'
     });
   });
