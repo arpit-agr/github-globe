@@ -43,7 +43,7 @@
   background: hsl(0deg 0% 100% / 1%);
 } */
 
-.globe:after {
+.with-js .globe:after {
   content: "";
   width: 82%;
   height: 82%;
@@ -53,8 +53,4 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: hsl(0deg 0% 100% / 1%);
-}
-
-canvas {
-  display: block;
 }
