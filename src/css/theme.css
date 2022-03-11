@@ -10,8 +10,6 @@
   --separator: hsl(198deg 13% 91%);
 
   --gutter: var(--space-m-2xl);
-  /* --radius-2: var(--space-2xs);
-  --radius-1: var(--space-3xs); */
   --radius-1: var(--space-3xs);
   --radius-2: var(--space-2xs);
   --measure: 60ch;
@@ -49,6 +47,7 @@ h3 {
 h1 {
   --measure: 26ch;
   max-width: var(--measure);
+  max-inline-size: var(--measure);
   font-size: var(--step-4);
   color: var(--primary);
   line-height: var(--font-lineheight-1);
@@ -77,6 +76,7 @@ a:hover {
 }
 
 p {
+  max-width: var(--measure);
   max-inline-size: var(--measure);
 }
 

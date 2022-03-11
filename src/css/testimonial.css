@@ -19,6 +19,7 @@
   font-weight: 500;
   background: var(--accent-bg);
   width: max-content;
+  inline-size: max-content;
   padding: var(--space-4xs) var(--space-xs);
   border-radius: 1em;
   color: var(--accent-color);
@@ -39,11 +40,14 @@
 
 .testimonial-normal .testimonial-block::before {
   content: counter(eyebrow, decimal-leading-zero);
+  padding-top: var(--space-m);
   padding-block-start: var(--space-m);
+  border-top: var(--border-size-1) solid;
   border-block-start: var(--border-size-1) solid;
 }
 
 .testimonial-block :nth-child(1) {
+  margin-top: auto;
   margin-block-start: auto;
 }
 

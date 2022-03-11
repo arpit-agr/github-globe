@@ -13,5 +13,7 @@ header * {
 }
 
 .hero {
+  padding-top: 0;
+  padding-bottom: 0;
   padding-block: 0;
 }
