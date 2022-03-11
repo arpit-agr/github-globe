@@ -12,6 +12,14 @@
   background: var(--surface-2);
 }
 
+.testimonial-featured .testimonial-block {
+  aspect-ratio: 16/9;
+}
+
+.with-js .testimonial-featured .testimonial-block {
+  aspect-ratio: unset;
+}
+
 .testimonial-featured .testimonial-block::before {
   content: "Featured";
   text-transform: uppercase;
