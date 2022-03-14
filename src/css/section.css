@@ -13,7 +13,7 @@
   .section-header h2::after {
     content: "";
     height: 1px;
-    block-size: 1px;
+    /* block-size: 1px; */
     flex-grow: 999;
     background-color: var(--separator);
   }

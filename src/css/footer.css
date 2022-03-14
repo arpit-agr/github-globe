@@ -1,11 +1,11 @@
 footer {
   font-size: 12px;
   width: 100%;
-  inline-size: 100%;
+  /* inline-size: 100%; */
   margin-top: auto;
-  margin-block-start: auto;
+  /* margin-block-start: auto; */
   border-top: var(--border-size-1) solid var(--separator);
-  border-block-start: var(--border-size-1) solid var(--separator);
+  /* border-block-start: var(--border-size-1) solid var(--separator); */
 }
 
 footer * {
@@ -16,6 +16,6 @@ footer div {
   --cluster-gap: var(--space-3xs);
   padding-top: var(--space-s);
   padding-bottom: var(--space-s);
-  padding-block: var(--space-s);
+  /* padding-block: var(--space-s); */
   justify-content: space-between;
 }

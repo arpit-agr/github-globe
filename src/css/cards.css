@@ -29,12 +29,12 @@ h3 {
   content: "";
   display: block;
   width: 100%;
-  inline-size: 100%;
+  /* inline-size: 100%; */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  inset: 0;
+  /* inset: 0; */
   position: absolute;
 }
 
@@ -42,12 +42,12 @@ h3 {
   /* Fallback for `aspect-ratio` of defining
   a height */
   width: 100%;
-  inline-size: 100%;
+  /* inline-size: 100%; */
   height: max(18vh, 12rem);
-  block-size: max(18vh, 12rem);
+  /* block-size: max(18vh, 12rem); */
   object-fit: cover;
   border-bottom: var(--border-size-1) solid var(--separator);
-  border-block-end: var(--border-size-1) solid var(--separator);
+  /* border-block-end: var(--border-size-1) solid var(--separator); */
 }
 
 /* When supported, use `aspect-ratio` */
@@ -55,7 +55,7 @@ h3 {
   .smol-card-component img {
     aspect-ratio: var(--img-ratio);
     height: auto;
-    block-size: auto;
+    /* block-size: auto; */
   }
 }
 
@@ -66,25 +66,25 @@ h3 {
 .smol-card-component picture:last-child img {
   border-radius: 0 0 var(--radius-1) var(--radius-1);
   margin-top: auto;
-  margin-block-start: auto;
+  /* margin-block-start: auto; */
 }
 
 .smol-card-component > :not(picture) {
   margin-left: var(--space-m);
   margin-right: var(--space-m);
-  margin-inline: var(--space-m);
+  /* margin-inline: var(--space-m); */
 }
 
 .smol-card-component > :not(picture):first-child {
   margin-top: var(--space-m);
-  margin-block-start: var(--space-m);
+  /* margin-block-start: var(--space-m); */
 }
 
 /* Enhanced `:not()` accepts a selector list,
 but as a fallback you can chain `:not()` instead */
 .smol-card-component > :last-of-type:not(picture, h2, h3, h4) {
   margin-bottom: var(--space-m);
-  margin-block-end: var(--space-m);
+  /* margin-block-end: var(--space-m); */
 }
 
 .smol-card-component > a {

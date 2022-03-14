@@ -2,13 +2,13 @@
   justify-content: space-between;
   padding-top: var(--space-s-m);
   padding-bottom: var(--space-s-m);
-  padding-block: var(--space-s-m);
+  /* padding-block: var(--space-s-m); */
 }
 
 .site-head__brand {
   display: block;
   width: var(--step-3);
-  inline-size: var(--step-3);
+  /* inline-size: var(--step-3); */
 }
 
 :where(.navigation) ul {
@@ -54,23 +54,23 @@
 .burger-menu__bar::after {
   display: block;
   width: 24px;
-  inline-size: 24px;
+  /* inline-size: 24px; */
   height: 3px;
-  block-size: 3px;
+  /* block-size: 3px; */
   background: var(--tertiary);
   border: var(--border-size-1) solid var(--tertiary);
   position: absolute;
   border-radius: var(--radius-1);
   left: 50%;
-  inset-inline-start: 50%;
+  /* inset-inline-start: 50%; */
   margin-left: -12px;
-  margin-inline-start: -12px;
+  /* margin-inline-start: -12px; */
   transition: transform 350ms ease-in-out;
 }
 
 .burger-menu__bar {
   top: 50%;
-  inset-block-start: 50%;
+  /* inset-block-start: 50%; */
   transform: translateY(-50%);
 }
 
@@ -81,20 +81,20 @@
 
 .burger-menu__bar::before {
   top: -8px;
-  inset-block-start: -8px;
+  /* inset-block-start: -8px; */
 }
 
 .burger-menu__bar::after {
   bottom: -8px;
-  inset-block-end: -8px;
+  /* inset-block-end: -8px; */
 }
 
 .burger-menu[enabled="true"] .burger-menu__trigger {
   display: block;
   width: 2rem;
-  inline-size: 2rem;
+  /* inline-size: 2rem; */
   height: 2rem; /* Nice big tap target */
-  block-size: 2rem; /* Nice big tap target */
+  /* block-size: 2rem; */
   position: relative;
   z-index: 1;
   background: transparent;
@@ -105,23 +105,23 @@
 .burger-menu[enabled="true"] .burger-menu__trigger[aria-expanded="true"] {
   position: fixed;
   top: calc(0.69 * var(--gutter));
-  inset-block-start: calc(0.69 * var(--gutter));
+  /* inset-block-start: calc(0.69 * var(--gutter)); */
   right: var(--gutter);
-  inset-inline-end: var(--gutter);
+  /* inset-inline-end: var(--gutter); */
   z-index: 3;
 }
 
 .burger-menu[enabled="true"] .burger-menu__panel {
   position: fixed;
   top: 0;
-  inset-block-start: 0;
+  /* inset-block-start: 0; */
   left: 0;
-  inset-inline-start: 0;
+  /* inset-inline-start: 0; */
   padding: var(--gutter);
   width: 100%;
-  inline-size: 100%;
+  /* inline-size: 100%; */
   height: 100vh;
-  block-size: 100vh;
+  /* block-size: 100vh; */
   visibility: hidden;
   opacity: 0;
   background: var(--header-bg);
@@ -137,7 +137,7 @@
 
 .burger-menu[enabled="true"] .navigation ul > * + * {
   margin-top: var(--gutter);
-  margin-block-start: var(--gutter);
+  /* margin-block-start: var(--gutter); */
 }
 
 .burger-menu[enabled="true"] .navigation li {
@@ -164,11 +164,13 @@
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::before {
   top: 0;
+  /* inset-block-start: 0; */
   transform: rotate(45deg);
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::after {
   top: 0;
+  /* inset-block-start: 0; */
   transform: rotate(-45deg);
 }
 

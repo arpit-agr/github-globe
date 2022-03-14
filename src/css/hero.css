@@ -7,7 +7,7 @@
 
 .cg21-page main {
   margin-top: -342px;
-  margin-block-start: -342px;
+  /* margin-block-start: -342px; */
 }
 
 .hero-content {
@@ -47,14 +47,14 @@
 .with-js .globe:after {
   content: "";
   width: 82%;
-  inline-size: 82%;
+  /* inline-size: 82%; */
   height: 82%;
-  block-size: 82%;
+  /* block-size: 82%; */
   position: absolute;
   top: 50%;
-  inset-block-start: 50%;
+  /* inset-block-start: 50%; */
   left: 50%;
-  inset-inline-start: 50%;
+  /* inset-inline-start: 50%; */
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: hsl(0deg 0% 100% / 1%);
