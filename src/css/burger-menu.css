@@ -6,9 +6,7 @@
 }
 
 .site-head__brand {
-  display: block;
-  width: var(--step-3);
-  /* inline-size: var(--step-3); */
+  display: inline-flex;
 }
 
 :where(.navigation) ul {
