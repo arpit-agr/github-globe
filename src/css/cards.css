@@ -11,6 +11,8 @@
   border-radius: var(--radius-1);
   border: var(--border-size-1) solid var(--separator);
   background-color: var(--surface-2);
+
+  overflow: hidden;
 }
 
 :where(.smol-card-component) h2,
@@ -60,11 +62,11 @@ h3 {
 }
 
 .smol-card-component picture:first-child img {
-  border-radius: var(--radius-1) var(--radius-1) 0 0;
+  /* border-radius: var(--radius-1) var(--radius-1) 0 0; */
 }
 
 .smol-card-component picture:last-child img {
-  border-radius: 0 0 var(--radius-1) var(--radius-1);
+  /* border-radius: 0 0 var(--radius-1) var(--radius-1); */
   margin-top: auto;
   /* margin-block-start: auto; */
 }

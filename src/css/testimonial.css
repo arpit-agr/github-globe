@@ -10,6 +10,8 @@
   border-radius: var(--radius-1);
   border: var(--border-size-1) solid var(--separator);
   background: var(--surface-2);
+
+  overflow: hidden;
 }
 
 .testimonial-featured .testimonial-block {
