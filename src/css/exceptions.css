@@ -14,6 +14,13 @@ html[data-location="home"] {
   /* border-block-end: unset; */
 }
 
+[data-location="home"] .burger-menu__bar,
+[data-location="home"] .burger-menu__bar::before,
+[data-location="home"] .burger-menu__bar::after {
+  background: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
 [data-location="home"] main {
   margin-top: -342px;
   /* margin-block-start: -342px; */

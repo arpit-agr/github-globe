@@ -56,8 +56,8 @@
   /* inline-size: 24px; */
   height: 3px;
   /* block-size: 3px; */
-  background: var(--tertiary);
-  border: var(--border-size-1) solid var(--tertiary);
+  background: var(--secondary);
+  border: var(--border-size-1) solid var(--secondary);
   position: absolute;
   border-radius: var(--radius-1);
   left: 50%;
