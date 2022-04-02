@@ -1,0 +1,30 @@
+---
+title: Post
+---
+
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<main>
+  <article class="post wrapper flow">
+    <header class="stack">
+      <h1>{{ title }}</h1>
+      <span class="visually-hidden">Publish date:</span>
+      <time datetime={{ date | dump | safe }}>
+        {{ date | postDate }}
+      </time>
+      <ul class="post-tags cluster" role="list" aria-label="Tags">
+        {% for tag in tags %}
+          <li class="post-tag-item">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </header>
+    {{ content | safe }}
+    {% if sourceLink %}
+      <p class="source">
+        Source: <a href="{{ sourceLink }}">{{ sourceName }}</a>
+      </p>
+    {% endif %}
+  </article>
+</main>
+{% endblock %}
