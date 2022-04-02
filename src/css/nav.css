@@ -11,7 +11,6 @@
 
 :where(.navigation) ul {
   --cluster-gap: var(--space-s);
-  padding: 0;
 }
 
 :where(.navigation) li {
