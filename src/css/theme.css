@@ -31,10 +31,13 @@
 }
 
 body {
-  --stack-gap: 0;
   font-size: var(--step-1);
   line-height: 1.5625;
   background: var(--surface-1);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
