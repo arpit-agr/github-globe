@@ -144,7 +144,7 @@
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel {
   visibility: visible;
   opacity: 1;
-  transition: opacity 400ms ease;
+  transition: opacity 200ms ease;
 }
 
 .burger-menu[enabled="true"][status="closed"] .burger-menu__panel > * {
@@ -155,8 +155,8 @@
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel > * {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 500ms cubic-bezier(0.17, 0.67, 0, 0.87) 700ms,
-    opacity 500ms ease 800ms;
+  transition: transform 350ms cubic-bezier(0.17, 0.67, 0, 0.87) 450ms,
+    opacity 350ms ease 500ms;
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::before {
