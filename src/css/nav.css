@@ -1,10 +1,8 @@
 .site-head__inner {
-  --separator: hsl(198deg 73% 29% / 5%);
   justify-content: space-between;
-  padding-top: var(--space-s-m);
-  padding-bottom: var(--space-s-m);
-  /* padding-block: var(--space-s-m); */
-  border-bottom: var(--border-size-2) solid var(--separator);
+  padding-top: var(--space-xs-s);
+  padding-bottom: var(--space-xs-s);
+  /* padding-block: var(--space-xs-s); */
 }
 
 .site-head__brand {

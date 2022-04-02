@@ -12,8 +12,6 @@ header * {
   color: inherit;
 }
 
-.hero {
-  padding-top: 0;
-  padding-bottom: 0;
-  /* padding-block: 0; */
+body > header {
+  border-bottom: var(--border-size-1) solid var(--separator);
 }
