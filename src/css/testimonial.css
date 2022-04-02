@@ -1,3 +1,9 @@
+.testimonial {
+  --flow-space: var(--space-xl-2xl);
+  padding-top: var(--space-s-m);
+  /* padding-block-start: var(--space-s-m); */
+}
+
 .testimonial-block {
   --flow-space: var(--space-m);
   padding: var(--space-m);
@@ -62,5 +68,5 @@
 }
 
 .testimonial-content {
-  --measure: 60ch;
+  --measure: 45ch;
 }

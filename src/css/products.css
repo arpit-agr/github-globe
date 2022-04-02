@@ -1,4 +1,7 @@
 .products {
+  --flow-space: var(--space-xl-2xl);
+  padding-top: var(--space-s-m);
+  /* padding-block-start: var(--space-s-m); */
   background: var(--surface-1);
   z-index: 4;
   isolation: isolate;

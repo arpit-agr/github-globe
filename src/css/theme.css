@@ -19,6 +19,7 @@
   --font-letterspacing-0: -0.05em;
   --font-letterspacing-2: 0.05em;
   --border-size-1: 1px;
+  --border-size-2: 2px;
 
   --font-plain: Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -26,7 +27,7 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
   font-family: var(--font-plain);
-  background: var(--primary);
+  background: var(--surface-1);
   color: var(--secondary);
 }
 
@@ -38,6 +39,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  margin-bottom: var(--space-xl-2xl);
+  /* margin-block-end: var(--space-xl-2xl); */
 }
 
 h1,
@@ -80,6 +86,7 @@ a:hover {
 }
 
 p {
+  --measure: 60ch;
   max-width: var(--measure);
   /* max-inline-size: var(--measure); */
 }
@@ -93,5 +100,12 @@ em {
   text-decoration-skip-ink: none; */
 
   color: var(--accent-color);
+  font-weight: 500;
+}
+
+time {
+  display: block;
+  text-transform: uppercase;
+  font-size: var(--step-0);
   font-weight: 500;
 }

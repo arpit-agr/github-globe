@@ -2,9 +2,6 @@
   margin-top: var(--flow-space, 1em);
   /* margin-block-start: var(--flow-space, 1em); */
 }
-:where(.flow) {
-  --flow-space: var(--space-xl-2xl);
-}
 
 :where(.cluster) {
   display: flex;
@@ -20,8 +17,7 @@
 }
 
 :where(.wrapper) {
-  --measure: min(87rem, 100vw);
-  box-sizing: content-box;
+  --measure: min(87rem, 100vw - (2 * var(--gutter)));
   max-width: var(--measure);
   /* max-inline-size: var(--measure); */
   margin-left: auto;
@@ -56,7 +52,14 @@
   }
 }
 
-:where(.box) {
-  padding: var(--gutter);
-  /* padding: var(--space-xl-2xl) var(--gutter); */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
