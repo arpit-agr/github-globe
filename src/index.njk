@@ -33,15 +33,8 @@ dataLocation: home
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<header class="overflow:hidden">
-  <div class="hero stack wrapper">
-    {% include "partials/nav.html" %}
-    {% include "sections/hero-section.html" %}
-  </div>
-</header>
 <main>
   {% include "sections/products-section.html" %}
   {% include "sections/testimonials-section.html" %}
 </main>
-{% include "partials/footer.html" %}
 {% endblock %}
