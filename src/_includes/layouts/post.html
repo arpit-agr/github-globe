@@ -9,10 +9,11 @@ title: Post
   <article class="post wrapper flow">
     <header class="stack">
       <h1>{{ title }}</h1>
-      <span class="visually-hidden">Publish date:</span>
+      <p class="visually-hidden">Publish date:</p>
       <time datetime={{ date | dump | safe }}>
         {{ date | postDate }}
       </time>
+      <p class="visually-hidden">Tags:</p>
       <ul class="post-tags cluster" role="list" aria-label="Tags">
         {% for tag in tags %}
           <li class="post-tag-item">{{ tag }}</li>
