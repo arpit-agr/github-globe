@@ -80,3 +80,35 @@
   padding-bottom: var(--space-s);
   /* padding-block-end: var(--space-s); */
 }
+
+/* column layout */
+.post {
+  column-width: 460px;
+  column-rule: var(--border-size-1) solid var(--separator);
+  column-gap: var(--space-2xl);
+}
+
+.post header {
+  column-span: all;
+}
+
+.post > header {
+  margin-bottom: 2em;
+}
+
+.post > p:first-of-type {
+  margin-top: 0;
+}
+
+/* drop cap */
+/* @supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  .post > p:first-of-type:first-letter {
+  -webkit-initial-letter: 4;
+  initial-letter: 4;
+  padding: var(--space-m);
+  background-color: var(--accent-bg);
+  margin-right: var(--space-m);
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-1);
+  }
+} */
