@@ -7,8 +7,13 @@
   --stack-gap: var(--space-s);
 }
 
+.post :where(h2, h3) {
+  --measure: 50ch;
+  max-width: var(--measure);
+}
+
 .post h1 {
-  --measure: 30ch;
+  --measure: 36ch;
   font-size: var(--step-3);
 }
 

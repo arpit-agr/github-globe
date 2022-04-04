@@ -36,7 +36,7 @@
 }
 
 .cta:hover {
-  color: var(--header-link);
+  color: var(--header-link-hover);
   background-color: transparent;
   text-decoration: none;
   border: var(--border-size-1) solid;

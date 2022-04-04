@@ -27,6 +27,7 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
   font-family: var(--font-plain);
+  font-variant-numeric: tabular-nums;
   background: var(--surface-1);
   color: var(--secondary);
 }
