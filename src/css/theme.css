@@ -52,6 +52,7 @@ h3 {
   text-transform: capitalize;
   font-family: var(--font-special);
   color: var(--primary);
+  font-weight: 500;
 }
 
 h1 {
@@ -61,7 +62,6 @@ h1 {
   font-size: var(--step-4);
   color: var(--primary);
   line-height: var(--font-lineheight-1);
-  font-weight: 700;
 }
 
 h2 {
