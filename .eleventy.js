@@ -6,6 +6,9 @@ const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
 
+	//DATA DEEP MERGE DEFAULTS TO TRUE IN 1.0
+	eleventyConfig.setDataDeepMerge(false);
+
 	eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
