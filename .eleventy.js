@@ -25,6 +25,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('./src/build-scripts/');
 	eleventyConfig.addWatchTarget('./src/scripts/');
 
+	// COLLECTIONS
+	eleventyConfig.addCollection("posts", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("./src/posts/*.md");
+	  });
+
 	//ELEVENTY AFTER EVENT
 	eleventyConfig.on('eleventy.after', async () => {
     // Run me after the build ends
@@ -49,7 +54,6 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
-
 
 	return {
 		htmlTemplateEngine: "njk",
