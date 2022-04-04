@@ -11,7 +11,3 @@ header {
 header * {
   color: inherit;
 }
-
-body > header {
-  border-bottom: var(--border-size-1) solid var(--separator);
-}
