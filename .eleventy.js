@@ -3,11 +3,15 @@ const imageShortcode = require("./src/_11ty/shortcodes/image");
 const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
 
 	//DATA DEEP MERGE DEFAULTS TO TRUE IN 1.0
 	eleventyConfig.setDataDeepMerge(false);
+
+	//PLUGIN
+	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 	eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
