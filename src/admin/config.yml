@@ -10,6 +10,8 @@ collections:
     label_singular: "Post"
     folder: "/src/posts"
     create: true
+    editor:
+      preview: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
