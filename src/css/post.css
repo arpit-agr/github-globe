@@ -96,7 +96,7 @@
   margin-bottom: 2em;
 }
 
-.post > p:first-of-type {
+.post header + * {
   margin-top: 0;
 }
 
