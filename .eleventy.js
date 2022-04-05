@@ -23,6 +23,7 @@ module.exports = function (eleventyConfig) {
 	//PASSTHROUGH COPY
 	eleventyConfig.addPassthroughCopy("./src/img");
 	eleventyConfig.addPassthroughCopy("./src/scripts");
+	eleventyConfig.addPassthroughCopy("./src/admin");
 
 	//SHORTCODE
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
