@@ -4,6 +4,7 @@ const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
 
@@ -12,6 +13,7 @@ module.exports = function (eleventyConfig) {
 
 	//PLUGIN
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
 	eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
