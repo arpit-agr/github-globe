@@ -11,11 +11,13 @@ const globe = createGlobe(canvas, {
   theta: -0.1,
   dark: 1,
   diffuse: 1.2,
+  scale: 1,
   mapSamples: 16000,
   mapBrightness: 6,
   baseColor: [0.05490196, 0.11764706, 0.14509804],
   markerColor: [0.97254902, 0.98823529, 0.98823529],
   glowColor: [0.05490196, 0.11764706, 0.14509804],
+  offset: [0, 0],
   markers: [
     // latitude longitude
     { location: [19.075983, 72.877655], size: 0.05 },
