@@ -82,7 +82,7 @@
 }
 
 /* column layout */
-.post {
+/* .post {
   column-width: 460px;
   column-rule: var(--border-size-1) solid var(--separator);
   column-gap: var(--space-2xl);
@@ -98,7 +98,7 @@
 
 .post header + * {
   margin-top: 0;
-}
+} */
 
 /* drop cap */
 /* @supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
