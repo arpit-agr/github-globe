@@ -1,5 +1,5 @@
 {
   "layout": "layouts/post",
-  "permalink": "./posts/{{ title | slugify }}/",
+  "permalink": "./archive/{{ title | slugify }}/",
   "tags": "Other"
 }

@@ -10,7 +10,7 @@
 }
 
 :where(.navigation) ul {
-  --cluster-gap: var(--space-s);
+  --cluster-gap: var(--space-m);
 }
 
 :where(.navigation) li {
@@ -27,19 +27,6 @@
 :where(.navigation) a:hover {
   color: var(--header-link-hover);
   text-decoration: underline;
-}
-
-.cta {
-  background-color: var(--accent-color);
-  color: var(--header-bg);
-  border-color: transparent;
-}
-
-.cta:hover {
-  color: var(--header-link-hover);
-  background-color: transparent;
-  text-decoration: none;
-  border: var(--border-size-1) solid;
 }
 
 .burger-menu__trigger {
@@ -175,4 +162,57 @@
   background: transparent;
   border-color: transparent;
   transform: rotate(180deg);
+}
+
+/* styles the current page in the menu */
+[aria-current="page"]::before,
+[data-state="active"]::before {
+  display: inline-block;
+  margin-right: var(--space-4xs);
+  content: "▸";
+  content: "▸"/ "";
+  alt: "";
+}
+
+[aria-current="page"],
+[data-state="active"] {
+  position: relative;
+  text-indent: calc(-1ch + var(--space-4xs));
+}
+
+/* Styles the contact us button */
+[aria-label="primary"] :last-child > a {
+  background-color: var(--accent-color);
+  color: var(--header-bg);
+  border-color: transparent;
+
+  padding: var(--space-3xs) var(--space-2xs);
+  border: var(--border-size-1) solid var(--accent-color);
+  border-radius: var(--radius-1);
+  font-weight: 500;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+
+[aria-label="primary"] :last-child > a:hover {
+  color: var(--header-link-hover);
+  background-color: transparent;
+  text-decoration-line: none;
+  border: var(--border-size-1) solid;
+}
+
+ul :last-child [aria-current="page"],
+ul :last-child [data-state="active"] {
+  position: relative;
+  text-indent: calc(-1ch + var(--space-4xs));
+
+  border-color: transparent;
+  background-color: transparent;
+  color: var(--header-link);
+}
+
+ul :last-child [aria-current="page"]:hover,
+ul :last-child [data-state="active"]:hover {
+  border-color: transparent;
+  text-decoration-line: underline;
 }
