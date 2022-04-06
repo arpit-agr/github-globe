@@ -1,19 +1,19 @@
 <div class="products">
   <section class="wrapper flow">
-    <header>
+    <header class="flow">
       <div class="section-title cluster">
         <h{{ headingLevel if headingLevel else '2' }} class="cluster">
-          {{ product.heading }}
+          {{ section.product.heading }}
         </h{{ headingLevel if headingLevel else '2' }}>
-        {%if not headingLevel %}
-          <a href="{{ product.url }}" class="btn step-0">
+        {%- if not headingLevel -%}
+          <a href="{{ section.product.url }}" class="btn step-0">
             Know More
-            <span class="visually-hidden">about {{ product.heading }}</span>
+            <span class="visually-hidden">about {{ section.product.heading }}</span>
           </a>
-        {% endif %}
+        {%- endif -%}
       </div>
-      <p>{{ product.subtitle | safe }}</p>
+      <p>{{ section.product.subtitle | safe }}</p>
     </header>
-    {% include "partials/cards.html" %}
+    {%- include "partials/cards.html" -%}
   </section>
 </div>

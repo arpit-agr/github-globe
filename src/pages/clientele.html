@@ -1,30 +1,14 @@
 ---
 title: Client Stories
 headingLevel: 1
-testimonial:
-  heading: Client Stories
-  subtitle: >
-    Our customers <em>trust</em> us to deliver exceptional service. Read a few of our client testimonials.
-  url: "/#"
-  videoID: "ejfsN8xOEoU"
-  videoTitle: >
-    CEO Satya Nadella on the Importance of Education
-  content: >
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum accusamus esse omnis labore id fugit qui possimus. Tempora, sed. Lorem ipsum dolor sit amet consectetur.
-  name: Satya Nadella
-  job: CEO
-  company: Microsoft
 eleventyNavigation:
     key: Clients
     order: 3
 ---
-{% set videoTitle = testimonial.videoTitle %}
-{% set videoId = testimonial.videoID %}
+{%- extends "layouts/base.html" -%}
 
-{% extends "layouts/base.html" %}
-
-{% block content %}
+{%- block content -%}
 <main>
-  {% include "sections/testimonials-section.html" %}
+  {%- include "sections/testimonials-section.html" -%}
 </main>
-{% endblock %}
+{%- endblock -%}

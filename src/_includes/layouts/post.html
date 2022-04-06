@@ -2,9 +2,9 @@
 title: Post
 ---
 
-{% extends "layouts/base.html" %}
+{%- extends "layouts/base.html" -%}
 
-{% block content %}
+{%- block content -%}
 <main>
   <article class="post wrapper flow">
     <header class="stack">
@@ -15,20 +15,20 @@ title: Post
       </time>
       <p class="visually-hidden">Tags:</p>
       <ul class="post-tags cluster" role="list" aria-label="Tags">
-        {% for tag in tags %}
+        {%- for tag in tags -%}
           <li class="post-tag-item">{{ tag }}</li>
-        {% endfor %}
+        {%- endfor -%}
       </ul>
     </header>
     {{ content | safe }}
-    {% if sourceLink %}
+    {%- if sourceLink -%}
       <p class="source">
         Source: <a href="{{ sourceLink }}">{{ sourceName }}</a>
       </p>
-    {% endif %}
+    {%- endif -%}
   </article>
 </main>
 <nav class="wrapper" aria-label="secondary">
   <a class="back-to-archive" href="/archive/">← Back to the archive</a>
 </nav>
-{% endblock %}
+{%- endblock -%}

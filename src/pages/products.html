@@ -1,20 +1,14 @@
 ---
 title: Products
 headingLevel: 1
-product:
-  heading: >
-    Our Products
-  subtitle: >
-    Lorem ipsum dolor sit amet <em>industry leading</em> elit. Natus ex nam, omnis, inventore dolores modi cumque!
-  url: "/#"
 eleventyNavigation:
   key: Products
   order: 2
 ---
-{% extends "layouts/base.html" %}
+{%- extends "layouts/base.html" -%}
 
-{% block content %}
+{%- block content -%}
 <main>
-  {% include "sections/products-section.html" %}
+  {%- include "sections/products-section.html" -%}
 </main>
-{% endblock %}
+{%- endblock -%}

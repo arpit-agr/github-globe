@@ -5,26 +5,26 @@
 <div class="testimonial">
   <section class="wrapper flow">
     
-    <header>
+    <header class="flow">
       <div class="section-title cluster">
         <h{{ headingLevel if headingLevel else '2' }} class="cluster">
-          {{ testimonial.heading }}
+          {{ section.testimonial.heading }}
         </h{{ headingLevel if headingLevel else '2' }}>
         {%- if not headingLevel -%}
-          <a href="{{ testimonial.url }}" class="btn step-0">
+          <a href="{{ section.testimonial.url }}" class="btn step-0">
             Know More
-            <span class="visually-hidden">about {{ testimonial.heading }}</span>
+            <span class="visually-hidden">about {{ section.testimonial.heading }}</span>
           </a>
         {%- endif -%}
       </div>
-      <p>{{ testimonial.subtitle | safe }}</p>
+      <p>{{ section.testimonial.subtitle | safe }}</p>
       <script src="/scripts/lite-yt-embed.js"></script>
     </header>
 
     <div class="testimonial-featured grid">
       {%- for testimonial in collections.testimonials | pluck(pickedPosts, 'featured') | limit(1) -%}
         {%- include "partials/testimonial-block.html" -%}
-      {% endfor %}
+      {%- endfor -%}
     </div>
 
     <div class="testimonial-normal grid">
