@@ -5,32 +5,15 @@
 <div class="testimonial">
   <section class="wrapper flow">
     
-    <header class="flow">
-      <div class="section-title cluster">
-        <h{{ headingLevel if headingLevel else '2' }} class="cluster">
-          {{ section.testimonial.heading }}
-        </h{{ headingLevel if headingLevel else '2' }}>
-        {%- if not headingLevel -%}
-          <a href="{{ section.testimonial.url }}" class="btn step-0">
-            Know More
-            <span class="visually-hidden">about {{ section.testimonial.heading }}</span>
-          </a>
-        {%- endif -%}
-      </div>
-      <p>{{ section.testimonial.subtitle | safe }}</p>
-      <script src="/scripts/lite-yt-embed.js"></script>
-    </header>
-
-    <div class="testimonial-featured grid">
+    {%- include "partials/testimonial-header.html" -%}
+    
+    <ul class="testimonial-container grid" role="list">
       {%- for testimonial in collections.testimonials | pluck(pickedPosts, 'featured') | limit(1) -%}
         {%- include "partials/testimonial-block.html" -%}
       {%- endfor -%}
-    </div>
-
-    <div class="testimonial-normal grid">
       {%- for testimonial in collections.testimonials | pluck(pickedPosts, 'homepage') | limit(2) -%}
         {%- include "partials/testimonial-block.html" -%}
       {%- endfor -%}
-    </div>
+    </ul>
   </section>
 </div>

@@ -9,6 +9,15 @@ eleventyNavigation:
 
 {%- block content -%}
 <main>
-  {%- include "sections/testimonials-section.html" -%}
+  <div class="testimonial">
+    <section class="wrapper flow">
+      
+      {%- include "partials/testimonial-header.html" -%}
+      
+      <ul class="testimonial-container grid" role="list">
+        {%- for testimonial in collections.testimonials -%}
+          {%- include "partials/testimonial-block.html" -%}
+        {%- endfor -%}
+      </ul>
 </main>
 {%- endblock -%}

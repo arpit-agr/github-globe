@@ -1,9 +1,20 @@
 {%- if testimonial.data.video.id -%}
-  {%- include "partials/youtube.html" -%}
-{%- endif -%}
-
-<div class="testimonial-block stack">
-  {%- if not testimonial.data.featured -%}
+  <li class="testimonial-video {{ 'testimonial-featured-video' if testimonial.data.featured }} grid">
+    {%- include "partials/youtube.html" -%}
+    <div class="testimonial-block stack">
+      <blockquote class="testimonial-content">
+        {{ testimonial.templateContent | safe }}
+      </blockquote>
+      <p class="testimonial-client-info stack">
+        <em>{{ testimonial.data.name }}</em>
+        <small>
+          {{ testimonial.data.designation }}, {{ testimonial.data.company }}
+        </small>
+      </p>
+    </div>
+  </li>  
+{%- else -%}
+  <li class="testimonial-text testimonial-block stack">
     <svg width="52" height="57" fill="none" xmlns="http://www.w3.org/2000/svg" class="blockquote-svg" aria-hidden="true">
       <style>
         .blockquote-svg path {
@@ -12,14 +23,15 @@
       </style>
       <path d="M0 21 18 3v36L0 57V21ZM26 21 44 3v36L26 57V21Z" fill="black"/>
     </svg>
-  {%- endif -%}
-  <blockquote class="testimonial-content">
-    {{ testimonial.templateContent | safe }}
-  </blockquote>
-  <p class="testimonial-client-info stack">
-    <em>{{ testimonial.data.name }}</em>
-    <small>
-      {{ testimonial.data.designation }}, {{ testimonial.data.company }}
-    </small>
-  </p>
-</div>
+    <blockquote class="testimonial-content">
+      {{ testimonial.templateContent | safe }}
+    </blockquote>
+    <p class="testimonial-client-info stack">
+      <em>{{ testimonial.data.name }}</em>
+      <small>
+        {{ testimonial.data.designation }}, {{ testimonial.data.company }}
+      </small>
+    </p>
+  </li>
+{%- endif -%}
+
