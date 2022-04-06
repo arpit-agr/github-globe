@@ -1,4 +1,4 @@
-header {
+body > header {
   --stack-gap: var(--space-l);
   --header-bg: var(--surface-1);
   --header-text: hsl(198deg 45% 7%);
@@ -8,6 +8,6 @@ header {
   color: var(--header-text);
 }
 
-header * {
+body > header * {
   color: inherit;
 }

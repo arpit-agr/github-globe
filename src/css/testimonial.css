@@ -7,7 +7,6 @@
 .testimonial-block {
   --flow-space: var(--space-m);
   padding: var(--space-m);
-  background: var(--surface-2);
   counter-increment: eyebrow;
 }
 
@@ -15,7 +14,6 @@
   --grid-gap: 0;
   border-radius: var(--radius-1);
   border: var(--border-size-1) solid var(--separator);
-  background: var(--surface-2);
 
   overflow: hidden;
 }
@@ -43,30 +41,30 @@
 }
 
 .testimonial-normal {
-  --grid-gap: var(--space-xl-2xl);
+  --flow-space: var(--space-m);
+  --grid-gap: var(--space-m);
   --min: 320px;
-  counter-reset: eyebrow 1;
 }
 
 .testimonial-normal .testimonial-block {
-  aspect-ratio: 16/9;
   border-radius: var(--radius-1);
   border: var(--border-size-1) solid var(--separator);
 }
 
-.testimonial-normal .testimonial-block::before {
-  content: counter(eyebrow, decimal-leading-zero);
-  padding-top: var(--space-m);
-  /* padding-block-start: var(--space-m); */
-  border-top: var(--border-size-1) solid;
-  /* border-block-start: var(--border-size-1) solid; */
-}
-
-.testimonial-block :nth-child(1) {
+.testimonial-block :last-child {
   margin-top: auto;
   /* margin-block-start: auto; */
 }
 
 .testimonial-content {
-  --measure: 45ch;
+  margin-bottom: var(--space-l);
+  /* margin-block-end: var(--space-l); */
+}
+
+.testimonial-client-info {
+  --stack-gap: 0;
+}
+
+.testimonial-client-info small {
+  font-size: var(--step-1);
 }

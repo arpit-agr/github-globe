@@ -9,4 +9,4 @@ featured: false
 homepage: true
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum accusamus esse omnis labore id fugit qui possimus. Tempora, sed. Lorem ipsum dolor sit amet consectetur.
+We were amazed by the iteration speed that was unlocked by Noodl. It translated to quicker live experiments, velocity of development, and convenient updates of an MVP in 3 weeks.

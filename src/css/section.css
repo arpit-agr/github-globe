@@ -1,16 +1,16 @@
-.section-header {
+.section-title {
   --cluster-gap: var(--space-s);
   justify-content: space-between;
 }
 
-.section-header h2 {
+.section-title h2 {
   display: flex;
   flex-grow: 999;
   flex-basis: 0;
 }
 
 @media (min-width: 500px) {
-  .section-header h2::after {
+  .section-title h2::after {
     content: "";
     height: 1px;
     /* block-size: 1px; */
@@ -19,7 +19,7 @@
   }
 }
 
-.section-header + p {
+.section-title + p {
   --flow-space: var(--space-m-s);
   --measure: 45ch;
 }

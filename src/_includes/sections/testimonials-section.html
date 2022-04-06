@@ -1,30 +1,36 @@
+{%- set pickedPosts -%}
+  [true]
+{%- endset -%}
+
 <div class="testimonial">
   <section class="wrapper flow">
-    <div class="section-header cluster">
-      <h{{ headingLevel if headingLevel else '2' }} class="cluster">
-        {{ testimonial.heading }}
-      </h{{ headingLevel if headingLevel else '2' }}>
-      {%if not headingLevel %}
-        <a href="{{ testimonial.url }}" class="btn step-0">Know More</a>
-      {% endif %}
-    </div>
-    <p>{{ testimonial.subtitle | safe }}</p>
+    
+    <header>
+      <div class="section-title cluster">
+        <h{{ headingLevel if headingLevel else '2' }} class="cluster">
+          {{ testimonial.heading }}
+        </h{{ headingLevel if headingLevel else '2' }}>
+        {%- if not headingLevel -%}
+          <a href="{{ testimonial.url }}" class="btn step-0">
+            Know More
+            <span class="visually-hidden">about {{ testimonial.heading }}</span>
+          </a>
+        {%- endif -%}
+      </div>
+      <p>{{ testimonial.subtitle | safe }}</p>
+      <script src="/scripts/lite-yt-embed.js"></script>
+    </header>
+
     <div class="testimonial-featured grid">
-      {% include "partials/youtube.html" %}
-      <div class="testimonial-block stack">
-        <p class="testimonial-content">{{ testimonial.content }}</p>
-        <p>{{ testimonial.name }}<br>{{ testimonial.job }}, {{ testimonial.company }}</p>
-      </div>
+      {%- for testimonial in collections.testimonials | pluck(pickedPosts, 'featured') | limit(1) -%}
+        {%- include "partials/testimonial-block.html" -%}
+      {% endfor %}
     </div>
+
     <div class="testimonial-normal grid">
-      <div class="testimonial-block stack fade-in">
-        <p class="testimonial-content">{{ testimonial.content }}</p>
-        <p>{{ testimonial.name }}<br>{{ testimonial.job }}, {{ testimonial.company }}</p>
-      </div>
-      <div class="testimonial-block stack fade-in">
-        <p class="testimonial-content">{{ testimonial.content }}</p>
-        <p>{{ testimonial.name }}<br>{{ testimonial.job }}, {{ testimonial.company }}</p>
-      </div>
+      {%- for testimonial in collections.testimonials | pluck(pickedPosts, 'homepage') | limit(2) -%}
+        {%- include "partials/testimonial-block.html" -%}
+      {%- endfor -%}
     </div>
   </section>
 </div>
