@@ -43,6 +43,7 @@
 .testimonial-container {
   --grid-gap: var(--space-l);
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
 }
 
 .testimonial-container > * {
