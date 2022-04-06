@@ -1,7 +1,7 @@
 ---
 video:
-  id:
-  title:
+  id: vWLcyFtni6U
+  title: Google CEO Sundar Pichai’s I/O 2017 keynote
 name: Sundar Pichai
 designation: CEO
 company: Alphabet
