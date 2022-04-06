@@ -15,11 +15,18 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+	//FILTER
 	eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+	});
+	eleventyConfig.addFilter("limit", function (arr, limit) {
+		return arr.slice(0, limit);
+	});
+	eleventyConfig.addFilter("pluck", function (arr, selections, attr) {
+		return arr.filter((item) => selections.includes(item.data[attr]));
 	});
 
 	//PASSTHROUGH COPY
@@ -38,7 +45,10 @@ module.exports = function (eleventyConfig) {
 	// COLLECTIONS
 	eleventyConfig.addCollection("posts", function(collectionApi) {
 		return collectionApi.getFilteredByGlob("./src/posts/*.md");
-	  });
+	});
+	eleventyConfig.addCollection("testimonials", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("./src/testimonials/*.md");
+	});
 
 	//ELEVENTY AFTER EVENT
 	eleventyConfig.on('eleventy.after', async () => {
