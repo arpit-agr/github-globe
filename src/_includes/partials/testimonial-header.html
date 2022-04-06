@@ -1,0 +1,15 @@
+<header class="flow">
+  <div class="section-title cluster">
+    <h{{ headingLevel if headingLevel else '2' }} class="cluster">
+      {{ section.testimonial.heading }}
+    </h{{ headingLevel if headingLevel else '2' }}>
+    {%- if not headingLevel -%}
+      <a href="{{ section.testimonial.url }}" class="btn step-0">
+        Know More
+        <span class="visually-hidden">about {{ section.testimonial.heading }}</span>
+      </a>
+    {%- endif -%}
+  </div>
+  <p>{{ section.testimonial.subtitle | safe }}</p>
+  <script src="/scripts/lite-yt-embed.js"></script>
+</header>
