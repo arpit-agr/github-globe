@@ -5,6 +5,7 @@ const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const sortByDisplayOrder = require('./src/_11ty/utils/sort-by-display-order.js');
 
 module.exports = function (eleventyConfig) {
 
@@ -47,10 +48,7 @@ module.exports = function (eleventyConfig) {
 		return collectionApi.getFilteredByGlob("./src/posts/*.md");
 	});
 	eleventyConfig.addCollection("testimonials", function(collectionApi) {
-		return collectionApi
-		.getFilteredByGlob("./src/testimonials/*.md")
-		.sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
-		;
+		return sortByDisplayOrder(collectionApi.getFilteredByGlob("./src/testimonials/*.md"));
 	});
 
 	//ELEVENTY AFTER EVENT
