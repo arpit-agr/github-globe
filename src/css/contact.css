@@ -80,7 +80,7 @@ svg[class*="bi-telephone"] {
   margin-top: var(--space-xs);
 }
 
-.contact-form label {
+.form-label {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
