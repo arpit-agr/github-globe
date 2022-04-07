@@ -40,6 +40,12 @@
   letter-spacing: var(--font-letterspacing-2);
 }
 
+.step--1 {
+  font-size: var(--step--1);
+  letter-spacing: var(--font-letterspacing-2);
+  text-transform: uppercase;
+}
+
 .grid {
   --grid-gap: var(--gutter);
   display: grid;
@@ -63,4 +69,8 @@
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+.tertiary {
+  color: var(--tertiary);
 }
