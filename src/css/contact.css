@@ -1,0 +1,122 @@
+.contact-us {
+  --flow-space: var(--space-xl-2xl);
+  padding-top: var(--space-m);
+  /* padding-block-start: var(--space-m); */
+}
+
+.contact-methods {
+  --stack-gap: var(--space-xl);
+  --grid-gap: var(--space-2xl);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-methods > * {
+  --flow-space: var(--space-l);
+}
+
+.contact-methods > li:last-child {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 46em) {
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-methods li:first-child {
+    border: unset;
+    padding-top: unset;
+    /* padding-block-start: unset; */
+  }
+}
+
+.contact-methods li {
+  --flow-space: var(--space-2xs);
+  padding-top: var(--space-xl);
+  /* padding-block-start: var(--space-xl); */
+  border-top: var(--border-size-1) solid var(--accent-separator);
+  /* border-block-start: var(--border-size-1) solid var(--accent-color); */
+}
+
+.contact-methods li > :last-child {
+  margin-top: auto;
+  /* margin-block-start: auto; */
+}
+
+.contact-methods svg {
+  width: 32px;
+  /* inline-size: 24px; */
+  height: 32px;
+  /* block-size: 24px; */
+  fill: var(--accent-color);
+}
+
+svg[class*="bi-telephone"] {
+  stroke: var(--accent-color);
+  stroke-width: 0.3px;
+}
+
+.contact-methods p {
+  color: var(--secondary);
+}
+
+
+.contact-methods h2 {
+  font-size: var(--step-2);
+}
+
+.contact-form {
+  --measure: 50ch;
+  --stack-gap: var(--space-l);
+  max-width: var(--measure);
+}
+
+.contact-form * {
+  border-width: var(--border-size-1);
+  border-color: var(--accent-separator);
+}
+
+.contact-form div > * + * {
+  margin-top: var(--space-xs);
+}
+
+.contact-form label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* [type="submit"] {
+  background-color: var(--accent-color);
+  color: var(--surface-1);
+  border-color: transparent;
+  padding: var(--space-3xs) var(--space-2xs);
+  border: var(--border-size-1) solid var(--accent-color);
+  border-radius: var(--radius-1);
+  font-weight: 500;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+
+[type="submit"]:hover {
+  color: var(--primary);
+  background-color: transparent;
+  text-decoration-line: none;
+  border: var(--border-size-1) solid;
+}
+ */
+
+/* validity styles for input  */
+@supports
+ (selector(:has(works))) {
+
+  p:has( + input:focus:invalid) .validity:after { 
+    content: "Invalid";
+    color: hsl(0deg 73% 29%);
+  }
+  
+  p:has( + input:valid) .validity:after { 
+    content: "Valid";
+    color: var(--accent-color);
+  }
+}
