@@ -16,6 +16,8 @@
   "contact": {
     "heading": "Contact Us",
     "subtitle": "Start a WhatsApp chat session, call us, or have us call you—your choice.",
-    "url": "\/contact"
+    "countryCode": 91,
+    "whatsapp": 8169101587,
+    "call": 8169101587
   }
 }

@@ -9,9 +9,54 @@ eleventyNavigation:
 {%- block content -%}
 <main>
   <div class="contact-us wrapper flow">
-    <header class="cluster">
-      <h1>{{ title }}</h1>
+    <header class="flow">
+      <div class="section-title">
+        <h1>{{ section.contact.heading }}</h1>
+      </div>
+      <p>
+        {{ section.contact.subtitle | safe }}
+      </p>
     </header>
+    <ul class="contact-methods grid" role="list">
+      <li class="stack">
+        <div class="flow">
+          {%- include "partials/whatsapp.svg" -%}
+          <h2>WhatsApp chat with Sales</h2>
+          <p>Available 10:00 AM–6:00 PM IST
+            <br>
+            Monday–Friday</p>
+        </div>
+        <a 
+          class="btn step-0" 
+          href="https://wa.me/{{ section.contact.countryCode }}{{ section.contact.whatsapp }}"
+        >
+          Chat Now <span class="visually-hidden">on WhatsApp</spa>
+        </a>
+      </li>
+      <li class="stack">
+        <div class="flow">
+          {%- include "partials/tel-outbound.svg" -%}
+          <h2>Call Sales</h2>
+          <p>Available 10:00 AM–6:00 PM IST
+            <br>
+            Monday–Friday</p>
+        </div>
+        <a 
+          class="btn step-0" 
+          href="tel:+{{ section.contact.countryCode }}{{ section.contact.call }}"
+        >
+          Call +{{ section.contact.countryCode }} {{ section.contact.call }}
+        </a>
+      </li>
+      <li class="stack">
+        <div class="flow">
+          {%- include "partials/tel-inbound.svg" -%}
+          <h2>Request we contact you</h2>
+          <p>Have a sales specialist contact you by filling the form</p>
+        </div>
+        {%- include "partials/contact-form.html" -%}
+      </li>
+    </ul>
   </div>
 </main>
 {%- endblock -%}
