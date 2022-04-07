@@ -2,12 +2,13 @@
   --surface-1: hsl(198deg 45% 98%);
   --surface-2: hsl(198deg 100% 99%);
   --primary: hsl(198deg 45% 10%);
-  --secondary: hsl(198deg 18% 22%);
-  --tertiary: hsl(198deg 3% 45%);
+  --secondary: hsl(198deg 18% 32%);
+  --tertiary: hsl(198deg 18% 45%);
   --accent-color: hsl(198deg 73% 29%);
   --accent-bg: hsl(198deg 73% 29% / 10%);
   /* --separator: hsl(198deg 45% 10% / 8%); */
   --separator: hsl(198deg 13% 91%);
+  --accent-separator: hsl(198deg 73% 29% / 33%);
 
   --gutter: var(--space-m-2xl);
   --radius-1: var(--space-3xs);
