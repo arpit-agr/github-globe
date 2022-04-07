@@ -9,8 +9,13 @@
     "url": "\/products"
   },
   "testimonial": {
-        "heading": "Our Clients",
-        "subtitle": "Our customers <em>trust<\/em> us to deliver exceptional service. Read a few of our client testimonials.",
-        "url": "\/clientele"
-    }
+    "heading": "Our Clients",
+    "subtitle": "Our customers <em>trust<\/em> us to deliver exceptional service. Read a few of our client testimonials.",
+    "url": "\/clientele"
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "subtitle": "Start a WhatsApp chat session, call us, or have us call you—your choice.",
+    "url": "\/contact"
+  }
 }
