@@ -47,7 +47,10 @@ module.exports = function (eleventyConfig) {
 		return collectionApi.getFilteredByGlob("./src/posts/*.md");
 	});
 	eleventyConfig.addCollection("testimonials", function(collectionApi) {
-		return collectionApi.getFilteredByGlob("./src/testimonials/*.md");
+		return collectionApi
+		.getFilteredByGlob("./src/testimonials/*.md")
+		.sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
+		;
 	});
 
 	//ELEVENTY AFTER EVENT
