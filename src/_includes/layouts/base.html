@@ -11,8 +11,12 @@
 
   <script>document.documentElement.classList.add('with-js');</script>
   <link rel="stylesheet" href="/css/style.css"/>
-  <meta name="theme-color" content="#0a151a" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0a151a" media="(prefers-color-scheme: dark)">
+
+  {%- if page.url == "/" -%}
+    <meta name="theme-color" content="#0a151a">
+  {%- else -%}
+    <meta name="theme-color" content="#f8fbfc">
+  {%- endif -%}
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
