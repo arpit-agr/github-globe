@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	//PASSTHROUGH COPY
+	eleventyConfig.addPassthroughCopy("./src/fonts");
 	eleventyConfig.addPassthroughCopy("./src/img");
 	eleventyConfig.addPassthroughCopy("./src/scripts");
 	eleventyConfig.addPassthroughCopy("./src/admin");

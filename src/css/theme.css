@@ -22,9 +22,9 @@
   --border-size-1: 1px;
   --border-size-2: 2px;
 
-  --font-plain: Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
+  --font-plain: Inter, Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-special: Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
+  --font-special: Inter, Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
   font-family: var(--font-plain);
