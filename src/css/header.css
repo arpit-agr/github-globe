@@ -1,4 +1,4 @@
-body > header {
+body > header, .hero {
   --stack-gap: var(--space-l);
   --header-bg: var(--surface-1);
   --header-text: hsl(198deg 45% 7%);
@@ -8,7 +8,7 @@ body > header {
   color: var(--header-text);
 }
 
-body > header * {
+body > header *, .hero * {
   color: inherit;
 }
 

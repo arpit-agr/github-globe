@@ -1,3 +1,9 @@
+.hero, .products, .testimonial {
+  --flow-space: var(--space-xl-2xl);
+  padding-top: var(--space-m);
+  /* padding-block-start: var(--space-m); */
+}
+
 .section-title {
   --cluster-gap: var(--space-s);
   justify-content: space-between;

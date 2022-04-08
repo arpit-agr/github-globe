@@ -1,0 +1,16 @@
+---
+title: CG21
+dataLocation: home
+eleventyNavigation:
+  key: home
+  order: 1
+---
+{%- extends "layouts/base.html" -%}
+
+{%- block content -%}
+<main class="stack overflow:hidden">
+  {%- include "sections/hero-section.html" -%}
+  {%- include "sections/products-section.html" -%}
+  {%- include "sections/testimonials-section.html" -%}
+</main>
+{%- endblock -%}

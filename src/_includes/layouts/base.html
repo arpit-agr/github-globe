@@ -26,13 +26,8 @@
 </head>
 <body>
 
-  <header class="overflow:hidden">
-    <div class="hero stack wrapper">
-      {%- include "partials/nav.html" -%}
-      {%- if dataLocation === "home" -%}
-        {%- include "sections/hero-section.html" -%}
-      {%- endif -%}
-    </div>
+  <header>
+    {%- include "partials/nav.html" -%}
   </header>
 
   {%- block content -%}

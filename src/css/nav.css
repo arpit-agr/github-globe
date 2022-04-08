@@ -1,8 +1,8 @@
 .site-head__inner {
   justify-content: space-between;
-  padding-top: var(--space-m);
-  padding-bottom: var(--space-m);
-  /* padding-block: var(--space-xs-s); */
+  padding-top: var(--space-s-m);
+  padding-bottom: var(--space-s-m);
+  /* padding-block: var(--space-s-m); */
 }
 
 .site-head__brand {
@@ -44,7 +44,7 @@
   background: var(--header-link);
   border: var(--border-size-1) solid var(--header-link);
   position: absolute;
-  border-radius: var(--radius-1);
+  border-radius: 1px;
   left: 50%;
   /* inset-inline-start: 50%; */
   margin-left: -12px;
