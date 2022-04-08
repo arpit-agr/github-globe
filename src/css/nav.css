@@ -177,7 +177,8 @@
 [aria-current="page"],
 [data-state="active"] {
   position: relative;
-  text-indent: calc(-1ch + var(--space-4xs));
+  /* text-indent: calc(-1ch + var(--space-4xs)); */
+  text-indent: calc(-1ch + var(--space-2xs));
 }
 
 /* Styles the contact us button */
@@ -189,7 +190,6 @@
   padding: var(--space-3xs) var(--space-2xs);
   border: var(--border-size-1) solid var(--accent-color);
   border-radius: var(--radius-1);
-  font-weight: 500;
   text-decoration-line: none;
   text-transform: uppercase;
 }
