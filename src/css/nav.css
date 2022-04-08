@@ -1,7 +1,7 @@
 .site-head__inner {
   justify-content: space-between;
-  padding-top: var(--space-xs-s);
-  padding-bottom: var(--space-xs-s);
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
   /* padding-block: var(--space-xs-s); */
 }
 
@@ -41,8 +41,8 @@
   /* inline-size: 24px; */
   height: 3px;
   /* block-size: 3px; */
-  background: var(--secondary);
-  border: var(--border-size-1) solid var(--secondary);
+  background: var(--header-link);
+  border: var(--border-size-1) solid var(--header-link);
   position: absolute;
   border-radius: var(--radius-1);
   left: 50%;

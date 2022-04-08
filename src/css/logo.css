@@ -1,0 +1,8 @@
+#svg-logo {
+  height: 28px;
+  width: auto;
+}
+
+#svg-logo path {
+  fill: var(--header-link);
+}
