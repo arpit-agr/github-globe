@@ -60,9 +60,8 @@ svg[class*="bi-telephone"] {
   color: var(--secondary);
 }
 
-
-.contact-methods h2 {
-  font-size: var(--step-2);
+.contact-methods .day {
+  --flow-space: 0;
 }
 
 .contact-form {
