@@ -111,3 +111,7 @@ time {
   font-size: var(--step-0);
   font-weight: 500;
 }
+
+summary {
+  cursor: pointer;
+}

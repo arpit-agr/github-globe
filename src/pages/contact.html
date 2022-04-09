@@ -51,9 +51,12 @@ eleventyNavigation:
         <div class="flow">
           {%- include "partials/tel-inbound.svg" -%}
           <h3>Request a call</h3>
-          <p>Have our sales specialist contact you by filling the form</p>
+          <p>Have our sales specialist contact you by filling the form.</p>
         </div>
-        {%- include "partials/contact-form.html" -%}
+        <details>
+          <summary class="form-summary btn step-0">Contact Form</summary>
+          {%- include "partials/contact-form.html" -%}
+        </details>
       </li>
     </ul>
   </div>

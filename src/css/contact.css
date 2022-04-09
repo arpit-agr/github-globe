@@ -64,10 +64,19 @@ svg[class*="bi-telephone"] {
   --flow-space: 0;
 }
 
+details[open] .form-summary {
+  color: var(--accent-color);
+  background-color: var(--surface-1);
+  padding-left: 0;
+  border: unset;
+}
+
 .contact-form {
   --measure: 50ch;
   --stack-gap: var(--space-l);
   max-width: var(--measure);
+  margin-top: var(--space-l);
+  /* margin-block-start: var(--space-l); */
 }
 
 .contact-form * {
