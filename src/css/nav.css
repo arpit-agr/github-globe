@@ -15,6 +15,7 @@
 
 :where(.navigation) li {
   margin: 0.1rem;
+  position: relative;
 }
 
 :where(.navigation) a {
@@ -117,15 +118,31 @@
 
 .burger-menu[enabled="true"] .navigation ul {
   display: block;
+  margin-top: var(--space-l);
+  /* margin-block-start: var(--space-l); */
 }
 
-.burger-menu[enabled="true"] .navigation ul > * + * {
-  margin-top: var(--gutter);
-  /* margin-block-start: var(--gutter); */
-}
-
-.burger-menu[enabled="true"] .navigation li {
+.burger-menu[enabled="true"] .navigation a {
+  padding-top: var(--space-2xs);
+  padding-bottom: var(--space-2xs);
+  /* padding-block: var(--space-2xs); */
   font-size: var(--step-1);
+}
+
+.burger-menu[enabled="true"] .navigation a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* inset: 0; */
+}
+
+.burger-menu[enabled="true"] .navigation li:last-child a {
+  padding: var(--space-3xs) var(--space-2xs);
+  margin-top: var(--space-2xs);
+  /* margin-block-start: var(--space-2xs); */
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel {
@@ -178,7 +195,7 @@
 [data-state="active"] {
   position: relative;
   /* text-indent: calc(-1ch + var(--space-4xs)); */
-  text-indent: calc(-1ch + var(--space-2xs));
+  text-indent: -6px;
 }
 
 /* Styles the contact us button */
@@ -204,15 +221,6 @@
 ul :last-child [aria-current="page"],
 ul :last-child [data-state="active"] {
   position: relative;
-  text-indent: calc(-1ch + var(--space-4xs));
-
-  border-color: transparent;
-  background-color: transparent;
-  color: var(--header-link);
+  text-indent: -6px;
 }
 
-ul :last-child [aria-current="page"]:hover,
-ul :last-child [data-state="active"]:hover {
-  border-color: transparent;
-  text-decoration-line: underline;
-}

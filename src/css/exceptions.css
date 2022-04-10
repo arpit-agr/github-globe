@@ -24,6 +24,5 @@ padding-top: var(--space-l);
   margin-top: -342px;
   /* margin-block-start: -342px; */
   background: var(--surface-1);
-  z-index: 4;
   isolation: isolate;
 }
