@@ -1,6 +1,6 @@
 .smol-css-grid {
   --min: 30ch;
-  --grid-gap: var(--space-xl-2xl);
+  --grid-gap: var(--space-l);
   padding: 0;
 }
 
