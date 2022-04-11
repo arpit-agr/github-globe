@@ -29,6 +29,14 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("pluck", function (arr, selections, attr) {
 		return arr.filter((item) => selections.includes(item.data[attr]));
 	});
+	eleventyConfig.addFilter("addNbsp", (str) => {
+		if (!str) {
+			return;
+		}
+		let title = str.replace(/((.*)\s(.*))$/g, "$2&nbsp;$3");
+		title = title.replace(/"(.*)"/g, '\\"$1\\"');
+		return title;
+	});
 
 	//PASSTHROUGH COPY
 	eleventyConfig.addPassthroughCopy("./src/fonts");
