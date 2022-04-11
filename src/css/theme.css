@@ -44,6 +44,7 @@ body {
 }
 
 main {
+  --flow-space: var(--gutter);
   margin-bottom: var(--space-xl-2xl);
   /* margin-block-end: var(--space-xl-2xl); */
 }

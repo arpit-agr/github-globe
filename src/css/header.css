@@ -1,17 +1,13 @@
-body > header, .hero {
+body > header, .hero, .cta-content {
   --stack-gap: var(--space-l);
   --header-bg: var(--surface-1);
-  --header-text: hsl(198deg 45% 7%);
-  --header-link: var(--primary);
-  --header-link-hover: var(--header-text);
+  --header-text: var(--primary);
+
   background: var(--header-bg);
   color: var(--header-text);
 }
 
-body > header *, .hero * {
+body > header *, .hero *, .cta-content * {
   color: inherit;
 }
 
-body > header a {
-  color: var(--header-link);
-}

@@ -1,0 +1,45 @@
+.cta {
+  --flow-space: var(--space-2xl);
+}
+
+.cta-content {
+  --stack-gap: var(--space-2xl);
+  position: relative;
+  padding: var(--space-l);
+  min-width: 100%;
+  border-radius: var(--radius-1);
+  isolation: isolate;
+}
+
+.cta-content h2 {
+  --measure: 32ch;
+  max-width: var(--measure);
+}
+
+.cta-content p {
+  --measure: 38ch;
+  --flow-space: var(--space-m);
+  filter: brightness(0.9);
+}
+
+.cta-content a {
+  border-color: var(--accent-color);
+}
+
+.cta-content a:hover {
+  color: var(--header-text);
+  background-color: transparent;
+  text-decoration-line: none;
+  border-color: currentColor;
+}
+
+.cta-content img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(25%, 50%);
+  height: 200%;
+  width: auto;
+  object-fit: contain;
+  z-index: -1;
+}

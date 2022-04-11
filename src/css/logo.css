@@ -4,5 +4,5 @@
 }
 
 #svg-logo path {
-  fill: var(--header-link);
+  fill: var(--header-text);
 }

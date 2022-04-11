@@ -22,11 +22,10 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--header-link);
 }
 
 :where(.navigation) a:hover {
-  color: var(--header-link-hover);
+  color: var(--header-text);
   text-decoration: underline;
 }
 
@@ -42,8 +41,8 @@
   /* inline-size: 24px; */
   height: 3px;
   /* block-size: 3px; */
-  background: var(--header-link);
-  border: var(--border-size-1) solid var(--header-link);
+  background: var(--header-text);
+  border: var(--border-size-1) solid var(--header-text);
   position: absolute;
   border-radius: 1px;
   left: 50%;
@@ -212,7 +211,7 @@
 }
 
 [aria-label="primary"] :last-child > a:hover {
-  color: var(--header-link-hover);
+  color: var(--header-text);
   background-color: transparent;
   text-decoration-line: none;
   border: var(--border-size-1) solid;

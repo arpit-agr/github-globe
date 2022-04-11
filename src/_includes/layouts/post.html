@@ -5,7 +5,10 @@ title: Post
 {%- extends "layouts/base.html" -%}
 
 {%- block content -%}
-<main>
+<main class="flow">
+  <nav class="wrapper" aria-label="secondary">
+    <a class="back-to-archive" href="/archive/">← Back to the archive</a>
+  </nav>
   <article class="post wrapper flow">
     <header class="stack">
       <h1>{{ title }}</h1>
@@ -13,22 +16,21 @@ title: Post
       <time datetime={{ date | dump | safe }}>
         {{ date | postDate }}
       </time>
-      <p class="visually-hidden">Tags:</p>
+      <!-- <p class="visually-hidden">Tags:</p>
       <ul class="post-tags cluster" role="list" aria-label="Tags">
         {%- for tag in tags -%}
           <li class="post-tag-item">{{ tag }}</li>
         {%- endfor -%}
-      </ul>
+      </ul> -->
     </header>
     {{ content | safe }}
     {%- if sourceLink -%}
-      <p class="source">
+      <!-- <p class="source">
         Source: <a href="{{ sourceLink }}">{{ sourceName }}</a>
-      </p>
+      </p> -->
     {%- endif -%}
   </article>
+  
+  {%- include "sections/cta-section.html" -%}
 </main>
-<nav class="wrapper" aria-label="secondary">
-  <a class="back-to-archive" href="/archive/">← Back to the archive</a>
-</nav>
 {%- endblock -%}

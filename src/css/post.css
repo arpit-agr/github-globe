@@ -1,6 +1,10 @@
-.post {
+/* .post {
   padding-top: var(--space-m);
-  /* padding-block-start: var(--space-m); */
+  padding-block-start: var(--space-m);
+} */
+
+.post {
+  --flow-space: 1em;
 }
 
 .post header {
