@@ -88,7 +88,6 @@ a:hover {
 }
 
 p, blockquote {
-  --measure: 60ch;
   max-width: var(--measure);
   /* max-inline-size: var(--measure); */
 }

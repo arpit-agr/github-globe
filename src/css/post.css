@@ -63,6 +63,10 @@
   border-radius: var(--radius-1);
 }
 
+:where(.post) :where(ul, ol):not([class]) li {
+  max-width: var(--measure);
+}
+
 :where(.post) :where(ul:not([class]), ol:not([class])) {
   padding: 0;
   padding-left: var(--space-l);
