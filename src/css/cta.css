@@ -1,5 +1,5 @@
 .cta {
-  --flow-space: var(--space-2xl);
+  --flow-space: var(--space-l);
 }
 
 .cta-content {
@@ -17,7 +17,7 @@
 }
 
 .cta-content p {
-  --measure: 38ch;
+  --measure: 48ch;
   --flow-space: var(--space-m);
   filter: brightness(0.9);
 }
@@ -42,4 +42,12 @@
   width: auto;
   object-fit: contain;
   z-index: -1;
+}
+
+.cta em {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 0.5ex;
+  /* text-underline-offset: -1ch; */
+  text-decoration-skip-ink: none;
 }

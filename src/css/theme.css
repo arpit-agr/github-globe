@@ -108,9 +108,9 @@ em {
 
 time {
   display: block;
-  text-transform: uppercase;
-  font-size: var(--step-0);
-  font-weight: 500;
+  /* text-transform: uppercase; */
+  /* font-size: var(--step-0); */
+  /* font-weight: 500; */
 }
 
 summary {

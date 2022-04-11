@@ -1,6 +1,11 @@
 ---
 title: Products
 headingLevel: 1
+cta:
+  heading: Quality products at the right price
+  subtitle: Learn more about how we fulfill your sourcing requirements by leveraging our presence at major gateway ports.
+  buttonText: Contact Us
+  buttonUrl: /contact/
 eleventyNavigation:
   key: Products
   order: 2
@@ -8,7 +13,8 @@ eleventyNavigation:
 {%- extends "layouts/base.html" -%}
 
 {%- block content -%}
-<main>
+<main class="flow">
   {%- include "sections/products-section.html" -%}
+  {%- include "sections/cta-section.html" -%}
 </main>
 {%- endblock -%}

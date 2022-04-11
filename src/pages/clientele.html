@@ -1,6 +1,11 @@
 ---
 title: Client Stories
 headingLevel: 1
+cta:
+  heading: Are you looking for a <em>trusted</em> importer?
+  subtitle: Learn more about how we fulfill your sourcing requirements by leveraging our presence at major gateway ports.
+  buttonText: Contact Us
+  buttonUrl: /contact/
 eleventyNavigation:
     key: Clients
     order: 3
@@ -8,7 +13,7 @@ eleventyNavigation:
 {%- extends "layouts/base.html" -%}
 
 {%- block content -%}
-<main>
+<main class="flow">
   <div class="testimonial">
     <section class="wrapper flow">
       
@@ -21,5 +26,6 @@ eleventyNavigation:
       </ul>
     </section>
   </div>
+  {%- include "sections/cta-section.html" -%}
 </main>
 {%- endblock -%}

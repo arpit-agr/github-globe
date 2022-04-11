@@ -3,10 +3,10 @@
     <div class="cta-content overflow:hidden">
       <div class="stack">
         <div class="flow">
-          <h2>{{ section.cta.heading }}</h2>
-          <p>{{ section.cta.subtitle }}</p>
+          <h2>{{ cta.heading | addNbsp | safe }}</h2>
+          <p>{{ cta.subtitle | addNbsp | safe }}</p>
         </div>
-        <a class="btn step-0" href={{ section.cta.buttonUrl }}>{{ section.cta.buttonText }}</a>
+        <a class="btn step-0" href={{ cta.buttonUrl }}>{{ cta.buttonText }}</a>
       </div>
       <img 
         class="globe" 

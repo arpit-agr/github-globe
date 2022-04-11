@@ -7,6 +7,13 @@
   --flow-space: 1em;
 }
 
+.post > :last-child:after {
+  content: "–––";
+  display: block;
+  padding-top: var(--space-l);
+  /* padding-block-start: var(--space-l); */
+}
+
 .post header {
   --stack-gap: var(--space-s);
 }
