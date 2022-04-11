@@ -4,7 +4,7 @@
       {{ section.testimonial.heading }}
     </h{{ headingLevel if headingLevel else '2' }}>
     {%- if not headingLevel -%}
-      <a href="{{ section.testimonial.url }}" class="btn step-0">
+      <a href="{{ section.testimonial.url }}" class="btn step-0" button-variant="secondary">
         Know More
         <span class="visually-hidden">about {{ section.testimonial.heading }}</span>
       </a>

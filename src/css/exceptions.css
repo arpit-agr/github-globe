@@ -12,16 +12,23 @@
 }
 
 [data-location="home"] main {
-  --stack-gap: var(--space-l);
+  --flow-space: var(--space-l);
 }
 
 [data-location="home"] main > * {
-padding-top: var(--space-l);
+  padding: 0;
+}
+
+[data-location="home"] main>:nth-child(1) {
+  padding-top: var(--space-l-xl);
+  /* padding-block-start: var(--space-l-xl); */
 }
 
 [data-location="home"] main>:nth-child(2) {
   margin-top: -342px;
   /* margin-block-start: -342px; */
+  padding-top: var(--space-l-xl);
+  /* padding-block-start: var(--space-l-xl); */
   background: var(--surface-1);
   isolation: isolate;
 }

@@ -11,6 +11,12 @@
   width: fit-content;
 }
 
+[button-variant="secondary"].btn {
+  color: var(--accent-color);
+  border-color: var(--accent-separator);
+  background-color: transparent;
+}
+
 .btn:hover {
   color: var(--accent-color);
   background-color: var(--surface-1);

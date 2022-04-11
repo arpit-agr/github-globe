@@ -1,7 +1,10 @@
-.hero, .products, .testimonial {
-  --flow-space: var(--space-xl-2xl);
+.hero, .products, .testimonial, .archive {
   padding-top: var(--space-m);
   /* padding-block-start: var(--space-m); */
+}
+
+.hero, .products, .testimonial, .archive, .cta {
+  --flow-space: var(--space-l-xl);
 }
 
 .section-title {

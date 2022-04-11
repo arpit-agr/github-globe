@@ -10,7 +10,7 @@
 .post > :last-child:after {
   content: "–––";
   display: block;
-  padding-top: var(--space-l);
+  padding-top: 1em;
   /* padding-block-start: var(--space-l); */
 }
 
@@ -24,7 +24,7 @@
 }
 
 .post h1 {
-  --measure: 36ch;
+  --measure: 45ch;
   font-size: var(--step-3);
 }
 
@@ -106,6 +106,7 @@
 .back-to-archive {
   padding-bottom: var(--space-s);
   /* padding-block-end: var(--space-s); */
+  color: var(--secondary);
 }
 
 
