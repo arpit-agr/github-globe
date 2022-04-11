@@ -1,4 +1,4 @@
-footer {
+[role="contentinfo"] {
   font-size: 12px;
   width: 100%;
   /* inline-size: 100%; */
@@ -8,11 +8,11 @@ footer {
   /* border-block-start: var(--border-size-1) solid var(--separator); */
 }
 
-footer * {
+[role="contentinfo"] * {
   color: inherit;
 }
 
-footer div {
+[role="contentinfo"] div {
   --cluster-gap: var(--space-3xs);
   padding-top: var(--space-s);
   padding-bottom: var(--space-s);
