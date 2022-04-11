@@ -217,6 +217,10 @@
   border: var(--border-size-1) solid;
 }
 
+[aria-label="primary"] :last-child > a:hover::before {
+  color: transparent;
+}
+
 ul :last-child [aria-current="page"],
 ul :last-child [data-state="active"] {
   position: relative;
