@@ -11,13 +11,17 @@
   width: fit-content;
 }
 
+.btn:where(:hover, :focus) {
+  color: var(--accent-color);
+  background-color: var(--surface-1);
+}
+
 [button-variant="secondary"].btn {
   color: var(--accent-color);
   border-color: var(--accent-separator);
   background-color: transparent;
 }
 
-.btn:hover {
-  color: var(--accent-color);
-  background-color: var(--surface-1);
+[button-variant="secondary"].btn:where(:hover, :focus) {
+  border-color: var(--accent-color);
 }

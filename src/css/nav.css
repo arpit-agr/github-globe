@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 
-:where(.navigation) a:hover {
+:where(.navigation) a:where(:hover, :focus) {
   color: var(--header-text);
   text-decoration: underline;
 }
@@ -210,14 +210,14 @@
   text-transform: uppercase;
 }
 
-[aria-label="primary"] :last-child > a:hover {
+[aria-label="primary"] :last-child > a:where(:hover, :focus) {
   color: var(--header-text);
   background-color: transparent;
   text-decoration-line: none;
   border: var(--border-size-1) solid;
 }
 
-[aria-label="primary"] :last-child > a:hover::before {
+[aria-label="primary"] :last-child > a:where(:hover, :focus)::before {
   color: transparent;
 }
 

@@ -123,12 +123,6 @@
   width: 100%;
 }
 
-.back-to-archive {
-  padding-bottom: var(--space-s);
-  /* padding-block-end: var(--space-s); */
-  color: var(--secondary);
-}
-
 
 
 /* drop cap */

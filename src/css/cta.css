@@ -22,13 +22,36 @@
 
 .cta-content a {
   border-color: var(--accent-color);
+  position: relative;
 }
 
 .cta-content a:hover {
-  color: var(--header-text);
-  background-color: transparent;
   text-decoration-line: none;
-  border-color: currentColor;
+  color: var(--accent-color);
+  background-color: var(--header-text);
+  border-color: var(--header-text);
+}
+
+/* https://tympanus.net/Development/ButtonHoverStyles/ */
+
+.cta-content a::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: -1;
+  -webkit-clip-path: 
+    polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
+  clip-path: 
+    polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
+}
+
+.cta-content a:where(:hover, :focus)::before {
+  background: var(--header-text);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
 }
 
 .cta-content img {
