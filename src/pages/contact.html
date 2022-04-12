@@ -8,57 +8,59 @@ eleventyNavigation:
 
 {%- block content -%}
 <main>
-  <div class="contact-us wrapper flow">
-    <header class="flow">
-      <div class="section-title">
-        <h1>{{ section.contact.heading }}</h1>
-      </div>
-      <p>
-        {{ section.contact.subtitle | safe }}
-      </p>
-    </header>
-    <h2 class="visually-hidden">Contact Options</h2>
-    <ul class="contact-methods grid" role="list">
-      <li class="stack">
-        <div class="flow">
-          {%- include "partials/whatsapp.svg" -%}
-          <h3>WhatsApp chat with Sales</h3>
-          <p>Available 10:00 AM–6:00 PM IST</p>
-          <p class="day">Monday–Friday</p>
+  <div class="contact-us">
+    <section class="wrapper flow">
+      <header class="flow">
+        <div class="section-title">
+          <h1>{{ section.contact.heading }}</h1>
         </div>
-        <a 
-          class="btn step-0" 
-          href="https://wa.me/{{ section.contact.countryCode }}{{ section.contact.whatsapp }}"
-        >
-          Chat Now on WhatsApp
-        </a>
-      </li>
-      <li class="stack">
-        <div class="flow">
-          {%- include "partials/tel-outbound.svg" -%}
-          <h3>Call Sales</h3>
-          <p>Available 10:00 AM–6:00 PM IST</p>
-          <p class="day">Monday–Friday</p>
-        </div>
-        <a 
-          class="btn step-0" 
-          href="tel:+{{ section.contact.countryCode }}{{ section.contact.call }}"
-        >
-          Call +{{ section.contact.countryCode }} {{ section.contact.call }}
-        </a>
-      </li>
-      <li class="stack">
-        <div class="flow">
-          {%- include "partials/tel-inbound.svg" -%}
-          <h3>Request a call</h3>
-          <p>Have our sales specialist contact you by filling the form.</p>
-        </div>
-        <details>
-          <summary class="form-summary btn step-0">Contact Form</summary>
-          {%- include "partials/contact-form.html" -%}
-        </details>
-      </li>
-    </ul>
+        <p>
+          {{ section.contact.subtitle | safe }}
+        </p>
+      </header>
+      <h2 class="visually-hidden">Contact Options</h2>
+      <ul class="contact-methods grid" role="list">
+        <li class="stack">
+          <div class="flow">
+            {%- include "partials/whatsapp.svg" -%}
+            <h3>WhatsApp chat with Sales</h3>
+            <p>Available 10:00 AM–6:00 PM IST</p>
+            <p class="day">Monday–Friday</p>
+          </div>
+          <a
+            class="btn step-0"
+            href="https://wa.me/{{ section.contact.countryCode }}{{ section.contact.whatsapp }}"
+          >
+            Chat Now on WhatsApp
+          </a>
+        </li>
+        <li class="stack">
+          <div class="flow">
+            {%- include "partials/tel-outbound.svg" -%}
+            <h3>Call Sales</h3>
+            <p>Available 10:00 AM–6:00 PM IST</p>
+            <p class="day">Monday–Friday</p>
+          </div>
+          <a
+            class="btn step-0"
+            href="tel:+{{ section.contact.countryCode }}{{ section.contact.call }}"
+          >
+            Call +{{ section.contact.countryCode }} {{ section.contact.call }}
+          </a>
+        </li>
+        <li class="stack">
+          <div class="flow">
+            {%- include "partials/tel-inbound.svg" -%}
+            <h3>Request a call</h3>
+            <p>Have our sales specialist contact you by filling the form.</p>
+          </div>
+          <details>
+            <summary class="form-summary btn step-0">Contact Form</summary>
+            {%- include "partials/contact-form.html" -%}
+          </details>
+        </li>
+      </ul>
+    </section>
   </div>
 </main>
 {%- endblock -%}

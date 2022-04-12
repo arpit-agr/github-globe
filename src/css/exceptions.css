@@ -15,9 +15,9 @@
   --flow-space: var(--space-l);
 }
 
-[data-location="home"] main > * {
+/* [data-location="home"] main > * {
   padding: 0;
-}
+} */
 
 [data-location="home"] main>:nth-child(1) {
   padding-top: var(--space-l-xl);
@@ -31,4 +31,8 @@
   /* padding-block-start: var(--space-l-xl); */
   background: var(--surface-1);
   isolation: isolate;
+}
+
+[data-location="home"] main>:nth-child(3) {
+  padding-top: 0;
 }

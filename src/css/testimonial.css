@@ -1,6 +1,7 @@
 .testimonial-block {
   --flow-space: var(--space-m);
   padding: var(--space-m);
+  background: var(--surface-1);
 }
 
 .testimonial-video {

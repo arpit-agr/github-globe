@@ -5,13 +5,33 @@
 
 .post {
   --flow-space: 1em;
+  /* margin-top: var(--space-m);
+  margin-block-start: var(--space-m); */
 }
 
-.post > :last-child:after {
-  content: "–––";
-  display: block;
-  padding-top: 1em;
-  /* padding-block-start: var(--space-l); */
+.post article {
+  background-color: var(--surface-1);
+}
+
+
+.post article {
+  column-width: 320px;
+  column-rule: var(--border-size-1) solid var(--accent-separator);
+  /* column-gap: var(--space-xl); */
+  column-gap: var(--space-l-xl);
+}
+
+.post article header {
+  column-span: all;
+}
+
+.post article > header {
+  margin-bottom: 2em;
+  margin-bottom: var(--space-l-xl);
+}
+
+.post article header + * {
+  margin-top: 0;
 }
 
 .post header {

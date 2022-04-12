@@ -42,6 +42,7 @@
   width: auto;
   object-fit: contain;
   z-index: -1;
+  pointer-events: none;
 }
 
 .cta em {

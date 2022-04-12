@@ -10,31 +10,33 @@ cta:
 {%- extends "layouts/base.html" -%}
 
 {%- block content -%}
+<nav class="wrapper" aria-label="secondary">
+  <a class="back-to-archive step-0" href="/archive/">← Back to the archive</a>
+</nav>
 <main class="flow">
-  <nav class="wrapper" aria-label="secondary">
-    <a class="back-to-archive step-0" href="/archive/">← Back to the archive</a>
-  </nav>
-  <article class="post wrapper flow">
-    <header class="stack">
-      <h1>{{ title }}</h1>
-      <p class="visually-hidden">Publish date:</p>
-      <time datetime={{ date | dump | safe }}>
-        {{ date | postDate }}
-      </time>
-      <!-- <p class="visually-hidden">Tags:</p>
-      <ul class="post-tags cluster" role="list" aria-label="Tags">
-        {%- for tag in tags -%}
-          <li class="post-tag-item">{{ tag }}</li>
-        {%- endfor -%}
-      </ul> -->
-    </header>
-    {{ content | safe }}
-    {%- if sourceLink -%}
-      <!-- <p class="source">
-        Source: <a href="{{ sourceLink }}">{{ sourceName }}</a>
-      </p> -->
-    {%- endif -%}
-  </article>
+  <div class="post">
+    <article class="wrapper flow">
+      <header class="stack">
+        <h1>{{ title }}</h1>
+        <p class="visually-hidden">Publish date:</p>
+        <time datetime={{ date | dump | safe }}>
+          {{ date | postDate }}
+        </time>
+        <!-- <p class="visually-hidden">Tags:</p>
+        <ul class="post-tags cluster" role="list" aria-label="Tags">
+          {%- for tag in tags -%}
+            <li class="post-tag-item">{{ tag }}</li>
+          {%- endfor -%}
+        </ul> -->
+      </header>
+      {{ content | safe }}
+      {%- if sourceLink -%}
+        <!-- <p class="source">
+          Source: <a href="{{ sourceLink }}">{{ sourceName }}</a>
+        </p> -->
+      {%- endif -%}
+    </article>
+  </div>
   {%- include "sections/cta-section.html" -%}
 </main>
 {%- endblock -%}

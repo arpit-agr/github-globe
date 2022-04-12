@@ -1,4 +1,4 @@
-.hero, .products, .testimonial, .archive {
+.hero, .products, .testimonial, .archive, .post {
   padding-top: var(--space-m);
   /* padding-block-start: var(--space-m); */
 }
