@@ -104,6 +104,7 @@ a {
   color: var(--primary);
   /* font-family: var(--font-special); */
   text-underline-offset: var(--space-3xs);
+  border-radius: var(--radius-1);
 }
 
 a:hover {
@@ -136,4 +137,45 @@ time {
 
 summary {
   cursor: pointer;
+}
+
+:focus {
+  outline: var(--border-size-2) solid var(--accent-color);
+  outline-offset: var(--border-size-2);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+.skip-to-main {
+  display: block;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform .15s ease;
+  z-index: 999;
+}
+
+.skip-to-main:focus {
+  opacity: 1;
+  outline: 0;
+  transform: translate(0);
+}
+
+.skip-to-main.btn {
+  padding: var(--space-3xs) var(--space-2xs);
+  border-radius: 0;
+  border-bottom-right-radius: var(--space-2xs);
+}
+
+::selection {
+  color: var(--surface-1);
+  background: var(--accent-color);
 }
