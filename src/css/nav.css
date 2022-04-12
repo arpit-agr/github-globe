@@ -24,8 +24,8 @@
   text-decoration: none;
 }
 
-:where(.navigation) a:where(:hover, :focus) {
-  color: var(--header-text);
+:where(.navigation) a:hover {
+  /* color: var(--header-text); */
   text-decoration: underline;
 }
 

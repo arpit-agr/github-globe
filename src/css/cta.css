@@ -25,9 +25,8 @@
   position: relative;
 }
 
-.cta-content a:hover {
+.cta-content a:where(:hover, :focus) {
   text-decoration-line: none;
-  color: var(--accent-color);
   background-color: var(--header-text);
   border-color: var(--header-text);
 }
