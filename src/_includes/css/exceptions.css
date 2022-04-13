@@ -21,18 +21,20 @@
 
 [data-location="home"] main>:nth-child(1) {
   padding-top: var(--space-l-xl);
+  padding-bottom: 0;
   /* padding-block-start: var(--space-l-xl); */
+  /* padding-block-end: 0; */
 }
 
 [data-location="home"] main>:nth-child(2) {
-  margin-top: -342px;
+  margin-top: -324px;
   /* margin-block-start: -342px; */
   padding-top: var(--space-l-xl);
   /* padding-block-start: var(--space-l-xl); */
   background: var(--surface-1);
-  isolation: isolate;
 }
 
+/* cta is supposed to be the last section on the page. No padding top is applied to it in the first place */
 [data-location="home"] main>:nth-child(3) {
   padding-top: 0;
 }
