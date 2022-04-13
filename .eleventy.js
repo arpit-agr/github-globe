@@ -6,8 +6,11 @@ const { DateTime } = require("luxon");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const sortByDisplayOrder = require('./src/_11ty/utils/sort-by-display-order.js');
+const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.setQuietMode(true);
+  eleventyConfig.addPlugin(directoryOutputPlugin);
 
 	//DATA DEEP MERGE DEFAULTS TO TRUE IN 1.0
 	eleventyConfig.setDataDeepMerge(false);
