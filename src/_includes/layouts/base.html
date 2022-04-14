@@ -7,20 +7,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>{{ title }}</title>
-
+  {%- include "partials/head-meta_info.html" -%}
+  {%- include "partials/head-meta_theme.html" -%}
+  {%- include "partials/favicon.html" -%}
+  
   <script>document.documentElement.classList.add('with-js');</script>
   <link rel="stylesheet" href="/css/style.css"/>
 
-  {%- if page.url == "/" -%}
-    <meta name="theme-color" content="#0a151a">
-  {%- else -%}
-    <meta name="theme-color" content="#f8fbfc">
-  {%- endif -%}
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
   <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
