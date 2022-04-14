@@ -227,3 +227,19 @@ ul :last-child [data-state="active"] {
   text-indent: -6px;
 }
 
+/* To prevent layout shift on smaller viewports caused due to the burger menu */
+@media (max-width: 770px) {
+  .with-js .navigation {
+    position: absolute;
+    top: var(--space-s-m);
+    left: 0;
+    opacity: 0;
+    }
+    
+    .with-js .burger-menu[enabled=true][status=open] .burger-menu__panel .navigation {
+      position: unset;
+      top: unset;
+      left: unset;
+      opacity: unset;
+    }
+}
