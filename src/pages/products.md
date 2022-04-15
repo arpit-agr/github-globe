@@ -1,5 +1,6 @@
 ---
 title: Products
+layout: "layouts/products.html"
 headingLevel: 1
 cta:
   heading: Quality products at the right price
@@ -10,11 +11,3 @@ eleventyNavigation:
   key: Products
   order: 2
 ---
-{%- extends "layouts/base.html" -%}
-
-{%- block content -%}
-<main class="flow" id="main">
-  {%- include "sections/products-section.html" -%}
-  {%- include "sections/cta-section.html" -%}
-</main>
-{%- endblock -%}

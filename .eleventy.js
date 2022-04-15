@@ -51,7 +51,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
 	//WATCH TARGET
-	eleventyConfig.addWatchTarget("./src/css/");
+	eleventyConfig.addWatchTarget("./src/_includes/css/");
 	eleventyConfig.addWatchTarget('./src/build-scripts/');
 	eleventyConfig.addWatchTarget('./src/scripts/');
 
