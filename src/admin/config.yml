@@ -22,6 +22,4 @@ collections:
           widget: "list",
           field: { label: Tag, name: tag, widget: string },
         }
-      - { label: "Source Name", name: "sourceName", widget: "string" }
-      - { label: "Source Link", name: "sourceLink", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }

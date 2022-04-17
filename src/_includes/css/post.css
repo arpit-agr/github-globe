@@ -109,16 +109,6 @@
   margin-top: var(--flow-space, 1em);
 }
 
-
-.source {
-  --flow-space: 2em;
-  padding-top: var(--space-xs);
-  /* padding-block-start: var(--space-xs); */
-  border-top: var(--border-size-1) solid var(--separator);
-  /* border-block-start: var(--border-size-1) solid var(--separator); */
-  color: var(--secondary);
-}
-
 [aria-label="secondary"] {
   width: 100%;
 }
