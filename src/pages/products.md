@@ -2,7 +2,7 @@
 title: Products
 layout: "layouts/products.html"
 headingLevel: 1
-cta:
+ctaContent:
   heading: Quality products at the right price
   subtitle: Learn more about how we fulfill your sourcing requirements by leveraging our presence at major gateway ports.
   buttonText: Contact Us

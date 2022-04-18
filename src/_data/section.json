@@ -19,5 +19,11 @@
     "countryCode": 91,
     "whatsapp": 8169101587,
     "call": 8169101587
+  },
+  "cta": {
+    "heading": "Do you have any import requirements?",
+    "subtitle": "Learn more about how we can fulfill your sourcing requirements",
+    "buttonText": "Contact Us",
+    "buttonUrl": "/contact/"
   }
 }

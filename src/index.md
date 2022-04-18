@@ -1,8 +1,8 @@
 ---
 title: CG21
-layout: 'layouts/home.html'
+layout: "layouts/home.html"
 dataLocation: home
-cta:
+ctaContent:
   heading: Are You Looking For A <em>Trusted</em> import–export house?
   subtitle: Learn more about how we fulfill your sourcing requirements by leveraging our presence at major gateway ports.
   buttonText: Contact Us
