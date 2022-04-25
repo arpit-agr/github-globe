@@ -22,7 +22,7 @@ const globe = createGlobe(canvas, {
     // latitude longitude
     { location: [19.075983, 72.877655], size: 0.05 },
     { location: [1.290270, 103.851959], size: 0.05 },
-    { location: [35.893955, 117.924896], size: 0.05 }
+    { location: [37.4627100, 118.4916500], size: 0.05 }
   ],
   onRender: (state) => {
     // Called on every animation frame.
