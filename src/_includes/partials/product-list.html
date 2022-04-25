@@ -1,0 +1,18 @@
+<ul class="product-list grid" role="list">
+  {% for product in collections.products %}
+    <li>
+      <details>
+        <summary>{{ product.data.title}}</summary>
+        {%- if product.data.sub -%}
+          <ul class="flow step-0">
+            {% for item in product.data.sub %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {%- else -%}
+          <p class="step-0">{{ product.data.desc}}</p>
+        {% endif %}
+      </details>
+    </li>
+  {% endfor %}
+</ul>
