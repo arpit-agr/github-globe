@@ -24,9 +24,14 @@
     {%- include "partials/nav.html" -%}
   </header>
 
-  {%- block content -%}
-    This page is under maintenance.
+  {%- block beforeMain -%}
   {%- endblock -%}
+  
+  <main class="flow" id="main" tabindex="-1">
+    {%- block content -%}
+      This page is under maintenance.
+    {%- endblock -%}
+  </main>
   
   {%- include "partials/footer.html" -%}
   <script src="/scripts/burger-menu.js" type="module"></script>
