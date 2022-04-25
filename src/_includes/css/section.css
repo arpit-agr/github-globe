@@ -30,5 +30,5 @@
 
 .section-title + p {
   --flow-space: var(--space-m-s);
-  --measure: 45ch;
+  --measure: 47ch;
 }

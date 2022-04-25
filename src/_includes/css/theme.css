@@ -81,7 +81,7 @@ h3 {
 }
 
 h1 {
-  --measure: 26ch;
+  --measure: 28ch;
   max-width: var(--measure);
   /* max-inline-size: var(--measure); */
   font-size: var(--step-4);
@@ -177,6 +177,7 @@ summary {
   padding: var(--space-3xs) var(--space-2xs);
   border-radius: 0;
   border-bottom-right-radius: var(--space-2xs);
+  text-transform: unset;
 }
 
 ::selection {
