@@ -1,0 +1,21 @@
+.offices {
+  --flow-space: var(--space-l-xl);
+}
+
+.offices ul {
+  --min: 320px;
+  --grid-gap: var(--space-xl);
+}
+
+.offices li {
+  border-top: var(--border-size-1) solid var(--accent-separator);
+  padding-top: var(--space-xl);
+}
+
+.offices h2 {
+  font-size: var(--step-4);
+}
+
+.offices address {
+  --flow-space: var(--space-s);
+}

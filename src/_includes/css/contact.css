@@ -5,9 +5,11 @@
 }
 
 .contact-methods {
-  --stack-gap: var(--space-xl);
-  --grid-gap: var(--space-2xl);
+  --stack-gap: var(--space-l);
+  --grid-gap: var(--space-xl);
   grid-template-columns: repeat(2, 1fr);
+  background-color: var(--surface-1);
+  border-radius: var(--radius-1);
 }
 
 .contact-methods > * {

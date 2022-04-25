@@ -136,6 +136,10 @@ time {
   /* font-weight: 500; */
 }
 
+address {
+  font-style: normal;
+}
+
 summary {
   cursor: pointer;
   touch-action: manipulation;
