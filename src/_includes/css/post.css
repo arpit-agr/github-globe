@@ -11,12 +11,15 @@
 
 .post article {
   background-color: var(--surface-1);
+  padding-bottom: 1em;
+  /* padding-block-end: 1em; */
+  border-radius: var(--radius-1);
 }
 
 
 .post article {
   column-width: 320px;
-  column-rule: var(--border-size-1) solid var(--accent-separator);
+  column-rule: var(--border-size-1) solid var(--accent-bg);
   /* column-gap: var(--space-xl); */
   column-gap: var(--space-l-xl);
 }
