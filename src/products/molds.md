@@ -1,4 +1,4 @@
 ---
 title: Molds
-sub: ["RSS I,II,III,IV,V", "ISNR(SMR) 5,10,20", "Desmocoll 540 Series"]
+desc: Lorem ipsum it translated to quicker live experiments, velocity of development, and convenient updates of an MVP in 3 weeks.
 ---
