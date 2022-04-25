@@ -16,6 +16,7 @@
 
 .globe {
   position: relative;
+  transform: translateY(-36px);
 }
 
 /* .globe:before {

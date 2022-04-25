@@ -27,7 +27,7 @@
 }
 
 [data-location="home"] main>:nth-child(2) {
-  margin-top: -324px;
+  margin-top: -360px;
   /* margin-block-start: -342px; */
   padding-top: var(--space-l-xl);
   /* padding-block-start: var(--space-l-xl); */
