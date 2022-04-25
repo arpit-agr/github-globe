@@ -138,6 +138,7 @@ time {
 
 summary {
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 :focus {
