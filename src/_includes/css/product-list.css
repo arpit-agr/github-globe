@@ -18,6 +18,11 @@
   padding: var(--space-xs);
 }
 
+.product-list summary:hover {
+  color: var(--accent-color);
+  background-color: var(--accent-bg);
+}
+
 .product-list details[open] {
   background-color: var(--surface-1);
   border: var(--border-size-1) solid var(--accent-separator);
@@ -30,6 +35,7 @@
   background-color: var(--accent-bg);
   color: var(--accent-color);
 }
+
 .product-list details[open] summary + * {
   font-weight: 400;
 }
@@ -38,7 +44,3 @@
   --flow-space: 1em;
   padding-left: 1em;
 }
-
-
-
-
