@@ -145,6 +145,11 @@ summary {
   touch-action: manipulation;
 }
 
+hr {
+  margin: unset;
+  border: var(--border-size-1) solid var(--accent-bg);
+}
+
 :focus {
   outline: var(--border-size-2) solid var(--accent-color);
   outline-offset: var(--border-size-2);

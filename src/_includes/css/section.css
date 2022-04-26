@@ -1,4 +1,4 @@
-.hero, .products, .testimonial, .archive, .post {
+.hero, .products, .testimonial, .archive, .post, .page-not-found {
   padding-top: var(--space-m);
   /* padding-block-start: var(--space-m); */
 }
