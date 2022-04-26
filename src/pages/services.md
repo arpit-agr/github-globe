@@ -1,5 +1,5 @@
 ---
-title: Service
+title: Services
 layout: "layouts/products.html"
 headingLevel: 1
 ctaContent:
@@ -8,6 +8,6 @@ ctaContent:
   buttonText: Contact Us
   buttonUrl: /contact/
 eleventyNavigation:
-  key: Service
+  key: Our Services
   order: 2
 ---
