@@ -17,11 +17,12 @@
 }
 
 [data-variant="secondary"].btn {
-  color: var(--accent-color);
-  border-color: var(--accent-separator);
+  color: var(--secondary);
+  border-color: transparent;
   background-color: transparent;
+  text-decoration-line: underline;
 }
 
 [data-variant="secondary"].btn:where(:hover, :focus) {
-  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
