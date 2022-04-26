@@ -1,5 +1,5 @@
 .product-list {
-  --min: 24ch;
+  --min: 25ch;
   --grid-gap: var(--space-s);
 }
 
