@@ -36,7 +36,7 @@
   --flow-space: var(--space-2xs);
   padding-top: var(--space-xl);
   /* padding-block-start: var(--space-xl); */
-  border-top: var(--border-size-1) solid var(--accent-separator);
+  border-top: var(--border-size-1) solid var(--accent-bg);
   /* border-block-start: var(--border-size-1) solid var(--accent-color); */
 }
 

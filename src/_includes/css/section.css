@@ -24,7 +24,7 @@
     height: 1px;
     /* block-size: 1px; */
     flex-grow: 999;
-    background-color: var(--accent-separator);
+    background-color: var(--accent-bg);
   }
 }
 

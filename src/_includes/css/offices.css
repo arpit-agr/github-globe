@@ -8,7 +8,7 @@
 }
 
 .offices li {
-  border-top: var(--border-size-1) solid var(--accent-separator);
+  border-top: var(--border-size-1) solid var(--accent-bg);
   padding-top: var(--space-xl);
 }
 
@@ -16,6 +16,14 @@
   font-size: var(--step-4);
 }
 
-.offices address {
+.offices :where(address, a) {
   --flow-space: var(--space-s);
+}
+
+@media (max-width: 46em) {
+  .offices li:first-child {
+    border: unset;
+    padding-top: unset;
+    /* padding-block-start: unset; */
+  }
 }
