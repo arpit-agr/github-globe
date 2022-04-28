@@ -16,13 +16,13 @@
   background-color: var(--surface-1);
 }
 
-[data-variant="secondary"].btn {
+.btn[data-variant="secondary"] {
   color: var(--secondary);
   border-color: transparent;
   background-color: transparent;
   text-decoration-line: underline;
 }
 
-[data-variant="secondary"].btn:where(:hover, :focus) {
+.btn[data-variant="secondary"]:where(:hover, :focus) {
   color: var(--accent-color);
 }
