@@ -3,6 +3,10 @@
   width: auto;
 }
 
-#svg-logo path {
+#svg-logo path:nth-child(-n+8) {
   fill: var(--header-text);
 }
+/* 
+#svg-logo path:nth-child(n+9) {
+  fill: hsl(175deg 100% 22%);
+} */
