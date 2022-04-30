@@ -10,7 +10,7 @@
 }
 
 :where(.navigation) ul {
-  --cluster-gap: var(--space-m);
+  --cluster-gap: var(--space-2xs);
 }
 
 :where(.navigation) li {
@@ -22,6 +22,7 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
+  padding: var(--space-3xs) var(--space-2xs);
 }
 
 :where(.navigation) a:hover {
@@ -122,9 +123,7 @@
 }
 
 .burger-menu[enabled="true"] .navigation a {
-  padding-top: var(--space-2xs);
-  padding-bottom: var(--space-2xs);
-  /* padding-block: var(--space-2xs); */
+  padding: var(--space-2xs) 0;
   font-size: var(--step-1);
 }
 
@@ -185,6 +184,7 @@
 [data-state="active"]::before {
   display: inline-block;
   margin-right: var(--space-4xs);
+  /* margin-inline-end: var(--space-4xs); */
   content: "▸";
   content: "▸"/ "";
   alt: "";
@@ -197,8 +197,8 @@
   text-indent: -6px;
 }
 
-/* Styles the contact us button */
-[aria-label="primary"] :last-child > a {
+/* Styles the contact us button which is the last child in the nav */
+:where([aria-label="primary"]) :last-child > a {
   background-color: var(--accent-color);
   color: var(--header-bg);
   border-color: transparent;
@@ -210,21 +210,24 @@
   text-transform: uppercase;
 }
 
-[aria-label="primary"] :last-child > a:where(:hover, :focus) {
+:where([aria-label="primary"]) :last-child > a:where(:hover, :focus) {
   color: var(--header-text);
   background-color: transparent;
   text-decoration-line: none;
   border: var(--border-size-1) solid;
 }
 
-[aria-label="primary"] :last-child > a:where(:hover, :focus)::before {
-  color: transparent;
+ul :last-child a:where([aria-current="page"], [data-state="active"]) {
+  color: var(--header-text);
+  background-color: transparent;
+  border-color: transparent;
 }
 
-ul :last-child [aria-current="page"],
-ul :last-child [data-state="active"] {
-  position: relative;
-  text-indent: -6px;
+.burger-menu[enabled="true"] .navigation li:last-child a:where([aria-current="page"], [data-state="active"]) {
+  padding: var(--space-2xs) 0;
+  margin-top: 0;
+  /* margin-block-start: 0; */
+  border-width: 0;
 }
 
 /* To prevent layout shift on smaller viewports caused due to the burger menu */
