@@ -23,6 +23,7 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: var(--space-3xs) var(--space-2xs);
+  transition: transform 100ms ease-in-out;
 }
 
 :where(.navigation) a:hover {
