@@ -1,4 +1,4 @@
-.hero, .products, .testimonial, .archive, .post, .page-not-found {
+.hero, .about, .products, .testimonial, .archive, .post, .page-not-found, .offline {
   padding-top: var(--space-m);
   /* padding-block-start: var(--space-m); */
 }
@@ -16,16 +16,6 @@
   display: flex;
   flex-grow: 999;
   flex-basis: 0;
-}
-
-@media (min-width: 500px) {
-  .section-title h2::after {
-    content: "";
-    height: 1px;
-    /* block-size: 1px; */
-    flex-grow: 999;
-    background-color: var(--accent-bg);
-  }
 }
 
 .section-title + p {
