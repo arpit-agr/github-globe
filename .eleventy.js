@@ -56,6 +56,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('./src/scripts/');
 
 	// COLLECTIONS
+	eleventyConfig.addCollection("pages", function(collectionApi) {
+		return sortByDisplayOrder(collectionApi.getFilteredByGlob("./src/pages/*.md"));
+	});
 	eleventyConfig.addCollection("posts", function(collectionApi) {
 		return collectionApi.getFilteredByGlob("./src/posts/*.md");
 	});

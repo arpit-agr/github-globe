@@ -3,5 +3,6 @@ title: Contact Us
 layout: "layouts/contact.html"
 eleventyNavigation:
   key: Contact Us
-  order: 5
+  order: 6
+displayOrder: 4
 ---

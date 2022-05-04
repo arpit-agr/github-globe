@@ -6,7 +6,5 @@ pagination:
   size: 8
   reverse: true
 permalink: "archive/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
-eleventyNavigation:
-  key: Archive
-  order: 4
+displayOrder: 2
 ---

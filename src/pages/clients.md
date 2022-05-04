@@ -1,5 +1,5 @@
 ---
-title: Client Stories
+title: Clients
 layout: "layouts/clientele.html"
 headingLevel: 1
 ctaContent:
@@ -9,5 +9,6 @@ ctaContent:
   buttonUrl: /contact/
 eleventyNavigation:
   key: Clients
-  order: 3
+  order: 4
+displayOrder: 3
 ---

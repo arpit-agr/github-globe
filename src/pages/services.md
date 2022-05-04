@@ -8,6 +8,7 @@ ctaContent:
   buttonText: Contact Us
   buttonUrl: /contact/
 eleventyNavigation:
-  key: Our Services
-  order: 2
+  key: Services
+  order: 3
+displayOrder: 5
 ---
