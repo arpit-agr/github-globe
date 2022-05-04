@@ -7,6 +7,7 @@
 .contact-methods {
   --stack-gap: var(--space-l);
   --grid-gap: var(--space-xl);
+  --flow-space: var(--space-xl);
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--surface-1);
   border-radius: var(--radius-1);
@@ -37,7 +38,7 @@
   padding-top: var(--space-xl);
   /* padding-block-start: var(--space-xl); */
   border-top: var(--border-size-1) solid var(--accent-bg);
-  /* border-block-start: var(--border-size-1) solid var(--accent-color); */
+  /* border-block-start: var(--border-size-1) solid var(--accent-bg); */
 }
 
 .contact-methods li > :last-child {
@@ -70,6 +71,7 @@ details[open] .form-summary {
   color: var(--accent-color);
   background-color: var(--surface-1);
   padding-left: 0;
+  /* padding-inline-start: 0; */
   border: unset;
 }
 

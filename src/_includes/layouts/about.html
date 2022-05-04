@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+  <div class="about">
+    <section class="wrapper flow">
+      <header>
+        <h1>{{ title }}</h1>
+      </header>
+      {{ content | safe }}
+    </section>
+  </div>
+  {%- include "partials/offices.html" -%}
+  {%- include "sections/cta-section.html" -%}
+{% endblock %}

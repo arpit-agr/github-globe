@@ -14,6 +14,7 @@
   --min: 320px;
   --grid-gap: var(--space-xl);
   --flow-space: var(--space-xl);
+  background-color: var(--surface-1);
 }
 
 .offices li {
@@ -31,4 +32,12 @@
 
 .offices a {
   --flow-space: var(--space-l);
+}
+
+@media (max-width: 46em) {
+  .offices li:first-child {
+    border: unset;
+    padding-top: unset;
+    /* padding-block-start: unset; */
+  }
 }

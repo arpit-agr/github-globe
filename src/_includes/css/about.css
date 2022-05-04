@@ -1,0 +1,11 @@
+.about {
+  --flow-space: 1em;
+}
+
+.about > section {
+  background-color: var(--surface-1);
+}
+
+/* .about h1 {
+  border-bottom: var(--border-size-1) solid var(--accent-bg);
+} */
