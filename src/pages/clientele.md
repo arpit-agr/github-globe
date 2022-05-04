@@ -3,7 +3,7 @@ title: Client Stories
 layout: "layouts/clientele.html"
 headingLevel: 1
 ctaContent:
-  heading: Looking for an EXIM agent with more than 25 years of experience?
+  heading: Looking for an EXIM partner with a decade of experience?
   subtitle: Learn more about how we fulfill your sourcing requirements by leveraging our presence at major gateway ports.
   buttonText: Contact Us
   buttonUrl: /contact/

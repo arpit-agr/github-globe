@@ -58,13 +58,13 @@ svg[class*="bi-telephone"] {
   stroke-width: 0.3px;
 }
 
-.contact-methods p {
-  color: var(--secondary);
+/* .contact-methods p {
+  color: var(--tertiary);
 }
 
-.contact-methods .day {
-  --flow-space: 0;
-}
+.contact-methods label {
+  color: var(--secondary);
+} */
 
 details[open] .form-summary {
   color: var(--accent-color);
