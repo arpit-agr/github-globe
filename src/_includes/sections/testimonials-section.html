@@ -1,3 +1,4 @@
+{% set logoLimit = 4 %}
 {%- set pickedPosts -%}
   [true]
 {%- endset -%}
@@ -6,6 +7,8 @@
   <section class="wrapper flow">
     
     {%- include "partials/testimonial-header.html" -%}
+
+    {%- include "partials/clients.html" -%}
     
     <ul class="testimonial-container grid" role="list">
       {%- for testimonial in collections.testimonials | pluck(pickedPosts, 'featured') | limit(1) -%}
