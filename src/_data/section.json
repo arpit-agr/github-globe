@@ -5,7 +5,7 @@
   },
   "product": {
     "heading": "Our Service",
-    "subtitle": "We help you <em>source<\/em> quality products at the right price after proper technical evaluation of the manufacturers.",
+    "subtitle": "We help you <em>source<\/em> quality products at competitve prices after proper technical evaluation of the manufacturers.",
     "url": "/services/"
   },
   "testimonial": {
@@ -18,7 +18,8 @@
     "subtitle": "Start a WhatsApp chat session, call us, or have us call you—your choice.",
     "countryCode": 91,
     "whatsapp": 9372473101,
-    "call": 9819492714
+    "call": 9819492714,
+    "timing": "<strong>Timing<\/strong>: Monday–Friday: 9am–5pm, Saturday:&nbsp;10am–4pm"
   },
   "cta": {
     "heading": "Do you have any import requirements?",
