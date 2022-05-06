@@ -1,18 +1,29 @@
-<ul class="product-list grid" role="list">
+<ul class="product-list stack" role="list">
   {% for product in collections.products %}
     <li>
-      <details>
-        <summary>{{ product.data.title}}</summary>
-        {%- if product.data.sub -%}
-          <ul class="flow step-0">
-            {% for item in product.data.sub %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        {%- else -%}
-          <p class="step-0">{{ product.data.desc}}</p>
-        {% endif %}
-      </details>
+      <details-utils force-close="(max-width: 600px)" force-open="(min-width: 601px)">
+        <details open>
+          <summary>{{ product.data.title | capitalize}}</summary>
+          <div>
+            {%- if product.data.sub -%}
+              <ul class="flow" role="list">
+                {% for item in product.data.sub %}
+                  <li>{{ item | capitalize }}</li>
+                {% endfor %}
+              </ul>
+            {%- else -%}
+              <p>{{ product.data.desc}}</p>
+            {% endif %}
+          </div>
+          <!-- <a href="#" style="margin-block: var(--space-m);">
+            {% include "partials/doc.svg" %}
+            <span>
+              <span class="visually-hidden">of {{ product.data.title }}</span>
+              Sales specification
+            </span>
+          </a> -->
+        </details>
+      </details-utils>
     </li>
   {% endfor %}
 </ul>

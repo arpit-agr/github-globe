@@ -1,9 +1,9 @@
-.hero, .about, .products, .testimonial, .archive, .post, .page-not-found, .offline {
+.hero, .about, .services, .clients, .archive, .post, .page-not-found, .offline {
   padding-top: var(--space-m);
   /* padding-block-start: var(--space-m); */
 }
 
-.hero, .products, .testimonial, .archive, .cta {
+.hero, .services, .testimonial, .archive, .cta {
   --flow-space: var(--space-l-xl);
 }
 

@@ -1,0 +1,38 @@
+.services header + ul {
+  --cluster-gap: var(--space-l-xl);
+}
+
+.service-item {
+  background-color: var(--surface-1);
+  border-radius: var(--radius-2);
+  padding: var(--space-m);
+  border: var(--border-size-1) solid var(--accent-separator);
+  /* counter-increment: item; */
+}
+
+/* .service-item > :first-child::before {
+  content: counter(item) ". ";
+} */
+
+.service-item > :first-child {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--accent-color);
+  font-size: var(--step-2);
+  /* padding-bottom: var(--space-xs);
+  border-bottom: var(--border-size-1) solid var(--accent-separator); */
+}
+
+.service-item > ul:first-of-type {
+  list-style: circle;
+}
+
+.service-desc {
+  --flow-space: var(--space-m);
+  padding-left: 1em;
+  /* padding-inline-start: 1em; */
+}
+
+.service-item li {
+  --flow-space: var(--space-3xs);
+}

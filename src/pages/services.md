@@ -1,6 +1,6 @@
 ---
 title: Services
-layout: "layouts/products.html"
+layout: "layouts/services.html"
 headingLevel: 1
 ctaContent:
   heading: Quality products at the right price
