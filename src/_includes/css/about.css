@@ -2,10 +2,29 @@
   --flow-space: 1em;
 }
 
-.about > section {
-  background-color: var(--surface-1);
+.about .with-sidebar {
+  align-items: flex-start;
+  gap: var(--space-xl);
 }
 
-/* .about h1 {
-  border-bottom: var(--border-size-1) solid var(--accent-bg);
-} */
+.about .with-sidebar > :first-child  {
+  background-color: var(--surface-1);
+  min-inline-size: 36%;
+}
+
+.about .with-sidebar > :last-child {
+  --min: 30ch;
+  --grid-gap: var(--space-m);
+}
+
+.vision, .mission {
+  background-color: var(--surface-1);
+  border-radius: var(--radius-1);
+  padding: var(--space-s);
+  border: var(--border-size-1) solid var(--accent-separator);
+}
+
+:where(.vision, .mission) h2 {
+  font-size: var(--step-2);
+  color: var(--accent-color);
+}

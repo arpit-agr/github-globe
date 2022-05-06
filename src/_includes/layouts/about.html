@@ -6,9 +6,22 @@
       <header>
         <h1>{{ title }}</h1>
       </header>
-      {{ content | safe }}
+      <div class="with-sidebar">
+        <div class="flow">
+          {{ content | safe }}
+        </div>
+        <div class="grid">
+          <div class="vision flow">
+            <h2>{{ vision.heading }}</h2>
+            <p>{{ vision.desc }}</p>
+          </div>
+          <div class="mission flow">
+            <h2>{{ mission.heading }}</h2>
+            <p>{{ mission.desc }}</p>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
-  {%- include "partials/offices.html" -%}
   {%- include "sections/cta-section.html" -%}
 {% endblock %}
