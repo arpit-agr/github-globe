@@ -71,6 +71,22 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("clients", function(collectionApi) {
 		return sortByDisplayOrder(collectionApi.getFilteredByGlob("./src/clients/*.md"));
 	});
+	
+	// Create an array of all tags
+	
+	function filterTagList(tags) {
+    return (tags || []).filter(tag => ["all", "nav", "post", "posts", "Other"].indexOf(tag) === -1);
+  }
+  eleventyConfig.addFilter("filterTagList", filterTagList)
+  eleventyConfig.addCollection("tagList", function(collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(item => {
+      (item.data.tags || []).forEach(tag => tagSet.add(tag));
+    });
+
+    return filterTagList([...tagSet]);
+  });
+
 
 	//ELEVENTY AFTER EVENT
 	eleventyConfig.on('eleventy.after', async () => {

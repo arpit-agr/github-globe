@@ -7,12 +7,13 @@
   /* margin-block-end: var(--space-m); */
 }
 
-.product-list summary {
-  font-weight: 500;
+.product-tag {
   padding-bottom: var(--space-xs);
   /* padding-block-end: var(--space-xs); */
   border-bottom: var(--border-size-1) solid var(--accent-separator);
   /* border-block-end: var(--border-size-1) solid var(--accent-separator); */
+  color: var(--accent-color);
+  font-weight: 500;
   text-transform: capitalize;
 }
 
@@ -21,10 +22,32 @@
   /* padding-block-start: var(--space-xs); */
 }
 
-.product-list ul {
-  column-width: 32ch;
-  column-gap: var(--space-xl);
-  list-style: circle;
+.product-item {
+  --min: 32ch;
+  --grid-gap: var(--space-xs) var(--space-l-xl);
   padding-left: 1em;
   /* padding-inline-start: 1em; */
+  text-transform: capitalize;
+}
+
+@supports (selector(:has(works))) {
+  .product-item > li:not(:has(details))::before  {
+    content: "\25CF  ";
+  }
+}
+
+.product-item details[open] summary {
+  padding-bottom: var(--space-xs);
+  /* padding-block-end: var(--space-xs); */
+  border-bottom: var(--border-size-1) solid var(--accent-separator);
+  /* border-block-end: var(--border-size-1) solid var(--accent-separator); */
+}
+
+.product-list ul ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+.product-item summary::marker {
+color: hsl(198deg 18% 32% / 40%);
 }

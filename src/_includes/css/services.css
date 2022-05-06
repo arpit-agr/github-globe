@@ -14,6 +14,10 @@
   content: counter(item) ". ";
 } */
 
+.service-item:last-child {
+  max-width: fit-content;
+}
+
 .service-item > :first-child {
   font-weight: 500;
   text-transform: capitalize;
@@ -24,7 +28,7 @@
 }
 
 .service-item > ul:first-of-type {
-  list-style: circle;
+  list-style: disc;
 }
 
 .service-desc {

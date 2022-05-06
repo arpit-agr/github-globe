@@ -1,20 +1,31 @@
 <ul class="product-list stack" role="list">
-  {% for product in collections.products %}
+  {% for tag in collections.tagList.sort() | reverse %}
     <li>
-      <details-utils force-close="(max-width: 600px)" force-open="(min-width: 601px)">
+      <details-utils force-close="(max-width: 600px)">
         <details open>
-          <summary>{{ product.data.title | capitalize}}</summary>
-          <div>
-            {%- if product.data.sub -%}
-              <ul class="flow" role="list">
-                {% for item in product.data.sub %}
-                  <li>{{ item | capitalize }}</li>
-                {% endfor %}
-              </ul>
-            {%- else -%}
-              <p>{{ product.data.desc}}</p>
-            {% endif %}
-          </div>
+          <summary class="product-tag">{{ tag }}</summary>
+          <ul class="product-item grid" role="list">
+            {% for product in collections[ tag ] %}
+              <li>
+                {%- if product.data.sub -%}
+                  <details>
+                    <summary>
+                      {{ product.data.title }}
+                    </summary>
+                    <div>
+                      <ul class="flow" role="list">
+                        {% for item in product.data.sub %}
+                          <li class="step-0">{{ item }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </details>
+                {%- else -%}
+                  {{ product.data.title }}
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
           <!-- <a href="#" style="margin-block: var(--space-m);">
             {% include "partials/doc.svg" %}
             <span>
@@ -27,3 +38,4 @@
     </li>
   {% endfor %}
 </ul>
+
