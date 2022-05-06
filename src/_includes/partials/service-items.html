@@ -5,26 +5,19 @@
 {% endif %}
 
 <ul class="flow" role="list">
-  
-  <li class="service-item flow">
-    <h{{ serviceHeadingLevel }}>
-      Raw Materials Sorucing
-    </h{{ serviceHeadingLevel }}>
-    <ul class="service-desc flow" role="list">
-      <li>Vendor & Product Selection</li>
-      <li>Free sample on request</li>
-      <li>Further assistance available on request</li>
-    </ul>
-    {%- include "partials/product-list.html" -%}
-  </li>
-  <li class="service-item flow">
-    <h{{ serviceHeadingLevel }}>
-      Project Consulting & set-up
-    </h{{ serviceHeadingLevel }}>
-    <ul class="service-desc flow" role="list">
-      <li>Complete turnkey project for setting up a tyre plant</li>
-      <li>Technical Consulting</li>
-      <li>Project report for tyre plant setup from all segments</li>
-    </ul>
-  </li>
+  {% for item in siteContent.services.items %}  
+    <li class="service-item flow">
+      <h{{ serviceHeadingLevel }}>
+        {{ item.name }}
+      </h{{ serviceHeadingLevel }}>
+      <ul class="service-desc flow" role="list">
+        {% for item in item.desc %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      {% if item.products %}
+        {%- include "partials/product-list.html" -%}
+      {% endif %}
+    </li>
+  {% endfor %}
 </ul>

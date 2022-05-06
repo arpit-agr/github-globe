@@ -3,12 +3,31 @@
     "heading": "leverage our global network to fulfill your sourcing needs",
     "subtitle": "Offices in India, Singapore and China ↓"
   },
-  "product": {
+  "services": {
     "heading": "Our Service",
     "subtitle": "We help you <em>source<\/em> quality products at competitve prices after proper technical evaluation of the manufacturers.",
-    "url": "/services/"
+    "url": "/services/",
+    "items": [
+      {
+        "name": "Raw Materials Sorucing",
+        "desc": [
+          "Vendor & Product Selection",
+          "Free sample on request",
+          "Further assistance available on request"
+        ],
+        "products": true 
+      },
+      {
+        "name": "Project Consulting & set-up",
+        "desc": [
+          "Complete turnkey project for setting up a tyre plant",
+          "Technical Consulting",
+          "Project report for tyre plant setup from all segments"
+        ]
+      }
+    ]
   },
-  "testimonial": {
+  "clients": {
     "heading": "Our Clients",
     "subtitle": "We work closely with our clients to fulfull their needs. Our clients, in turn, <em>trust<\/em> us to deliver exceptional service.",
     "url": "/clients/"

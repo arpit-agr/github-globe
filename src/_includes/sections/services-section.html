@@ -3,16 +3,16 @@
     <header class="flow">
       <div class="section-title cluster">
         <h{{ headingLevel if headingLevel else '2' }} class="cluster">
-          {{ section.product.heading }}
+          {{ siteContent.services.heading }}
         </h{{ headingLevel if headingLevel else '2' }}>
         {%- if not headingLevel -%}
-          <a href="{{ section.product.url }}" class="btn step-0" data-variant="secondary">
+          <a href="{{ siteContent.services.url }}" class="btn step-0" data-variant="secondary">
             Know More
-            <span class="visually-hidden">about {{ section.product.heading }}</span>
+            <span class="visually-hidden">about {{ siteContent.services.heading }}</span>
           </a>
         {%- endif -%}
       </div>
-      <p>{{ section.product.subtitle | safe }}</p>
+      <p>{{ siteContent.services.subtitle | safe }}</p>
     </header>
     {%- include "partials/service-items.html" -%}
   </section>

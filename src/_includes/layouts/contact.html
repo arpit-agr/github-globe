@@ -5,10 +5,10 @@
     <section class="wrapper flow">
       <header class="flow">
         <div class="section-title">
-          <h1>{{ section.contact.heading }}</h1>
+          <h1>{{ siteContent.contact.heading }}</h1>
         </div>
         <p>
-          {{ section.contact.subtitle | safe }}
+          {{ siteContent.contact.subtitle | safe }}
         </p>
       </header>
       <h2 class="visually-hidden">Contact Options</h2>
@@ -24,7 +24,7 @@
           </div>
           <a
             class="btn step-0"
-            href="https://wa.me/{{ section.contact.countryCode }}{{ section.contact.whatsapp }}"
+            href="https://wa.me/{{ siteContent.contact.countryCode }}{{ siteContent.contact.whatsapp }}"
           >
             Chat Now on WhatsApp
           </a>
@@ -40,9 +40,9 @@
           </div>
           <a
             class="btn step-0"
-            href="tel:+{{ section.contact.countryCode }}{{ section.contact.call }}"
+            href="tel:+{{ siteContent.contact.countryCode }}{{ siteContent.contact.call }}"
           >
-            Call +{{ section.contact.countryCode }} {{ section.contact.call }}
+            Call +{{ siteContent.contact.countryCode }} {{ siteContent.contact.call }}
           </a>
         </li>
         <li class="stack">
