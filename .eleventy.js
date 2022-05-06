@@ -68,6 +68,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("testimonials", function(collectionApi) {
 		return sortByDisplayOrder(collectionApi.getFilteredByGlob("./src/testimonials/*.md"));
 	});
+	eleventyConfig.addCollection("clients", function(collectionApi) {
+		return sortByDisplayOrder(collectionApi.getFilteredByGlob("./src/clients/*.md"));
+	});
 
 	//ELEVENTY AFTER EVENT
 	eleventyConfig.on('eleventy.after', async () => {
