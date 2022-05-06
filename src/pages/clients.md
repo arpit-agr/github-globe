@@ -1,6 +1,6 @@
 ---
 title: Clients
-layout: "layouts/clientele.html"
+layout: "layouts/clients.html"
 headingLevel: 1
 ctaContent:
   heading: Looking for an EXIM partner with a decade of experience?

@@ -1,0 +1,12 @@
+<ul class="client-logos grid overflow:hidden" role="list">
+  {% for client in collections.clients  | limit(logoLimit) %}
+    
+    {% set imgUrl = "./src/img/client-logos/" + client.data.url %}
+    {% set imgAlt = client.data.title %}
+    
+    <li class="">
+      <div>{% image imgUrl, imgAlt %}</div>
+    </li>
+
+  {% endfor %}
+</ul>

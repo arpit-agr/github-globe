@@ -1,11 +1,16 @@
 {%- extends "layouts/base.html" -%}
+{% set logoLimit = 12 %}
 
 {%- block content -%}
-  <div class="testimonial">
+  <div class="clients">
     <section class="wrapper flow">
-      
       {%- include "partials/testimonial-header.html" -%}
-      
+      {%- include "partials/clients.html" -%}
+    </section>
+  </div>
+  <div class="testimonial">
+    <section class="wrapper flow">  
+      <h2>Client testimonials</h2>
       <ul class="testimonial-container grid" role="list">
         {%- for testimonial in collections.testimonials -%}
           {%- include "partials/testimonial-block.html" -%}

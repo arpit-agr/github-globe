@@ -1,0 +1,32 @@
+.client-logos {
+  --min: calc(var(--step-4) * 4.75);
+  --grid-gap: var(--space-s);
+  --grid-gap: var(--border-size-1) 0;
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--accent-separator);
+  background: var(--accent-separator);
+}
+
+.client-logos li {
+  /* --logo-bg: hsl(198deg 35% 99%); */
+  background: var(--surface-1);
+  /* border: var(--border-size-1) solid var(--accent-bg); */
+  /* outline: var(--border-size-1) solid var(--accent-bg); */
+  /* border-radius: var(--radius-1); */
+}
+
+.client-logos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-l);
+}
+
+.client-logos img {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+
