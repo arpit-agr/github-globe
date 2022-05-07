@@ -9,7 +9,7 @@ mission:
   desc: To trade ethically and deliver exceptional results and ‘Xtreme Performance’ consistently.
 ctaContent:
   heading: If we seem like a good fit, please get in touch.
-  subtitle: Learn more about how we fulfill your sourcing requirements by leveraging our presence at major gateway ports.
+  subtitle: Learn more about how we fulfil your sourcing requirements by leveraging our presence at major gateway ports.
   buttonText: Contact Us
   buttonUrl: /contact/
 eleventyNavigation:

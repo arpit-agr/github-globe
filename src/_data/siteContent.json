@@ -1,15 +1,15 @@
 {
   "hero": {
-    "heading": "leverage our global network to fulfill your sourcing needs",
+    "heading": "leverage our global network to fulfil your sourcing needs",
     "subtitle": "Offices in India, Singapore and China ↓"
   },
   "services": {
     "heading": "Our Service",
-    "subtitle": "We help you <em>source<\/em> quality products at competitve prices after proper technical evaluation of the manufacturers.",
+    "subtitle": "We help you <em>source<\/em> quality products at competitive prices after proper technical evaluation of the manufacturers.",
     "url": "/services/",
     "items": [
       {
-        "name": "Raw Materials Sorucing",
+        "name": "Raw Materials Sourcing",
         "desc": [
           "Vendor & Product Selection",
           "Free sample on request",
@@ -29,7 +29,7 @@
   },
   "clients": {
     "heading": "Our Clients",
-    "subtitle": "We work closely with our clients to fulfull their needs. Our clients, in turn, <em>trust<\/em> us to deliver exceptional service.",
+    "subtitle": "We work closely with our clients to fulfil their needs. Our clients, in turn, <em>trust<\/em> us to deliver exceptional service.",
     "url": "/clients/"
   },
   "contact": {
@@ -42,7 +42,7 @@
   },
   "cta": {
     "heading": "Do you have any import requirements?",
-    "subtitle": "Learn more about how we can fulfill your sourcing requirements",
+    "subtitle": "Learn more about how we fulfil your sourcing requirements",
     "buttonText": "Contact Us",
     "buttonUrl": "/contact/"
   }

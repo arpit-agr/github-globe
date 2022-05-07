@@ -6,7 +6,7 @@
     {%- if not headingLevel -%}
       <a href="{{ siteContent.clients.url }}" class="btn step-0" data-variant="secondary">
         Know More
-        <span class="visually-hidden">about {{ siteContent.clients.heading }}</span>
+        <span class="visually-hidden"> about {{ siteContent.clients.heading | lower }}</span>
       </a>
     {%- endif -%}
   </div>
