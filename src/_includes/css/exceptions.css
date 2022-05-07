@@ -20,9 +20,10 @@
 } */
 
 [data-location="home"] main>:nth-child(1) {
-  padding-top: var(--space-l-xl);
+  /* padding-top: var(--space-l-xl); */
+  padding-top: var(--space-s-m);
   padding-bottom: 0;
-  /* padding-block-start: var(--space-l-xl); */
+  /* padding-block-start: var(--space-s-m); */
   /* padding-block-end: 0; */
 }
 
