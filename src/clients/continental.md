@@ -1,5 +1,5 @@
 ---
 title: Continental
-url: continental.svg
+url: continental.jpg
 displayOrder: 7
 ---
