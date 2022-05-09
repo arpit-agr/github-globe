@@ -9,7 +9,7 @@
 }
 
 .cta-content h2 {
-  --measure: 32ch;
+  --measure: 25ch;
   max-width: var(--measure);
 }
 
