@@ -18,7 +18,7 @@
 
   --font-lineheight-0: 1.1;
   --font-lineheight-1: 1.25;
-  --font-letterspacing-0: -0.05em;
+  --font-letterspacing-0: -0.015em;
   --font-letterspacing-2: 0.035em;
   --border-size-1: 1px;
   --border-size-2: 2px;
@@ -30,6 +30,7 @@
 
   font-family: var(--font-plain);
   font-variant-numeric: tabular-nums;
+  font-feature-settings: "ss04";
   background: var(--surface-1);
   color: var(--secondary);
 }
@@ -79,6 +80,7 @@ h3 {
   font-family: var(--font-special);
   color: var(--primary);
   font-weight: 500;
+  letter-spacing: var(--font-letterspacing-0);
 }
 
 h1 {
