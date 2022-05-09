@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--space-l);
+  padding: var(--space-m);
 }
 
 .client-logos img {

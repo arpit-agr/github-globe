@@ -32,7 +32,7 @@
 
 @supports (selector(:has(works))) {
   .product-item > li:not(:has(details))::before  {
-    content: "\25CF  ";
+    content: "\2022  ";
   }
 }
 
