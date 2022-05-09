@@ -68,9 +68,7 @@
 }
 
 .cta em {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-  text-decoration-thickness: 0.5ex;
-  /* text-underline-offset: -1ch; */
-  text-decoration-skip-ink: none;
+  background: linear-gradient(90deg,hsl(198deg 100% 62% / 25%) 30%,hsl(198deg 100% 62% / 0%));
+  border-radius: var(--radius-1);
+  padding: 0 var(--space-3xs);
 }

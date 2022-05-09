@@ -25,7 +25,7 @@
 }
 
 [role="contentinfo"] a {
-  padding: var(--space-3xs) var(--space-2xs);
+  padding: var(--space-2xs);
   text-decoration-line: none;
 }
 

@@ -30,7 +30,7 @@
 
   font-family: var(--font-plain);
   font-variant-numeric: tabular-nums;
-  font-feature-settings: "ss04";
+  /* font-feature-settings: "ss04"; */
   background: var(--surface-1);
   color: var(--secondary);
 }
