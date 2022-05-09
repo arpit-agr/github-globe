@@ -5,45 +5,37 @@
 }
 
 .contact-methods {
+  --min: 320px;
   --stack-gap: var(--space-l);
   --grid-gap: var(--space-xl);
   --flow-space: var(--space-xl);
-  grid-template-columns: repeat(2, 1fr);
-  background-color: var(--surface-1);
-  border-radius: var(--radius-1);
+  background-color: var(--surface-3);
 }
 
 .contact-methods > * {
   --flow-space: var(--space-l);
 }
 
-.contact-methods > li:last-child {
-  grid-column: 1/-1;
-}
 
-@media (max-width: 46em) {
-  .contact-methods {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-methods li:first-child {
-    border: unset;
-    padding-top: unset;
-    /* padding-block-start: unset; */
-  }
-}
 
 .contact-methods li {
   --flow-space: var(--space-2xs);
+}
+
+.contact-methods li:not(:first-child) {
   padding-top: var(--space-xl);
   /* padding-block-start: var(--space-xl); */
   border-top: var(--border-size-1) solid var(--accent-bg);
   /* border-block-start: var(--border-size-1) solid var(--accent-bg); */
 }
 
-.contact-methods li > :last-child {
-  margin-top: auto;
-  /* margin-block-start: auto; */
+@media (min-width: 47em) {  
+  .contact-methods li {
+    padding-top: var(--space-xl);
+    /* padding-block-start: var(--space-xl); */
+    border-top: var(--border-size-1) solid var(--accent-bg);
+    /* border-block-start: var(--border-size-1) solid var(--accent-bg); */
+  }
 }
 
 .contact-methods svg {
@@ -83,9 +75,10 @@ details[open] .form-summary {
   /* margin-block-start: var(--space-l); */
 }
 
-.contact-form * {
+.contact-form :where(textarea, input)  {
   border-width: var(--border-size-1);
   border-color: var(--accent-separator);
+  border-style: solid;
 }
 
 .contact-form div > * + * {

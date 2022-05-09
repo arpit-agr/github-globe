@@ -16,12 +16,12 @@
 }
 
 [role="contentinfo"] div {
-  --cluster-gap: var(--space-2xs) var(--space-m);
+  --cluster-gap: var(--space-2xs);
   justify-content: space-between;
 }
 
 [role="contentinfo"] ul {
-  --cluster-gap:var(--space-2xs) var(--space-xs);
+  --cluster-gap: 0 var(--space-2xs);
 }
 
 [role="contentinfo"] a {

@@ -10,7 +10,7 @@
 }
 
 .post article {
-  background-color: var(--surface-1);
+  background-color: var(--surface-3);
   padding-bottom: 1em;
   /* padding-block-end: 1em; */
   border-radius: var(--radius-1);

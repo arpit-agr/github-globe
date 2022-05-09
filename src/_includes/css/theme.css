@@ -1,6 +1,7 @@
 :root {
   --surface-1: hsl(198deg 45% 98%);
   --surface-2: hsl(198deg 100% 99%);
+  --surface-3: hsl(198deg 45% 98% / 50%);
   --primary: hsl(198deg 45% 20%);
   --secondary: hsl(198deg 18% 32%);
   --tertiary: hsl(198deg 18% 43%);
@@ -18,7 +19,7 @@
   --font-lineheight-0: 1.1;
   --font-lineheight-1: 1.25;
   --font-letterspacing-0: -0.05em;
-  --font-letterspacing-2: 0.05em;
+  --font-letterspacing-2: 0.035em;
   --border-size-1: 1px;
   --border-size-2: 2px;
 

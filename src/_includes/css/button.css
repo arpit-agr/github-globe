@@ -18,9 +18,9 @@
   background-color: var(--surface-1);
 }
 
-.btn:active {
+/* .btn:active {
   transform: scale(0.90);
-}
+} */
 
 .btn[data-variant="secondary"] {
   color: var(--secondary);
