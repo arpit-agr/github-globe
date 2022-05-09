@@ -3,7 +3,7 @@ title: Services
 layout: "layouts/services.html"
 headingLevel: 1
 ctaContent:
-  heading: Quality products at the right price
+  heading: Quality products at competitive prices
   subtitle: Learn more about how we fulfil your sourcing requirements by leveraging our presence at major gateway ports.
   buttonText: Contact Us
   buttonUrl: /contact/

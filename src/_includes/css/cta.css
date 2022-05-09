@@ -15,7 +15,7 @@
 
 .cta-content p {
   /* --measure: 48ch; */
-  --measure: 47ch;
+  --measure: 44ch;
   --flow-space: var(--space-m);
   filter: brightness(0.9);
 }
