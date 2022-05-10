@@ -1,5 +1,5 @@
 <div class="services">
-  <section class="wrapper flow">
+  <article class="wrapper flow">
     <header class="flow">
       <div class="section-title cluster">
         <h{{ headingLevel if headingLevel else '2' }} class="cluster">
@@ -15,5 +15,5 @@
       <p>{{ siteContent.services.subtitle | safe }}</p>
     </header>
     {%- include "partials/service-items.html" -%}
-  </section>
+  </article>
 </div>

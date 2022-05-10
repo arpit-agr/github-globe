@@ -2,7 +2,7 @@
 
 {% block content %}
   <div class="archive">
-    <section class="wrapper flow">
+    <article class="wrapper flow">
       <header class="cluster">
         <h1>{{ title }}</h1>
         <span class="page-number">
@@ -15,6 +15,6 @@
       </header>
       {% include "partials/post-list.html" %}
       {% include "partials/archive-pagination.html" %}
-    </section>
+    </article>
   </div>
 {% endblock %}
