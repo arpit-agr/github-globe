@@ -31,7 +31,7 @@
   padding: var(--space-4xs) var(--space-xs);
   border-radius: 1em;
   color: var(--accent-color);
-  border: var(--border-size-1) solid;
+  border: var(--border-size-1) solid var(--accent-bg);
 }
 
 .testimonial-container {
