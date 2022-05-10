@@ -49,5 +49,5 @@
 }
 
 .product-item summary::marker {
-color: hsl(198deg 18% 32% / 40%);
+  color: hsl(198deg 98% 32% / 40%);
 }
