@@ -1,5 +1,6 @@
 .client-logos {
-  --min: calc(var(--step-4) * 5);
+  /* --min: calc(var(--step-4) * 5); */
+  --min: clamp(8.6rem, 25vw, 18rem);
   --grid-gap: var(--space-s);
   --grid-gap: var(--border-size-1) 0;
   border-radius: var(--radius-2);
