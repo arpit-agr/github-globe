@@ -23,12 +23,13 @@
 } */
 
 .btn[data-variant="secondary"] {
-  color: var(--secondary);
-  border-color: transparent;
+  padding: var(--space-3xs) var(--space-2xs);
+  border-color: var(--accent-bg);
+  color: var(--accent-color);
   background-color: transparent;
-  text-decoration-line: underline;
 }
 
 .btn[data-variant="secondary"]:where(:hover, :focus) {
   color: var(--accent-color);
+  background-color: var(--accent-bg);
 }
