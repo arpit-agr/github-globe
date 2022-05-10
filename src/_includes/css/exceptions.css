@@ -45,3 +45,12 @@
     background-color: var(--accent-bg);
   }
 }
+
+[data-location="home"] .client-logos {
+  --min: clamp(8.6rem, 25vw, 13rem);
+  background: unset;
+  /* border-radius: unset;
+  border-inline: unset;
+  border-block-end: unset;
+  border: unset; */
+}
