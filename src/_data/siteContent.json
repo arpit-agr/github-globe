@@ -45,5 +45,17 @@
     "subtitle": "Learn more about how we fulfil your sourcing requirements",
     "buttonText": "Contact Us",
     "buttonUrl": "/contact/"
+  },
+  "pageNotFound": {
+    "heading": "Page Not Found",
+    "subtitle": "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
+    "buttonText": "← Back to the home page",
+    "buttonUrl": "/"
+  },
+  "offline": {
+    "heading": "Offline",
+    "subtitle": "Sorry. It looks like there's a problem with the internet connection.",
+    "buttonText": "contact page",
+    "buttonUrl": "/contact/"
   }
 }

@@ -14,10 +14,10 @@
   --gutter: var(--space-m-2xl);
   --radius-1: var(--space-3xs);
   --radius-2: var(--space-2xs);
-  --measure: 60ch;
+  --measure: 50ch;
 
   --font-lineheight-0: 1.1;
-  --font-lineheight-1: 1.25;
+  --font-lineheight-1: 1.2;
   --font-letterspacing-0: -0.015em;
   --font-letterspacing-2: 0.035em;
   --border-size-1: 1px;
