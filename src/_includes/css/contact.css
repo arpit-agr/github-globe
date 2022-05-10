@@ -1,14 +1,7 @@
-.contact-us {
-  --flow-space: var(--space-xl-2xl);
-  padding-top: var(--space-m);
-  /* padding-block-start: var(--space-m); */
-}
-
 .contact-methods {
   --min: 320px;
   --stack-gap: var(--space-l);
   --grid-gap: var(--space-xl);
-  --flow-space: var(--space-xl);
   background-color: var(--surface-3);
 }
 
@@ -36,6 +29,10 @@
     border-top: var(--border-size-1) solid var(--accent-bg);
     /* border-block-start: var(--border-size-1) solid var(--accent-bg); */
   }
+}
+
+.contact-methods li h3 + * {
+  color: var(--tertiary);
 }
 
 .contact-methods svg {

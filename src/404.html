@@ -6,24 +6,28 @@ eleventyExcludeFromCollections: true
 {%- extends "layouts/base.html" -%}
 
 {%- block content -%}
-  <div class="page-not-found">
-    <section class="wrapper stack">
-      <h1>{{ title }}</h1>
-      <div class="flow" style="--flow-space: var(--space-m);">
-        <p>
-          Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
-        </p>
-        <a href="/" class="btn step-0">← Back to the home page</a>
+  <div class="page-not-found region">
+    <article class="wrapper flow">
+      <header class="flow">
+        <div class="section-title cluster">
+          <h1>{{ siteContent.pageNotFound.heading }}</h1>
+        </div>
+        <p>{{ siteContent.pageNotFound.subtitle | safe }}</p>
+      </header>
+      <div class="flow">
+        <a href="{{ siteContent.pageNotFound.buttonUrl }}" class="btn step-0">{{ siteContent.pageNotFound.buttonText }}</a>
         <hr>
-        <p>Other useful links: </p>
-        <ul>
-          {% for item in collections.pages %}
-            <li>
-              <a href="{{ item.url }}">{{ item.data.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
+        <div class="flow">
+          <p>Other useful links: </p>
+          <ul style="--flow-space: 1em;">
+            {% for item in collections.pages %}
+              <li>
+                <a href="{{ item.url }}">{{ item.data.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
-    </section>
+    </article>
   </div>
 {%- endblock -%}

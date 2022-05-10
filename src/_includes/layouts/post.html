@@ -9,14 +9,8 @@ ctaContent:
 
 {%- extends "layouts/base.html" -%}
 
-{%- block beforeMain -%}
-  <nav class="wrapper" aria-label="secondary">
-    <a class="step-0" href="/archive/">← Back to the archive</a>
-  </nav>
-{%- endblock -%}
-
 {%- block content -%}
-  <div class="post">
+  <div class="post flow">
     <article class="wrapper flow">
       <header class="stack">
         <h1>{{ title }}</h1>
@@ -24,15 +18,12 @@ ctaContent:
         <time datetime={{ date | dump | safe }}>
           {{ date | postDate }}
         </time>
-        <!-- <p class="visually-hidden">Tags:</p>
-        <ul class="post-tags cluster" role="list" aria-label="Tags">
-          {%- for tag in tags -%}
-            <li class="post-tag-item">{{ tag }}</li>
-          {%- endfor -%}
-        </ul> -->
       </header>
       {{ content | safe }}
     </article>
+    <nav class="wrapper" aria-label="secondary">
+      <a class="btn step-0" href="/archive/" data-variant="secondary">← Back to the archive</a>
+    </nav>
   </div>
   {%- include "sections/cta-section.html" -%}
 {%- endblock -%}

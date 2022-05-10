@@ -11,10 +11,6 @@
   border-color: var(--header-text);
 }
 
-[data-location="home"] main {
-  --flow-space: var(--space-l);
-}
-
 /* [data-location="home"] main > * {
   padding: 0;
 } */
@@ -35,8 +31,8 @@
   background: var(--surface-1);
 }
 
-/* cta is supposed to be the last section on the page. No padding top is applied to it in the first place */
-[data-location="home"] main>:nth-child(3) {
+/* remove padding from the last two regions */
+[data-location="home"] main>:nth-child(n+3) {
   padding-top: 0;
 }
 

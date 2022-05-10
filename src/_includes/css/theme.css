@@ -46,7 +46,7 @@ body {
 }
 
 main {
-  --flow-space: var(--gutter);
+  --flow-space: var(--space-l-xl);
   --dot-shadow-size: 0.75em;
   overflow:hidden;
 }
