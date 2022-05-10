@@ -1,6 +1,6 @@
 import createGlobe from "cobe";
 
-let phi = 4.5;
+let rotation = 1.35;
 let canvas = document.getElementById("cobe");
 
 const globe = createGlobe(canvas, {
@@ -27,8 +27,8 @@ const globe = createGlobe(canvas, {
   onRender: (state) => {
     // Called on every animation frame.
     // `state` will be an empty object, return updated params.
-    state.phi = phi;
-    phi -= 0.005;
+    state.phi = rotation;
+    rotation += 0.005;
   }
 });
 
