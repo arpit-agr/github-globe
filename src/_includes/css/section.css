@@ -22,7 +22,7 @@ main > *:first-child {
   flex-basis: 0;
 }
 
-.section-title + p {
+.section-title + * {
   --flow-space: var(--space-m-s);
   --measure: 47ch;
 }

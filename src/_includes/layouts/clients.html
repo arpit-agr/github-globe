@@ -10,7 +10,8 @@
   </div>
   <div class="testimonial">
     <article class="wrapper flow">  
-      <h2>Client testimonials</h2>
+      <h2 class="section-title">{{ siteContent.clients.subHeading }}</h2>
+      <p>{{ siteContent.clients.subHeadingSubtitle | safe }}</p>
       <ul class="testimonial-container grid" role="list">
         {%- for testimonial in collections.testimonials -%}
           {%- include "partials/testimonial-block.html" -%}
