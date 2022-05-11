@@ -1,8 +1,8 @@
 <ul class="product-list stack" role="list">
   {% for tag in collections.tagList.sort() | reverse %}
     <li>
-      <details-utils force-close="(max-width: 600px)">
-        <details open>
+      <details-utils force-close="(max-width: 703px)">
+        <details {{ 'open' if expandedProductList else '' }}>
           <summary class="product-tag">{{ tag }}</summary>
           <ul class="product-item grid" role="list">
             {% for product in collections[ tag ] %}

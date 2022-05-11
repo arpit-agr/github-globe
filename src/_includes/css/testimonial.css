@@ -32,6 +32,7 @@
   border-radius: 1em;
   color: var(--accent-color);
   border: var(--border-size-1) solid var(--accent-bg);
+  letter-spacing: var(--font-letterspacing-2);
 }
 
 .testimonial-container {
