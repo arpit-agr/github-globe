@@ -6,7 +6,7 @@ name: Kapil Gupta
 designation: Purchase Head
 company: NRC Industries Ltd.
 featured: false
-homepage: true
+homepage: false
 displayOrder: 3
 ---
 
