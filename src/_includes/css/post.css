@@ -88,6 +88,12 @@
 
 .post nav {
   --flow-space: var(--space-l-xl);
+}
+
+:where(.post nav) .btn[data-variant=secondary] {
   background-color: var(--surface-1);
-  transform: translateY(-4px);
+}
+
+:where(.post nav) .btn[data-variant=secondary]:hover {
+  background-color: var(--accent-separator);
 }

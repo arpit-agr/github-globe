@@ -31,5 +31,5 @@
 
 .btn[data-variant="secondary"]:where(:hover, :focus) {
   color: var(--accent-color);
-  background-color: var(--accent-bg);
+  background-color: var(--accent-separator);
 }
