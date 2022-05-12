@@ -84,7 +84,7 @@ h3 {
 }
 
 h1 {
-  --measure: 23ch;
+  --measure: 24ch;
   max-width: var(--measure);
   /* max-inline-size: var(--measure); */
   font-size: var(--step-4);
