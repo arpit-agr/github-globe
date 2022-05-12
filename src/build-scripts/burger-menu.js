@@ -1,4 +1,4 @@
-import getFocusableElements from './get-focusable-elements.js';
+import getFocusableElements from '../scripts/get-focusable-elements.js';
 
 class BurgerMenu extends HTMLElement {
   constructor() {

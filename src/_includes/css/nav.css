@@ -86,6 +86,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  border-radius: var(--radius-1);
 }
 
 .burger-menu[enabled="true"] .burger-menu__trigger[aria-expanded="true"] {
