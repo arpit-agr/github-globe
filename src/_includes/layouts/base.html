@@ -6,18 +6,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="{{ eleventy.generator }}">
   
-  <link rel="preload" href="/fonts/inter-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-v11-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-  {%- include "partials/head-meta_info.html" -%}
-  {%- include "partials/head-meta_theme.html" -%}
-  {%- include "partials/favicon.html" -%}
-  
+  <!-- IF JS IS AVAILABLE ADD CLASS -->
   <script>document.documentElement.classList.add('with-js');</script>
+
+  <!-- CSS -->
   {%- include "partials/style.njk" -%}
 
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- NJK BLOCK TO INJECT ELEMENTS FROM LAYOUT FILES -->
+  {%- block injectHead -%}
+  {%- endblock -%}
+
+  <!-- PRELOAD FONTS-->
+  <link rel="preload" href="/fonts/inter-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-v11-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- META INFORMATION -->
+  {%- include "partials/head-meta_info.html" -%}
+  {%- include "partials/head-meta_theme.html" -%}
+
+  <!-- FAVICON -->
+  {%- include "partials/favicon.html" -%}
+  
+  <!-- ELEVENTY -->
+  <meta name="generator" content="{{ eleventy.generator }}">
+
+  <!-- NETLIFY IDENTITY -->
+    <script 
+      defer 
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+      fetchpriority="low"
+    ></script>
 
 </head>
 <body>
@@ -25,6 +44,11 @@
   <header>
     {%- include "partials/nav.html" -%}
   </header>
+  <script 
+    src="/scripts/burger-menu.js" 
+    type="module" 
+    fetchpriority="high"
+  ></script>
 
   {%- block beforeMain -%}
   {%- endblock -%}
@@ -37,12 +61,12 @@
   
   {%- include "partials/footer.html" -%}
 
-  <script src="/scripts/burger-menu.js" type="module"></script>
   <!-- <script src="/scripts/scale-up.js" defer></script>
   <script src="/scripts/fade-in.js" defer></script> -->
 
   {%- block bodyScripts -%}
   {%- endblock -%}
+
 
   <script>
     if (window.netlifyIdentity) {

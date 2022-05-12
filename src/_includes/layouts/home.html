@@ -1,6 +1,10 @@
 
 {%- extends "layouts/base.html" -%}
 
+{%- block injectHead -%}
+  <link rel="preload" href="/scripts/globe.js" as="script" fetchpriority="high">
+{%- endblock -%}
+
 {%- block content -%}
   {%- include "sections/hero-section.html" -%}
   {%- include "sections/services-section.html" -%}
@@ -8,9 +12,8 @@
   {%- include "sections/cta-section.html" -%}
 {%- endblock -%}
 
-
 {%- block bodyScripts -%}
   <script src="/scripts/globe.js" async></script>
   <script type="module" src="/scripts/details-utils.js"></script>
-  <script src="/scripts/lite-yt-embed.js" async></script>
+  <!-- <script src="/scripts/lite-yt-embed.js" async></script> -->
 {%- endblock -%}
