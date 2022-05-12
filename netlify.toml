@@ -22,8 +22,4 @@ package = "netlify-plugin-cache"
     X-XSS-Protection = "1; mode=block"
     Permissions-Policy = "interest-cohort=()"
 
-    cache-control = '''
-    max-age=0,
-    no-cache,
-    no-store,
-    must-revalidate'''
+    cache-control = "no-cache"
