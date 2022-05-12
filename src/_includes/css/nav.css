@@ -7,6 +7,9 @@
 
 .site-head__brand {
   display: inline-flex;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  /* padding-block: 2px; */
 }
 
 :where(.navigation) ul {
