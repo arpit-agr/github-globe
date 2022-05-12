@@ -1,5 +1,5 @@
 ---
-title: CG21
+title: CG21 EXIM
 layout: "layouts/home.html"
 dataLocation: home
 clientLogos:
