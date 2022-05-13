@@ -8,15 +8,20 @@
   {% for item in siteContent.services.items %}  
     <li class="service-item flow">
       <h{{ serviceHeadingLevel }} class="stack">
-        {{ item.name }}
+        {{ item.serviceName }}
       </h{{ serviceHeadingLevel }}>
-      <ul class="service-desc flow" role="list">
-        {% for item in item.desc %}
-          <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-      {% if item.products %}
-        {%- include "partials/product-list.html" -%}
+      {% if item.desc %}
+        <ul class="service-desc flow" role="list">
+          {% for item in item.desc %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if item.import %}
+        {%- include "partials/import-list.html" -%}
+      {% endif %}
+      {% if item.export %}
+        {%- include "partials/export-list.html" -%}
       {% endif %}
     </li>
   {% endfor %}

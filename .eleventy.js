@@ -75,7 +75,7 @@ module.exports = function (eleventyConfig) {
 	// Create an array of all tags
 	
 	function filterTagList(tags) {
-    return (tags || []).filter(tag => ["all", "nav", "post", "posts", "Other"].indexOf(tag) === -1);
+    return (tags || []).filter(tag => ["all", "nav", "post", "posts", "Other", "exports"].indexOf(tag) === -1);
   }
   eleventyConfig.addFilter("filterTagList", filterTagList)
   eleventyConfig.addCollection("tagList", function(collection) {

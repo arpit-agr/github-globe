@@ -1,21 +1,35 @@
-<ul class="product-list stack" role="list">
-  {% for tag in collections.tagList.sort() | reverse %}
-    <li>
+{% set customStyle %}
+style="
+list-style: disc;
+list-style-position: inside;
+padding-top: var(--space-2xs);
+padding-bottom: var(--space-2xs);
+"
+{% endset %}
+
+<ul class="product-category-list stack" role="list">
+  {# {% for tag in collections.tagList.sort() | reverse %} #}
+  {% for tag in collections.tagList %}
+    <li class="product-category">
       <details-utils force-close="(max-width: 703px)">
         <details {{ 'open' if expandedProductList else '' }}>
-          <summary class="product-tag">{{ tag }}</summary>
-          <ul class="product-item grid" role="list">
+          <summary class="product-category__title">{{ tag }}</summary>
+          <ul class="product-list grid" role="list">
             {% for product in collections[ tag ] %}
-              <li>
+            <li class="product-item"
+              {%- if not product.data.sub -%}
+              {{ customStyle | safe }}
+              {% endif %}
+            >
                 {%- if product.data.sub -%}
                   <details>
-                    <summary>
+                    <summary class="product-item__title">
                       {{ product.data.title }}
                     </summary>
                     <div>
                       <ul class="flow" role="list">
                         {% for item in product.data.sub %}
-                          <li class="step-0">{{ item }}</li>
+                          <li class="product-specification step-0 tertiary">{{ item }}</li>
                         {% endfor %}
                       </ul>
                     </div>

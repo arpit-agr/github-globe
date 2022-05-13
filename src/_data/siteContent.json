@@ -9,21 +9,30 @@
     "url": "/services/",
     "items": [
       {
-        "name": "Raw Materials Sourcing",
+        "serviceName": "Raw Materials Sourcing",
         "desc": [
           "Vendor & Product Selection",
           "Free sample on request",
           "Further assistance available on request"
         ],
-        "products": true 
+        "import": true
       },
       {
-        "name": "Project Consulting & set-up",
+        "serviceName": "turnkey project set-up",
         "desc": [
           "Complete turnkey project for setting up a tyre plant",
           "Technical Consulting",
           "Project report for tyre plant setup from all segments"
         ]
+      },
+      {
+        "serviceName": "Export",
+        "desc": [
+          "Complete turnkey project for setting up a tyre plant",
+          "Technical Consulting",
+          "Project report for tyre plant setup from all segments"
+        ],
+        "export": true
       }
     ]
   },

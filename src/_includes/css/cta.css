@@ -9,7 +9,7 @@
 }
 
 .cta-content h2 {
-  --measure: 25ch;
+  --measure: 24ch;
   max-width: var(--measure);
 }
 
@@ -69,6 +69,6 @@
 
 .cta em {
   background: linear-gradient(90deg,hsl(198deg 100% 62% / 25%) 30%,hsl(198deg 100% 62% / 0%));
-  border-radius: var(--radius-1);
+  /* border-radius: var(--radius-1); */
   padding: 0 var(--space-3xs);
 }
