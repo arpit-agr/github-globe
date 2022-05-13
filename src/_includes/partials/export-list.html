@@ -8,7 +8,7 @@ list-style-position: inside;
 {% endset %}
 
 <ul class="export product-category-list stack" role="list">
-  {% for item in collections.exports %}
+  {% for item in collections.exports.sort() | reverse %}
     <li class="product-category"
       {%- if not item.data.sub -%}
       {{ customStyle | safe }}
