@@ -6,7 +6,7 @@
   --flow-space: var(--space-l-xl);
 } */
 
-main > *:first-child {
+:where(main > *:first-child) {
   padding-top: var(--space-m);
   /* padding-block-start: var(--space-m); */
 }

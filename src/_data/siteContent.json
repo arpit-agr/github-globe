@@ -1,10 +1,14 @@
 {
   "hero": {
     "heading": "leverage our global network to fulfil your sourcing needs",
-    "subtitle": "Offices in India, Singapore and China ↓"
+    "subtitle": "Offices in India, Singapore and China"
+  },
+  "about": {
+    "heading": "About Us",
+    "subtitle": "Get to know us, our values, our mission and vision."
   },
   "services": {
-    "heading": "Our Service",
+    "heading": "Our Services",
     "subtitle": "One of our key services is to help you <em>source<\/em> quality products at competitive prices after proper technical evaluation.",
     "url": "/services/",
     "items": [
@@ -56,6 +60,14 @@
     "subtitle": "Learn more about how we fulfil your sourcing requirements",
     "buttonText": "Contact Us",
     "buttonUrl": "/contact/"
+  },
+  "archive": {
+    "heading": "Archive",
+    "subtitle": "Archive of all the weekly updates."
+  },
+  "weeklyUpdate": {
+    "heading": "Weekly Update",
+    "subtitle": "Weekly updates on [placeholder] from around the world."
   },
   "pageNotFound": {
     "heading": "Page Not Found",

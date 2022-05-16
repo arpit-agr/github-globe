@@ -23,6 +23,12 @@
   display: inline-block;
 }
 
+.globe-subtitle::after {
+  content: " ↓";
+  content: " ↓"/"";
+  alt: "";
+}
+
 .globe {
   position: relative;
   transform: translateY(-36px);
