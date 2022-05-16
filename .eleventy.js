@@ -46,6 +46,12 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./src/img");
 	eleventyConfig.addPassthroughCopy("./src/scripts");
 	eleventyConfig.addPassthroughCopy("./src/admin");
+	eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+	eleventyConfig.addPassthroughCopy("./src/icon.svg");
+	eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
+	eleventyConfig.addPassthroughCopy("./src/icon-192.png");
+	eleventyConfig.addPassthroughCopy("./src/icon-512.png");
+	eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
 
 	//SHORTCODE
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);

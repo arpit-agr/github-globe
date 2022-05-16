@@ -13,7 +13,7 @@
   <!-- CSS -->
   {%- include "partials/style.njk" -%}
 
-  <!-- NJK BLOCK TO INJECT ELEMENTS FROM LAYOUT FILES -->
+  <!-- NAMED BLOCK TO INJECT ELEMENTS FROM LAYOUT FILES -->
   {%- block injectHead -%}
   {%- endblock -%}
 
@@ -26,14 +26,7 @@
 
   <!-- META INFORMATION -->
   {%- include "partials/head-meta_info.html" -%}
-  {%- include "partials/head-meta_theme.html" -%}
-
-  <!-- FAVICON -->
-  {%- include "partials/favicon.html" -%}
   
-  <!-- ELEVENTY -->
-  <meta name="generator" content="{{ eleventy.generator }}">
-
   <!-- NETLIFY IDENTITY -->
     <script 
       defer 
