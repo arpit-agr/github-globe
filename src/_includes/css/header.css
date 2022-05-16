@@ -1,5 +1,4 @@
-body > header, .hero, .cta-content {
-  --stack-gap: var(--space-l);
+.site-head {
   --header-bg: var(--surface-1);
   --header-text: var(--primary);
 
@@ -7,7 +6,6 @@ body > header, .hero, .cta-content {
   color: var(--header-text);
 }
 
-body > header *, .hero *, .cta-content * {
+.site-head * {
   color: inherit;
 }
-

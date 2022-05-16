@@ -1,3 +1,12 @@
+.hero {
+  background: var(--inverted-bg);
+  color: var(--inverted-text);
+}
+
+.hero * {
+  color: inherit;
+}
+
 .hero-content {
   --stack-gap: 0;
   align-items: center;
