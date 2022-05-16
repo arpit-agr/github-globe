@@ -48,7 +48,6 @@ body {
 main {
   --flow-space: var(--space-l-xl);
   --dot-shadow-size: 0.75em;
-  overflow:hidden;
 }
 
 main > * {
@@ -120,16 +119,10 @@ p, blockquote {
   /* max-inline-size: var(--measure); */
 }
 
-em {
-  font-style: normal;
-  /* text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-  text-decoration-thickness: 0.8ex;
-  text-underline-offset: -0.8ex;
-  text-decoration-skip-ink: none; */
-
-  color: var(--accent-color);
+em, strong {
+  color: var(--primary);
   font-weight: 500;
+  font-style: normal;
 }
 
 time {
@@ -194,10 +187,5 @@ hr {
 
 ::selection {
   color: var(--surface-1);
-  background: var(--accent-color);
-}
-
-strong {
-  font-weight: 500;
-  color: var(--accent-color);
+  background: var(--primary);
 }

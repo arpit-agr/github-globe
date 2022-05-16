@@ -1,12 +1,12 @@
 {%- if testimonial.data.video.id -%}
-  <li class="testimonial-video {{ 'testimonial-featured-video' if testimonial.data.featured }} grid">
+  <li class="testimonial-video {{ 'testimonial-featured-video' if testimonial.data.featured }} grid overflow:hidden">
     {%- include "partials/youtube.html" -%}
     <div class="testimonial-block stack">
       <blockquote class="testimonial-content">
         {{ testimonial.templateContent | safe }}
       </blockquote>
       <p class="testimonial-client-info stack">
-        <em>{{ testimonial.data.name }}</em>
+        <strong>{{ testimonial.data.name }}</strong>
         <small>
           {{ testimonial.data.designation }}, {{ testimonial.data.company }}
         </small>
@@ -27,7 +27,7 @@
       {{ testimonial.templateContent | safe }}
     </blockquote>
     <p class="testimonial-client-info stack">
-      <em>{{ testimonial.data.name }}</em>
+      <strong>{{ testimonial.data.name }}</strong>
       <small>
         {{ testimonial.data.designation }}, {{ testimonial.data.company }}
       </small>

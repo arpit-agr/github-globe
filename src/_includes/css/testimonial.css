@@ -6,10 +6,9 @@
 
 .testimonial-video {
   --grid-gap: 0;
+  background: var(--surface-1);
   border-radius: var(--radius-2);
   border: var(--border-size-1) solid var(--accent-separator);
-
-  overflow: hidden;
 }
 
 .testimonial-video .testimonial-block {
@@ -56,6 +55,7 @@
 }
 
 .testimonial-text {
+  background: var(--surface-1);
   border-radius: var(--radius-2);
   border: var(--border-size-1) solid var(--accent-separator);
 }
