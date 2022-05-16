@@ -15,7 +15,7 @@ list-style-position: inside;
       {% endif %}
     >
       {%- if item.data.sub -%}
-        <details-utils force-close="(max-width: 703px)">
+        <details-utils close-esc force-close="(max-width: 703px)">
           <details {{ 'open' if expandedProductList else '' }}>
             <summary class="product-category__title">{{ item.data.title }}</summary>
             <ul class="product-list grid" role="list">

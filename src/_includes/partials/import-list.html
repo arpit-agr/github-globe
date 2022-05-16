@@ -11,7 +11,7 @@ padding-bottom: var(--space-2xs);
   {# {% for tag in collections.tagList.sort() | reverse %} #}
   {% for tag in collections.tagList %}
     <li class="product-category">
-      <details-utils force-close="(max-width: 703px)">
+      <details-utils close-esc force-close="(max-width: 703px)">
         <details {{ 'open' if expandedProductList else '' }}>
           <summary class="product-category__title">{{ tag }}</summary>
           <ul class="product-list grid" role="list">
