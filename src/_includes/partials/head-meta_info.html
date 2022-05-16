@@ -3,8 +3,15 @@
 {%- else -%}
   {%- set pageTitle = title + ' - ' + site.name -%}
 {%- endif -%}
+
 {%- set siteTitle = site.name -%}
 {%- set description = site.description -%}
 
+{%- if not opengraphUrl -%}
+  {% set opengraphUrl = site.url + 'img/og/' + page.fileSlug + '.jpeg' %}
+{%- endif -%}
+
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ description }}" />
+<meta property="og:image" content="{{ opengraphUrl }}" />
+<meta name="twitter:image" content="{{ opengraphUrl }}" />
