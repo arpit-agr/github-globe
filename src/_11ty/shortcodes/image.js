@@ -10,8 +10,10 @@ async function imageShortcode(
   className = ''
   ) {
   let metadata = await Image(src, {
-    widths: [640, 800],
-    formats: ["avif", "webp", "jpeg"],
+    // logo width = 112px
+    widths: [224, 448],
+    // use png instead of jpeg to preserve alpha transparency
+    formats: ["avif", "webp", "png"],
 		outputDir: "./public/img/"
   });
 
