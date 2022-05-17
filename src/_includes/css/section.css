@@ -1,11 +1,3 @@
-/* .hero, .about, .services, .clients, .archive, .post, .contact-us, .page-not-found, .offline {
-  padding-top: var(--space-m);
-}
-
-.hero, .about, .services, .clients, .archive, .post, .contact-us, .page-not-found, .offline {
-  --flow-space: var(--space-l-xl);
-} */
-
 :where(main > *:first-child) {
   padding-top: var(--space-m);
   /* padding-block-start: var(--space-m); */

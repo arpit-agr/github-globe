@@ -1,7 +1,3 @@
-/* .about header {
-  border-bottom: var(--border-size-1) solid var(--separator);
-} */
-
 .about .with-sidebar {
   align-items: flex-start;
   gap: var(--gutter);
