@@ -10,7 +10,7 @@
 }
 
 .about .with-sidebar > :last-child {
-  --min: 30ch;
+  --min: 25ch;
   --grid-gap: var(--space-m);
 }
 
