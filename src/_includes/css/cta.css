@@ -33,8 +33,9 @@
 
 .cta-content a:where(:hover, :focus) {
   text-decoration-line: none;
-  background-color: var(--header-text);
-  border-color: var(--header-text);
+  background-color: var(--inverted-text);
+  border-color: var(--inverted-text);
+  color: var(--accent-color);
 }
 
 /* https://tympanus.net/Development/ButtonHoverStyles/ */
@@ -54,7 +55,7 @@
 }
 
 .cta-content a:where(:hover, :focus)::before {
-  background: var(--header-text);
+  background: var(--inverted-text);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
 }
