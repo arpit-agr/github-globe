@@ -23,16 +23,8 @@
   --border-size-1: 1px;
   --border-size-2: 2px;
 
-  --font-plain: Inter, Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-special: Inter, Helvetica Neue, sans-serif, "Segoe UI", Roboto, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-
-  font-family: var(--font-plain);
-  font-variant-numeric: tabular-nums;
-  /* font-feature-settings: "ss04"; */
-  background: var(--surface-1);
-  color: var(--secondary);
+  --font-plain: Inter, Inter-fallback, system-ui, sans-serif;
+  --font-special: Inter, Inter-fallback, system-ui, sans-serif;
 }
 
 :root {
@@ -42,13 +34,18 @@
 }
 
 body {
-  font-size: var(--step-1);
-  line-height: 1.5625;
   background: var(--surface-1);
 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  font-family: var(--font-plain);
+  font-size: var(--step-1);
+  line-height: 1.5625;
+  font-variant-numeric: tabular-nums;
+  /* font-feature-settings: "ss04"; */
+  color: var(--secondary);
 }
 
 main {

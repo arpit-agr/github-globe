@@ -9,10 +9,8 @@
   --flow-space: var(--space-l);
 }
 
-
-
 .contact-methods li {
-  --flow-space: var(--space-2xs);
+  --flow-space: var(--space-s);
 }
 
 .contact-methods li:not(:first-child) {

@@ -9,7 +9,7 @@
   },
   "services": {
     "heading": "Our Services",
-    "subtitle": "One of our key services is to help you <em>source<\/em> quality products at competitive prices after proper technical evaluation.",
+    "subtitle": "One of our key services is to help you <em>source</em> quality products at competitive prices after proper technical evaluation.",
     "url": "/services/",
     "items": [
       {
@@ -42,7 +42,7 @@
   },
   "clients": {
     "heading": "Our Clients",
-    "subtitle": "We work closely with our clients to fulfil their needs. Our clients, in turn, <em>trust<\/em> us to deliver exceptional service.",
+    "subtitle": "We work closely with our clients to fulfil their needs. Our clients, in turn, <em>trust</em> us to deliver exceptional service.",
     "subHeading": "Client Testimonials",
     "subHeadingSubtitle": "Learn more about what our clients have to say about partnering with&nbsp;us.",
     "url": "/clients/"
@@ -77,7 +77,7 @@
   },
   "offline": {
     "heading": "Offline",
-    "subtitle": "Sorry. It looks like there's a problem with the internet connection.",
+    "subtitle": "Something seems to be wrong with the network connection right now.",
     "buttonText": "contact page",
     "buttonUrl": "/contact/"
   }
