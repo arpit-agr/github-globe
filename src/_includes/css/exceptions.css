@@ -29,8 +29,8 @@
   /* padding-block-start: var(--space-l-xl); */
   background: var(--surface-1);
 
-  border-top-left-radius: var(--radius-2);
-  border-top-right-radius: var(--radius-2);
+  /* border-top-left-radius: var(--radius-2);
+  border-top-right-radius: var(--radius-2); */
 }
 
 /* remove padding from the last two regions */
