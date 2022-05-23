@@ -35,6 +35,11 @@
   pointer-events: none;
 }
 
+#cobe {
+  background-image: url(/img/globe.png);
+  background-size: contain;
+}
+
 /* .globe:before {
   content: "";
   width: 82%;
