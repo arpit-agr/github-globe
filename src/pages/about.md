@@ -1,12 +1,6 @@
 ---
 title: About
 layout: "layouts/about.html"
-vision:
-  heading: Vision
-  desc: To be an optimum solutions company for suppliers, manufacturers & customers across the globe.
-mission:
-  heading: Mission
-  desc: To trade ethically and deliver exceptional results and ‘Xtreme Performance’ consistently.
 ctaContent:
   heading: If we seem like a good fit, please get in touch
   subtitle: Learn more about how we fulfil your sourcing requirements by leveraging our presence at major gateway ports.

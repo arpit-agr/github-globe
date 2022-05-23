@@ -5,7 +5,17 @@
   },
   "about": {
     "heading": "About Us",
-    "subtitle": "Get to know us, our values, our mission and vision."
+    "subtitle": "Get to know us, our values, our mission and vision.",
+    "items": [
+      {
+        "heading": "Vision",
+        "desc": "To be an optimum solutions company for suppliers, manufacturers & customers across the globe."
+      },
+      {
+        "heading": "Mission",
+        "desc": "To trade ethically and deliver exceptional results and <em>‘Xtreme Performance’</em> consistently."
+      }
+    ]
   },
   "services": {
     "heading": "Our Services",

@@ -14,7 +14,7 @@
   --grid-gap: var(--space-m);
 }
 
-.vision, .mission {
+.about-items {
   --flow-space: 1em;
   background-color: var(--surface-1);
   border-radius: var(--radius-1);
@@ -22,7 +22,7 @@
   border: var(--border-size-1) solid var(--accent-separator);
 }
 
-:where(.vision, .mission) h2 {
+:where(.about-items) h2 {
   font-size: var(--step-2);
   color: var(--accent-color);
 }

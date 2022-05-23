@@ -11,14 +11,12 @@
           {{ content | safe }}
         </div>
         <div class="grid">
-          <div class="vision flow">
-            <h2>{{ vision.heading }}</h2>
-            <p>{{ vision.desc }}</p>
+          {% for item in siteContent.about.items %}
+          <div class="about-items flow">
+            <h2>{{ item.heading }}</h2>
+            <p>{{ item.desc | safe }}</p>
           </div>
-          <div class="mission flow">
-            <h2>{{ mission.heading }}</h2>
-            <p>{{ mission.desc }}</p>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </article>

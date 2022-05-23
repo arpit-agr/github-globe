@@ -222,9 +222,9 @@
   border: var(--border-size-1) solid;
 }
 
-:where([aria-label="primary"]) :last-child > a:active {
+/* :where([aria-label="primary"]) :last-child > a:active {
   transform: scale(0.90);
-}
+} */
 
 ul :last-child a:where([aria-current="page"], [data-state="active"]) {
   color: var(--header-text);
