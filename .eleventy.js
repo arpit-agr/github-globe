@@ -101,8 +101,7 @@ module.exports = function (eleventyConfig) {
       entryPoints: [
 				'src/build-scripts/globe.js', 
 				'src/build-scripts/lite-yt-embed.js',
-				'src/build-scripts/burger-menu.js',
-				'src/build-scripts/device.js'
+				'src/build-scripts/burger-menu.js'
 			],
       bundle: true,
 			minify: true,
