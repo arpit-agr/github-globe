@@ -1,5 +1,5 @@
 ---
 title: Elgi Rubber Company Limited
 url: elgi.png
-displayOrder: 26
+displayOrder: 12
 ---

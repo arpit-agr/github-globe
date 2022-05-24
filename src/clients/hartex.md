@@ -1,5 +1,5 @@
 ---
 title: Hartex Industries
 url: hartex.jpg
-displayOrder: 10
+displayOrder: 17
 ---

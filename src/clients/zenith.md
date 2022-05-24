@@ -1,5 +1,5 @@
 ---
 title: Zenith Rubber
 url: zenith.jpg
-displayOrder: 21
+displayOrder: 8
 ---

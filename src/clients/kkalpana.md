@@ -1,5 +1,5 @@
 ---
 title: Kkalpana Industries India Limited
 url: kkalpana.png
-displayOrder: 12
+displayOrder: 19
 ---

@@ -1,5 +1,5 @@
 ---
 title: TVS Motor Company
 url: tvs-motor.png
-displayOrder: 18
+displayOrder: 3
 ---

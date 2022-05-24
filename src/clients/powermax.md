@@ -1,5 +1,5 @@
 ---
 title: Power Max Tyre
-url: power.png
+url: powermax.png
 displayOrder: 25
 ---
