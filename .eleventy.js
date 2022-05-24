@@ -99,9 +99,10 @@ module.exports = function (eleventyConfig) {
     // Run me after the build ends
 		return esbuild.build({
       entryPoints: [
+				'src/build-scripts/burger-menu.js',
 				'src/build-scripts/globe.js', 
-				'src/build-scripts/lite-yt-embed.js',
-				'src/build-scripts/burger-menu.js'
+				'src/build-scripts/details-utils.js', 
+				'src/build-scripts/lite-yt-embed.js'
 			],
       bundle: true,
 			minify: true,
