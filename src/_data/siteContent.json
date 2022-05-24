@@ -32,7 +32,7 @@
         "import": true
       },
       {
-        "serviceName": "turnkey project set-up",
+        "serviceName": "turnkey project set-up in India",
         "desc": [
           "Complete turnkey project for setting up a tyre plant",
           "Technical Consulting",
@@ -41,18 +41,13 @@
       },
       {
         "serviceName": "Export",
-        "desc": [
-          "Complete turnkey project for setting up a tyre plant",
-          "Technical Consulting",
-          "Project report for tyre plant setup from all segments"
-        ],
         "export": true
       }
     ]
   },
   "clients": {
     "heading": "Our Clients",
-    "subtitle": "We work closely with our clients to fulfil their needs. Our clients, in turn, <em>trust</em> us to deliver exceptional service.",
+    "subtitle": "We work closely with our clients to fulfil their requirements. Our clients <em>trust</em> us to deliver exceptional services.",
     "subHeading": "Client Testimonials",
     "subHeadingSubtitle": "Learn more about what our clients have to say about partnering with&nbsp;us.",
     "url": "/clients/"
