@@ -5,12 +5,12 @@
       <blockquote class="testimonial-content">
         {{ testimonial.templateContent | safe }}
       </blockquote>
-      <p class="testimonial-client-info stack">
-        <strong>{{ testimonial.data.name }}</strong>
-        <small>
+      <div class="testimonial-client-info stack">
+        <p class="testimonial-name">{{ testimonial.data.name }}</p>
+        <p>
           {{ testimonial.data.designation }}, {{ testimonial.data.company }}
-        </small>
-      </p>
+        </p>
+      </div>
     </div>
   </li>  
 {%- else -%}
@@ -26,12 +26,12 @@
     <blockquote class="testimonial-content">
       {{ testimonial.templateContent | safe }}
     </blockquote>
-    <p class="testimonial-client-info stack">
-      <strong>{{ testimonial.data.name }}</strong>
-      <small>
+    <div class="testimonial-client-info stack">
+      <p class="testimonial-name">{{ testimonial.data.name }}</p>
+      <p>
         {{ testimonial.data.designation }}, {{ testimonial.data.company }}
-      </small>
-    </p>
+      </p>
+    </div>
   </li>
 {%- endif -%}
 
