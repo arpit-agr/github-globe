@@ -22,6 +22,10 @@
   text-transform: capitalize;
 }
 
+.product-category__title, .product-item__title {
+  border-radius: var(--radius-1);
+}
+
 .product-category-list summary:hover {
   --summary-bg: hsl(198deg 53% 95%);
   border-radius: var(--radius-1);
