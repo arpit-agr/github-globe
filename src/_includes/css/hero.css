@@ -35,8 +35,12 @@
   pointer-events: none;
 }
 
+#cobe {
+  background-color: transparent;
+}
+
 /* #cobe {
-  background-image: url(/img/globe.png);
+  background-image: url(/img/globe-cc.png);
   background-size: contain;
 } */
 
