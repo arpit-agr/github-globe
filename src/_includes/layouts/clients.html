@@ -1,11 +1,13 @@
 {%- extends "layouts/base.html" -%}
-{% set logoLimit = 12 %}
 
 {%- block content -%}
   <div class="clients">
     <article class="wrapper flow">
       {%- include "partials/clients-header.html" -%}
       {%- include "partials/clients.html" -%}
+      <button class="view-all-clients stack">
+        <span class="btn step-0" data-variant="secondary">View All Clients</span>
+      </button>
     </article>
   </div>
   <div class="testimonial">
@@ -23,5 +25,17 @@
 {%- endblock -%}
 
 {%- block bodyScripts -%}
+  <script>
+    const logoList = document.querySelector('.logo-list');
+    const viewAllButton = document.querySelector('.view-all-clients');
+    
+    logoList.setAttribute('data-state', 'hidden');
+    viewAllButton.addEventListener("click", showMore);
+    
+    function showMore() {
+      logoList.setAttribute('data-state', 'visible');
+      viewAllButton.setAttribute('data-state', 'hidden');
+    };
+  </script>
   <!-- <script src="/scripts/lite-yt-embed.js" async></script> -->
 {%- endblock -%}

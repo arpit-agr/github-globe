@@ -1,4 +1,52 @@
-.client-logos {
+.view-all-clients {
+  --stack-gap: 0;
+  margin-top: 0;
+  /* margin-block-start: 0; */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-inline: auto; */
+
+  border: none;
+  background-color: var(--surface-3);
+
+  cursor: pointer;
+}
+
+.view-all-clients span[data-variant="secondary"] {
+  font-weight: 500;
+  background-color: var(--surface-3);
+}
+
+.view-all-clients:where(:hover, :focus) span[data-variant="secondary"] {
+  color: var(--accent-color);
+  background-color: var(--accent-separator);
+}
+
+.view-all-clients[data-state="hidden"] {
+  display: none;
+}
+
+.view-all-clients::before {
+  height: 2em;
+  width: var(--border-size-1);
+  background-color: var(--accent-separator);
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-inline: auto; */
+}
+
+/* limits logos to 12 */
+.logo-list[data-state="hidden"] > :nth-child(n+13) {
+  display: none;
+}
+
+.logo-list[data-state="visible"] > :nth-child(n+13) {
+  display: unset;
+}
+
+.logo-list {
   /* --min: calc(var(--step-4) * 5); */
   --min: clamp(8.6rem, 25vw, 18rem);
   --grid-gap: var(--space-s);
@@ -8,7 +56,7 @@
   background: var(--accent-separator);
 }
 
-.client-logos li {
+.logo-list li {
   /* --logo-bg: hsl(198deg 35% 99%); */
   background: var(--surface-1);
   /* border: var(--border-size-1) solid var(--accent-bg); */
@@ -16,14 +64,14 @@
   /* border-radius: var(--radius-1); */
 }
 
-.client-logos div {
+.logo-list div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: var(--space-m);
 }
 
-.client-logos img {
+.logo-list img {
   width: 112px;
   height: 112px;
   object-fit: contain;
