@@ -21,7 +21,7 @@
 
 .cta-content p {
   /* --measure: 48ch; */
-  --measure: 44ch;
+  --measure: 45ch;
   --flow-space: var(--space-m);
   filter: brightness(0.9);
 }
@@ -72,6 +72,12 @@
   object-fit: contain;
   z-index: -1;
   pointer-events: none;
+}
+
+@media (min-width: 55em) {
+  .cta-content img {
+    transform: translate(30%, 41%);
+  }
 }
 
 .cta em {
