@@ -11,8 +11,6 @@ homepage: false
 displayOrder: 3
 ---
 
-> CG21 ensures transparency between customers and suppliers, which gives us confidence to maximise our sourcing through them on a regular basis.
-
-<!-- > CG21 ensures transparency between customers and suppliers, which gives us confidence to maximise our sourcing through them on a regular basis. CG21 delivers what they promise which has helped NRC Industries to source quality products at competitive prices from different origins. -->
+> CG21 ensures transparency between customers and suppliers, which gives us confidence to maximise our sourcing through them on a regular basis. CG21 is our first choice for import sourcing.
 
 {%- include "partials/testimonial-client-info.html" -%}

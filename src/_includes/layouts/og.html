@@ -69,10 +69,12 @@
   <div class="og">
     <div class="flow">
       <h1>{{ siteContent[pageData.fileSlug].heading | safe }}</h1>
+      {% if siteContent[pageData.fileSlug].subtitle %}
       <hr>
       <p>
         {{ siteContent[pageData.fileSlug].subtitle | safe }}
       </p>
+      {% endif %}
     </div>
     {% include "partials/logo.svg" %}
   </div>
