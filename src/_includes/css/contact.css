@@ -1,49 +1,54 @@
 .contact-methods {
-  --min: 320px;
-  --stack-gap: var(--space-l);
-  --grid-gap: var(--space-xl);
-  background-color: var(--surface-3);
-}
-
-.contact-methods > * {
-  --flow-space: var(--space-l);
+  --cluster-gap: var(--space-l);
+  align-items: flex-start;
 }
 
 .contact-methods li {
+  --stack-gap: var(--space-xl);
+  flex-grow: 1;
+
+  padding: var(--space-m);
+  background-color: var(--surface-1);
+  border: var(--border-size-1) solid var(--accent-bg);
+  border-top: var(--step--2) solid var(--accent-bg);
+  border-radius: var(--radius-1);
+}
+
+.contact-methods li > div {
   --flow-space: var(--space-s);
 }
 
-.contact-methods li:not(:first-child) {
-  padding-top: var(--space-xl);
-  /* padding-block-start: var(--space-xl); */
-  border-top: var(--border-size-1) solid var(--accent-bg);
-  /* border-block-start: var(--border-size-1) solid var(--accent-bg); */
-}
-
-@media (min-width: 47em) {  
-  .contact-methods li {
-    padding-top: var(--space-xl);
-    /* padding-block-start: var(--space-xl); */
-    border-top: var(--border-size-1) solid var(--accent-bg);
-    /* border-block-start: var(--border-size-1) solid var(--accent-bg); */
-  }
+.contact-methods li h3 {
+  --cluster-gap: var(--space-s);
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .contact-methods li h3 + * {
   color: var(--tertiary);
 }
 
+.form-method h3 + * {
+  --measure: 30ch;
+} 
+
 .contact-methods svg {
-  width: 32px;
+  width: var(--step-2);
   /* inline-size: 24px; */
-  height: 32px;
+  height: var(--step-2);
   /* block-size: 24px; */
-  fill: var(--accent-color);
+  fill: var(--primary);
 }
 
 svg[class*="bi-telephone"] {
-  stroke: var(--accent-color);
+  stroke: var(--primary);
   stroke-width: 0.3px;
+}
+
+@media (max-width: 25.5em) {
+  .contact-methods svg {
+    display: none;
+  }
 }
 
 /* .contact-methods p {
@@ -53,14 +58,6 @@ svg[class*="bi-telephone"] {
 .contact-methods label {
   color: var(--secondary);
 } */
-
-details[open] .form-summary {
-  color: var(--accent-color);
-  background-color: var(--surface-1);
-  padding-left: 0;
-  /* padding-inline-start: 0; */
-  border: unset;
-}
 
 .contact-form {
   --measure: 50ch;

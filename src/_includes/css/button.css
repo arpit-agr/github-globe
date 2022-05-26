@@ -27,7 +27,7 @@
   padding: var(--space-3xs) var(--space-2xs);
   border-color: var(--accent-bg);
   color: var(--accent-color);
-  background-color: transparent;
+  background-color: var(--surface-2);
 }
 
 .btn[data-variant="secondary"]:where(:hover, :focus) {
