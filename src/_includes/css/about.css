@@ -20,6 +20,8 @@
   border-radius: var(--radius-1);
   padding: var(--space-s);
   border: var(--border-size-1) solid var(--accent-separator);
+  border-top: var(--step--2) solid var(--accent-bg);
+  /* border-block-start: var(--step--2) solid var(--accent-bg); */
 }
 
 :where(.about-items) h2 {
