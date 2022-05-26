@@ -89,20 +89,3 @@
 .post nav {
   --flow-space: var(--space-l-xl);
 }
-
-.post nav a {
-  background-color: var(--surface-3);
-  color: inherit;
-
-  display: flex;
-  justify-content: space-between;
-  min-width: 100%;
-  padding: var(--space-2xs) var(--space-xs);
-  font-weight: 500;
-}
-
-.post nav a:where(:hover, :focus) {
-  color: var(--accent-color);
-  background-color: var(--accent-separator);
-  border-radius: var(--radius-1);
-}
