@@ -1,19 +1,24 @@
+.client-logos-container {
+  border: var(--border-size-1) solid var(--accent-separator); 
+  border-radius: var(--radius-2);
+  background-color: var(--surface-2);
+}
+
 .view-all-clients {
+  background: none;
   border: none;
-  border-radius: 0;
-  background-color: var(--surface-3);
+  border-bottom-left-radius: var(--radius-2);
+  border-bottom-right-radius: var(--radius-2);
   color: inherit;
   padding: unset;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: var(--space-2xs);
   min-width: 100%;
 
-  margin-top: var(--space-s);
-  /* margin-block-start: var(--space-s); */
   padding: var(--space-2xs) var(--space-xs);
-  border-bottom: var(--border-size-1) solid var(--accent-separator);
-  /* border-block-end: var(--border-size-1) solid var(--accent-separator); */
+  border-top: var(--border-size-1) solid var(--accent-separator);
   font-weight: 500;
 
   cursor: pointer;
@@ -28,7 +33,6 @@
 .view-all-clients:where(:hover, :focus) {
   color: var(--accent-color);
   background-color: var(--accent-separator);
-  border-radius: var(--radius-1);
 }
 
 
@@ -49,8 +53,8 @@
   --min: clamp(8.6rem, 25vw, 18rem);
   --grid-gap: var(--space-s);
   --grid-gap: var(--border-size-1) 0;
-  border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--accent-separator);
+  border-top-left-radius: var(--radius-2);
+  border-top-right-radius: var(--radius-2);
   background: var(--accent-separator);
 }
 

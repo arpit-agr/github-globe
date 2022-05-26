@@ -4,10 +4,12 @@
   <div class="clients">
     <article class="wrapper flow">
       {%- include "partials/clients-header.html" -%}
-      {%- include "partials/clients.html" -%}
-      <button class="view-all-clients">
-        View All Clients
-      </button>
+      <div class="client-logos-container overflow:hidden">
+        {%- include "partials/clients.html" -%}
+        <button class="view-all-clients step-0">
+          View All Clients
+        </button>
+      </div>
     </article>
   </div>
   <div class="testimonial">
