@@ -1,5 +1,5 @@
 .contact-methods {
-  --cluster-gap: var(--space-l);
+  --cluster-gap: var(--space-m);
   align-items: flex-start;
 }
 
