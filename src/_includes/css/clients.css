@@ -9,7 +9,7 @@
   border: none;
   border-bottom-left-radius: var(--radius-2);
   border-bottom-right-radius: var(--radius-2);
-  color: inherit;
+  color: var(--accent-color);
   padding: unset;
 
   display: flex;
