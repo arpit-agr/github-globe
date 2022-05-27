@@ -1,5 +1,5 @@
 ---
-title: "Weekly update #1"
+title: "Market Weekly update #1"
 date: 2022-04-05T03:24:58.514Z
 ---
 
