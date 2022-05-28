@@ -13,7 +13,7 @@
 {%- set description = site.description -%}
 
 {%- if not opengraphUrl -%}
-  {% set opengraphUrl = site.url + 'img/og/' + page.fileSlug + '.jpeg' %}
+  {% set opengraphUrl = site.url + '/img/og/' + page.fileSlug + '.jpeg' %}
 {%- endif -%}
 
 <title>{{ pageTitle }}</title>
