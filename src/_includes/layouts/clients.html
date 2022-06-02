@@ -1,5 +1,9 @@
 {%- extends "layouts/base.html" -%}
 
+{%- block injectHead -%}
+  <link rel="preload" href="/scripts/lite-yt-embed.js" as="script" fetchpriority="high">
+{%- endblock -%}
+
 {%- block content -%}
   <div class="clients">
     <article class="wrapper flow">
@@ -39,5 +43,5 @@
       viewAllButton.setAttribute('data-state', 'hidden');
     };
   </script>
-  <!-- <script src="/scripts/lite-yt-embed.js" async></script> -->
+  <script src="/scripts/lite-yt-embed.js" async></script>
 {%- endblock -%}

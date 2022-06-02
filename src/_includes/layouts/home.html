@@ -5,6 +5,7 @@
 {%- block injectHead -%}
   <link rel="preload" href="/scripts/globe.js" as="script" fetchpriority="high">
   <link rel="preload" href="/scripts/details-utils.js" as="script" fetchpriority="high">
+  <link rel="preload" href="/scripts/lite-yt-embed.js" as="script" fetchpriority="medium">
 {%- endblock -%}
 
 {%- block content -%}
@@ -16,9 +17,5 @@
 
 {%- block bodyScripts -%}
   <script src="/scripts/details-utils.js" defer></script>
-
-  <!-- <script 
-    src="/scripts/lite-yt-embed.js" 
-    async
-  ></script> -->
+  <script src="/scripts/lite-yt-embed.js" async></script>
 {%- endblock -%}
