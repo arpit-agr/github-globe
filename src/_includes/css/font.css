@@ -6,8 +6,9 @@
 
 @font-face {
   font-family: 'InterVariable';
-  src: url('/fonts/Inter.var.woff2') format('woff2');
   font-weight: 1 999;
+  font-display: swap;
+  src: url('/fonts/Inter.var.woff2') format('woff2');
 }
 
 /* inter-regular - latin */
