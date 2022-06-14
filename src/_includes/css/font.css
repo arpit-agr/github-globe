@@ -4,6 +4,12 @@
   src: local("Arial");
 }
 
+@font-face {
+  font-family: 'InterVariable';
+  src: url('/fonts/Inter.var.woff2') format('woff2');
+  font-weight: 1 999;
+}
+
 /* inter-regular - latin */
 @font-face {
   font-family: 'Inter';
@@ -14,6 +20,7 @@
       url('/fonts/inter-v11-latin-regular.woff2') format('woff2'),
       url('/fonts/inter-v11-latin-regular.woff') format('woff');
 }
+
 /* inter-500 - latin */
 @font-face {
   font-family: 'Inter';
