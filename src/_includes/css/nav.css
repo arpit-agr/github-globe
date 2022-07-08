@@ -232,7 +232,10 @@ ul :last-child a:where([aria-current="page"], [data-state="active"]) {
   border-color: transparent;
 }
 
-.burger-menu[enabled="true"] .navigation li:last-child a:where([aria-current="page"], [data-state="active"]) {
+.burger-menu[enabled="true"]
+  .navigation
+  li:last-child
+  a:where([aria-current="page"], [data-state="active"]) {
   padding: var(--space-2xs) 0;
   margin-top: 0;
   /* margin-block-start: 0; */
@@ -246,12 +249,22 @@ ul :last-child a:where([aria-current="page"], [data-state="active"]) {
     top: var(--space-s-m);
     left: 0;
     opacity: 0;
-    }
-    
-    .with-js .burger-menu[enabled=true][status=open] .burger-menu__panel .navigation {
-      position: unset;
-      top: unset;
-      left: unset;
-      opacity: unset;
-    }
+  }
+
+  .with-js
+    .burger-menu[enabled="true"][status="open"]
+    .burger-menu__panel
+    .navigation {
+    position: unset;
+    top: unset;
+    left: unset;
+    opacity: unset;
+  }
+}
+
+/* When the burger menu is opened on smaller viewports we hide the overflow */
+@supports (selector(:has(works))) {
+  body:has(.burger-menu[enabled="true"][status="open"]) {
+    overflow: hidden;
+  }
 }
