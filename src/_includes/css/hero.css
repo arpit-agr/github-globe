@@ -1,42 +1,44 @@
 .hero {
-  background: var(--inverted-bg);
-  color: var(--inverted-text);
+	background: var(--inverted-bg);
+	color: var(--inverted-text);
 }
 
 .hero * {
-  color: inherit;
+	color: inherit;
 }
 
 .hero-content {
-  --stack-gap: 0;
-  align-items: center;
-  text-align: center;
+	--stack-gap: 0;
+	align-items: center;
+	text-align: center;
+
+	max-width: max-content;
 }
 
 :where(.hero-section) h1 {
-  --flow-space: var(--space-m);
+	--flow-space: var(--space-m);
 }
 
 .globe-subtitle {
-  --flow-space: var(--space-m-l);
-  text-transform: uppercase;
-  display: inline-block;
+	--flow-space: var(--space-m-l);
+	text-transform: uppercase;
+	display: inline-block;
 }
 
 .globe-subtitle::after {
-  content: " ↓";
-  content: " ↓"/"";
-  alt: "";
+	content: " ↓";
+	content: " ↓"/"";
+	alt: "";
 }
 
 .globe {
-  position: relative;
-  transform: translateY(-36px);
-  pointer-events: none;
+	position: relative;
+	transform: translateY(-36px);
+	pointer-events: none;
 }
 
 #cobe {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 /* #cobe {
@@ -60,18 +62,56 @@
 } */
 
 .with-js .globe:after {
-  content: "";
-  width: 82%;
-  /* inline-size: 82%; */
-  height: 82%;
-  /* block-size: 82%; */
-  position: absolute;
-  top: 50%;
-  /* inset-block-start: 50%; */
-  left: 50%;
-  /* inset-inline-start: 50%; */
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: hsl(0deg 0% 100% / 1%);
+	content: "";
+	width: 82%;
+	/* inline-size: 82%; */
+	height: 82%;
+	/* block-size: 82%; */
+	position: absolute;
+	top: 50%;
+	/* inset-block-start: 50%; */
+	left: 50%;
+	/* inset-inline-start: 50%; */
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: hsl(0deg 0% 100% / 1%);
 }
 
+#pause {
+	display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.with-js #pause {
+		display: flex;
+		padding: var(--space-3xs);
+		position: absolute;
+		bottom: calc(360px + var(--space-s-m));
+		right: var(--gutter);
+		width: var(--space-xl);
+		height: var(--space-xl);
+
+		border-radius: 100vmin;
+		/* border-color: var(--accent-color);
+		border-style: dashed; */
+
+		border-color: var(--accent-bg);
+		background: var(--accent-bg);
+		backdrop-filter: blur(16px) saturate(180%);
+		-webkit-backdrop-filter: blur(16px) saturate(180%);
+	}
+}
+
+#pause svg {
+	flex: 1;
+	fill: var(--accent-color);
+	vertical-align: middle;
+}
+
+#pause[data-animation="off"] {
+	border-color: var(--surface-1);
+}
+
+#pause[data-animation="off"] svg {
+	fill: var(--surface-1);
+}

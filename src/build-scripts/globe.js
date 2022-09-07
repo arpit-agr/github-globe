@@ -28,7 +28,15 @@ const globe = createGlobe(canvas, {
     // Called on every animation frame.
     // `state` will be an empty object, return updated params.
     state.phi = rotation;
-    rotation += 0.005;
+
+    let motionPreference = window.matchMedia('(prefers-reduced-motion: no-preference)') ;
+
+    if (motionPreference.matches == true) {
+      rotation += 0.005;
+    } else {
+      rotation = 3;
+      // rotation += 0.00125;
+    }
   }
 });
 
@@ -38,3 +46,19 @@ const globe = createGlobe(canvas, {
 // To remove the instance:
 // `globe.destroy()`
 // ...
+
+let pauseButton = document.getElementById("pause");
+
+function pause () {
+  let animationState = pauseButton.getAttribute("data-animation");
+
+  globe.toggle();
+
+  animationState = animationState === 'on'
+    ? 'off'
+    : 'on';
+  pauseButton.setAttribute("data-animation", animationState);
+  pauseButton.setAttribute('aria-label', 'Animation is now' + ' ' + animationState)
+}
+
+pauseButton.addEventListener("click", pause);
